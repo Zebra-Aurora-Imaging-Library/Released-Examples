@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="SystemDetection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+     <Category Name="Core"/>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 PP3" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program shows how to use the MappInquire(M_INSTALLED_... inquires to detect
+              installed systems types and display their names using SystemDetection.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAllocDefault</Function>
+  <Function>MappFreeDefault</Function>
+  <Function>MappGetError</Function>
+  <Function>MbufClear</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraText</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+ <Keywords/>
+</Example>

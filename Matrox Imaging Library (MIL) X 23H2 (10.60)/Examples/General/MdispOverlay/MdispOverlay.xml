@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MdispOverlay" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="100" Name="General"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Digitizer"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This program shows how to display an image while creating text and graphics annotations on 
+                         top of it using MIL graphic functions and windows GDI drawing under Windows. If the target 
+                         system supports grabbing, the annotations are done on top of live video.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+  <Language>Python</Language>
+ </Languages>
+ <Functions>
+  <Function>MbufClear</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappControl</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufControl</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufRestore</Function>
+  <Function>MbufInquire</Function>
+  <Function>MdigAlloc</Function>
+  <Function>MdigFree</Function>
+  <Function>MdigGrabContinuous</Function>
+  <Function>MdigHalt</Function>
+  <Function>MdigInquire</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraControl</Function>
+  <Function>MgraText</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+  <Function>MsysInquire</Function>
+ </Functions>
+ <Notes>
+  <Note>Supports digitizer use</Note>
+ </Notes>
+ <Keywords>
+  <Keyword>Graphical annotations</Keyword>
+ </Keywords>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

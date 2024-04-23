@@ -1,0 +1,21 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+Project("{AA0802C5-CA8B-4BAE-8364-900391F1AE63}") = "MbufCreate", "MbufCreate.csproj", "{DF168EDD-C629-493B-9541-0DAD49C68562}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF168EDD-C629-493B-9541-0DAD49C68562}.Debug|x64.ActiveCfg = Debug|x64
+		{DF168EDD-C629-493B-9541-0DAD49C68562}.Debug|x64.Build.0 = Debug|x64
+		{DF168EDD-C629-493B-9541-0DAD49C68562}.Release|x64.ActiveCfg = Release|x64
+		{DF168EDD-C629-493B-9541-0DAD49C68562}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

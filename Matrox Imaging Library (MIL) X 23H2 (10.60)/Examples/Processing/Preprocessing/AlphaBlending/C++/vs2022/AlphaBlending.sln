@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlphaBlending", "AlphaBlending.vcxproj", "{2C1DA7BE-BB03-48FC-A6E2-35F77B29EDA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C1DA7BE-BB03-48FC-A6E2-35F77B29EDA7}.Debug|x64.ActiveCfg = Debug|x64
+		{2C1DA7BE-BB03-48FC-A6E2-35F77B29EDA7}.Debug|x64.Build.0 = Debug|x64
+		{2C1DA7BE-BB03-48FC-A6E2-35F77B29EDA7}.Release|x64.ActiveCfg = Release|x64
+		{2C1DA7BE-BB03-48FC-A6E2-35F77B29EDA7}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ABB668D-C8A0-43FD-A55E-66BEB6B33556}
+	EndGlobalSection
+EndGlobal

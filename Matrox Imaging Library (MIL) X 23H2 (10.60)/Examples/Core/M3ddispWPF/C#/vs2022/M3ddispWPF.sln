@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M3ddispWPF", "..\M3ddispWPF\vs2022\M3ddispWPF.csproj", "{A490D5D8-7414-49DF-B145-CA67A6D24F9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MILApplicationLibrary", "..\MILApplicationLibrary\vs2022\MILApplicationLibrary.csproj", "{3897F7DD-EAFE-4060-9047-53DBE9F6ABD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A490D5D8-7414-49DF-B145-CA67A6D24F9D}.Debug|x64.ActiveCfg = Debug|x64
+		{A490D5D8-7414-49DF-B145-CA67A6D24F9D}.Debug|x64.Build.0 = Debug|x64
+		{A490D5D8-7414-49DF-B145-CA67A6D24F9D}.Release|x64.ActiveCfg = Release|x64
+		{A490D5D8-7414-49DF-B145-CA67A6D24F9D}.Release|x64.Build.0 = Release|x64
+		{3897F7DD-EAFE-4060-9047-53DBE9F6ABD4}.Debug|x64.ActiveCfg = Debug|x64
+		{3897F7DD-EAFE-4060-9047-53DBE9F6ABD4}.Debug|x64.Build.0 = Debug|x64
+		{3897F7DD-EAFE-4060-9047-53DBE9F6ABD4}.Release|x64.ActiveCfg = Release|x64
+		{3897F7DD-EAFE-4060-9047-53DBE9F6ABD4}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29F747EC-BF36-4AB9-ABC1-032198BB5E21}
+	EndGlobalSection
+EndGlobal

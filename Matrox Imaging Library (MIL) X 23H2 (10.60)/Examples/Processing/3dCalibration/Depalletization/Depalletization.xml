@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Depalletization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries"/>
+  <Category Name="Applications">
+   <Category Name="Finding/Locating"/>
+  </Category>
+    <Category Name="Modules">
+         <Category Name="Buffer"/>
+         <Category Name="Calibration"/>
+         <Category Name="Geometric Model Finder"/>
+         <Category Name="Image Processing"/>
+         <Category Name="Display"/>
+         <Category Name="Graphics"/>
+         <Category Name="3D Display"/>
+         <Category Name="3D Graphics"/> 
+         <Category Name="3D Geometry"/>
+         <Category Name="3D Metrology"/>
+         <Category Name="3D Image Processing"/>
+    </Category>
+    <Category Name="What's New">
+      <Category Name="MIL 10.0 SP6" New="1"/>
+    </Category>
+  </Categories>
+  <Description>
+    This program calibrates a camera to find stacked blocks from a top-down view.
+    The blocks are located using a 2D rectangle finder in the world plane
+    and a robot arm removes the top layer of blocks. Succeeding layers are correctly
+    detected at the next expected Z-position before removal.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappControl</Function>
+      <Function>MappTimer</Function>
+      <Function>MbufRestore</Function>
+      <Function>MbufLoad</Function>
+      <Function>MbufClone</Function>
+      <Function>MbufChild2d</Function>
+      <Function>MbufClear</Function>
+      <Function>MbufCopyCond</Function>
+      <Function>McalAlloc</Function>
+      <Function>McalAssociate</Function>
+      <Function>McalSetCoordinateSystem</Function>
+      <Function>McalGetCoordinateSystem</Function>
+      <Function>McalControl</Function>
+      <Function>McalInquire</Function>
+      <Function>McalDraw</Function>
+      <Function>McalDraw3d</Function>
+      <Function>McalGrid</Function>
+      <Function>MimBoundingBox</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispControl</Function>
+      <Function>MdispInquire</Function>
+      <Function>MdispSelect</Function>
+      <Function>MgraAllocList</Function>
+      <Function>MgraClear</Function>
+      <Function>MgraControl</Function>
+      <Function>MgraRectAngle</Function>
+      <Function>MmodAlloc</Function>
+      <Function>MmodAllocResult</Function>
+      <Function>MmodControl</Function>
+      <Function>MmodDefine</Function>
+      <Function>MmodPreprocess</Function>
+      <Function>MmodFind</Function>
+      <Function>MmodGetResult</Function>
+      <Function>MmodDraw</Function>
+      <Function>M3dgeoAlloc</Function>
+      <Function>M3dgeoInquire</Function>
+      <Function>M3dgeoConstruct</Function>
+      <Function>M3dgeoCopy</Function>
+      <Function>M3dgeoBox</Function>
+      <Function>M3dgeoLine</Function>
+      <Function>M3dgeoMatrixSetTransform</Function>
+      <Function>M3dgeoMatrixSetWithAxes</Function>
+      <Function>M3dgeoDraw3d</Function>
+      <Function>M3dimRotate</Function>
+      <Function>M3dimTranslate</Function>
+      <Function>M3dmetFeature</Function>
+      <Function>M3dmetFeatureEx</Function>
+      <Function>M3ddispAlloc</Function>
+      <Function>M3ddispControl</Function>
+      <Function>M3ddispInquire</Function>
+      <Function>M3ddispSetView</Function>
+      <Function>M3ddispSelect</Function>
+      <Function>M3dgraControl</Function>
+      <Function>M3dgraNode</Function>
+      <Function>M3dgraSphere</Function>
+      <Function>M3dgraBox</Function>
+      <Function>M3dgraCylinder</Function>
+      <Function>M3dgraCopy</Function>
+      <Function>M3dgraRemove</Function>
+      <Function>MsysAlloc</Function>
+  </Functions>
+  <Licenses>
+      <License>Image Analysis</License>
+      <License>3D Calibration &amp; Supplement</License>  
+      <License>Geometric Model Finder</License>
+  </Licenses>
+  <Keywords>
+      <Keyword>3D calibration</Keyword>
+      <Keyword>Rectangle detection</Keyword>
+      <Keyword>Geometric pattern matching</Keyword>
+  </Keywords>
+</Example>

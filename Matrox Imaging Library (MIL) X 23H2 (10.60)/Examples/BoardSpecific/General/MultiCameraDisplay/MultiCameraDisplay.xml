@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MultiCameraDisplay" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+      <Category Name="Hardware-specific">
+         <Category Name="Matrox Clarity UHD"/>
+         <Category Name="GigE Vision"/>
+         <Category Name="USB3 Vision"/>
+         <Category Name="Matrox Morphis"/>
+         <Category Name="Matrox Morphis QxT"/>
+         <Category Name="Matrox Radient"/>
+         <Category Name="Matrox Radient eV-CXP"/>
+         <Category Name="Matrox RadientPro"/>
+         <Category Name="Matrox Radient eV-CL"/>
+         <Category Name="Matrox Rapixo CL Pro"/>
+         <Category Name="Matrox Rapixo CXP"/>
+         <Category Name="Matrox Solios"/>
+         <Category Name="Matrox Vio"/>
+      </Category>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Digitizer"/>
+   <Category Name="Sequence"/>   
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0" New="1"/>
+  </Category>
+ </Categories>
+ <Description>
+ <![CDATA[
+This program detects all the cameras attached to all the installed
+Matrox systems and starts grabbing from them using MdigProcess().<br /><br />
+<b>Features include:</b><br /><br />
+- Displaying multiple live streams from multiple boards.<br />
+- No tearing video output.<br />
+- Low latency video output.<br />
+- Live camera addition and removal.<br />
+- Changing the display between windowed and full screen mode.<br />
+- Changing grab buffer pixel formats.<br />
+- Activating encoding on a live stream.<br />
+- Activating image processing on a live stream.<br />
+- Displaying the Feature browser so that the user can control the digitizer<br />
+  and camera settings.<br />
+]]>
+</Description>
+ <Languages>
+ <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MdigProcess</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappControl</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufFree</Function>
+  <Function>MdigAlloc</Function>
+  <Function>MdigControl</Function>
+  <Function>MdigFree</Function>
+  <Function>MdigGetHookInfo</Function>
+  <Function>MdigInquire</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysGetHookInfo</Function>
+  <Function>MsysHookFunction</Function>
+  <Function>MsysInquire</Function>
+ </Functions>
+ <Notes>
+   <Note>Requires a digitizer</Note>
+   <Note>May show a firewall alert</Note>
+ </Notes>
+ <Keywords>
+  <Keyword>Image acquisition</Keyword>
+ </Keywords>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

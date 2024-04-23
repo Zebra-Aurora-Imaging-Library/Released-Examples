@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MultiCameraLaserCalibration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+   <Category Name="Calibration"/>
+   <Category Name="3D Map"/>
+   <Category Name="3D Display"/>
+   <Category Name="3D Graphics"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP4"/>
+   <Category Name="MIL 10.0 PP2" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program calibrates a multi camera laser system.
+It also diagnoses the calibration process to validate the 
+accuracy of the calibration result.
+ </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>M3ddispAlloc</Function> 
+  <Function>M3ddispControl</Function> 
+  <Function>M3ddispFree</Function> 
+  <Function>M3ddispInquire</Function> 
+  <Function>M3ddispSelect</Function> 
+  <Function>M3ddispSetView</Function> 
+  <Function>M3dgeoAlloc</Function> 
+  <Function>M3dgeoFree</Function> 
+  <Function>M3dgeoMatrixSetTransform</Function> 
+  <Function>M3dgraControl</Function> 
+  <Function>M3dgraGrid</Function> 
+  <Function>M3dgraRemove</Function> 
+  <Function>M3dmapAddScan</Function>
+  <Function>M3dmapAlloc</Function>
+  <Function>M3dmapAllocResult</Function>
+  <Function>M3dmapCalibrate</Function>
+  <Function>M3dmapCalibrateMultiple</Function>
+  <Function>M3dmapControl</Function>
+  <Function>M3dmapDraw</Function>
+  <Function>M3dmapDraw3d</Function> 
+  <Function>M3dmapFree</Function>
+  <Function>M3dmapInquire</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappControl</Function> 
+  <Function>MappFree</Function>
+  <Function>MbufChild2d</Function>
+  <Function>MbufClone</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufLoad</Function>
+  <Function>MbufRestore</Function>
+  <Function>McalAlloc</Function>
+  <Function>McalControl</Function>
+  <Function>McalDraw</Function>
+  <Function>McalFree</Function>
+  <Function>McalGrid</Function>
+  <Function>McalInquire</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraAlloc</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraControl</Function>
+  <Function>MgraControlList</Function>
+  <Function>MgraFree</Function>
+  <Function>MgraGetHookInfo</Function>
+  <Function>MgraHookFunction</Function>
+  <Function>MgraInquireList</Function>
+  <Function>MgraRectFill</Function>
+  <Function>MgraText</Function>
+  <Function>MimArith</Function>
+  <Function>MimControl</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>  
+ </Functions>
+ <Licenses>
+  <License>3D Calibration &amp; Supplement</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>3D calibration</Keyword>
+  <Keyword>Sheet-of-light</Keyword>
+  <Keyword>3D profiling</Keyword>
+ </Keywords>
+ <Notes>
+  <Note>Console-based utility</Note>
+  <Note>Example might not be compatible with older compilers</Note>
+ </Notes>
+</Example>

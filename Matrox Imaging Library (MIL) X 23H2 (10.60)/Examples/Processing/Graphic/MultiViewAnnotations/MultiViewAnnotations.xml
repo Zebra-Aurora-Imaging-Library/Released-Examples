@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MultiViewAnnotations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications">
+   <Category Name="Finding/Locating"/>
+   <Category Name="Measuring"/>
+   <Category Name="Reading"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+   <Category Name="Calibration"/>
+   <Category Name="Measurement"/>
+   <Category Name="Metrology"/>
+   <Category Name="Geometric Model Finder"/>
+   <Category Name="OCR"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This example shows the capabilities of advanced graphic annotations
+                         when using an application that has multiple camera views. The resulting
+                         subpixel annotations are drawn using the corresponding color of the most
+                         suitable camera view with which to perform the processing operation.
+                         Annotations can be panned, zoomed, and seen from any other camera point
+                         of view by interactively selecting a different camera.
+   </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufChild2d</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufClone</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufPut</Function>
+  <Function>MbufRestore</Function>
+  <Function>McalAlloc</Function>
+  <Function>McalAssociate</Function>
+  <Function>McalControl</Function>
+  <Function>McalDraw</Function>
+  <Function>McalFixture</Function>
+  <Function>McalFree</Function>
+  <Function>McalGrid</Function>
+  <Function>McalSetCoordinateSystem</Function>
+  <Function>McalTransformCoordinateList</Function>
+  <Function>McalTransformImage</Function>
+  <Function>McalWarp</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MdispZoom</Function>
+  <Function>MgraAlloc</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraArcFill</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraControl</Function>
+  <Function>MgraControlList</Function>
+  <Function>MgraFont</Function>
+  <Function>MgraFree</Function>
+  <Function>MgraGetHookInfo</Function>
+  <Function>MgraHookFunction</Function>
+  <Function>MgraInquireList</Function>
+  <Function>MgraText</Function>
+  <Function>MimWarp</Function>
+  <Function>MmeasDraw</Function>
+  <Function>MmeasFindMarker</Function>
+  <Function>MmeasFree</Function>
+  <Function>MmeasGetResult</Function>
+  <Function>MmeasRestoreMarker</Function>
+  <Function>MmeasSetMarker</Function>
+  <Function>MmetAllocResult</Function>
+  <Function>MmetCalculate</Function>
+  <Function>MmetControl</Function>
+  <Function>MmetDraw</Function>
+  <Function>MmetFree</Function>
+  <Function>MmetGetResult</Function>
+  <Function>MmetInquire</Function>
+  <Function>MmetRestore</Function>
+  <Function>MmodAllocResult</Function>
+  <Function>MmodDraw</Function>
+  <Function>MmodFind</Function>
+  <Function>MmodFree</Function>
+  <Function>MmodGetResult</Function>
+  <Function>MmodPreprocess</Function>
+  <Function>MmodRestore</Function>
+  <Function>MocrAllocResult</Function>
+  <Function>MocrControl</Function>
+  <Function>MocrDraw</Function>
+  <Function>MocrFree</Function>
+  <Function>MocrGetResult</Function>
+  <Function>MocrReadString</Function>
+  <Function>MocrRestoreFont</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>Identification</License>
+  <License>Geometric Model Finder</License>
+  <License>Metrology</License>
+  <License>3D Calibration &amp; Supplement</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Interactive annotations</Keyword>
+  <Keyword>Graphical annotations</Keyword>
+  <Keyword>Object matching</Keyword>
+  <Keyword>Fixturing</Keyword>
+  <Keyword>Optical character recognition</Keyword>
+  <Keyword>OCR</Keyword>
+  <Keyword>Object dimensions</Keyword>
+  <Keyword>2D calibration</Keyword>
+  <Keyword>Unwarping</Keyword>
+  <Keyword>Warping</Keyword>
+  <Keyword>Metrology</Keyword>
+  <Keyword>Gauging</Keyword>
+  <Keyword>Measurement</Keyword>
+ </Keywords>
+</Example>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="CookieDetection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+      <Category Name="Food and Beverage"/>
+      <Category Name="Packaging"/>
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Inspecting/Proofing/Verifying"/>
+      <Category Name="Finding/Locating"/>
+      <Category Name="Counting"/>
+      <Category Name="3D profiling"/>
+    </Category>
+    <Category Name="Modules">
+      <Category Name="3D Image Processing"/>
+      <Category Name="Buffer"/>
+      <Category Name="Calibration"/>
+      <Category Name="Display"/>
+      <Category Name="Graphics"/>
+      <Category Name="Image Processing"/>
+      <Category Name="Geometric Model Finder"/>
+      <Category Name="3D Metrology"/>
+      <Category Name="3D Display"/>
+    </Category>
+    <Category Name="What's New">
+	  <Category Name="MIL 10.0 SP4"/>
+      <Category Name="MIL 10.0 PP1" New="1"/>
+      <Category Name="MIL 10.0 U24"/>
+      <Category Name="MIL 10.0 U37"/>
+    </Category>
+  </Categories>
+  <Description>
+    This example demonstrates how to count cookies using 3D point
+    clouds. 
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+    <Function>M3ddispAlloc</Function>
+    <Function>M3ddispControl</Function>
+    <Function>M3ddispFree</Function>
+    <Function>M3ddispSelect</Function>
+    <Function>M3ddispSetView</Function>
+    <Function>M3dgeoAlloc</Function>
+    <Function>M3dgeoBox</Function>
+    <Function>M3dgeoFree</Function>
+    <Function>M3dimAlloc</Function>
+    <Function>M3dimCalibrateDepthMap</Function>
+    <Function>M3dimControl</Function>
+    <Function>M3dimCrop</Function>
+    <Function>M3dimFillGaps</Function>
+    <Function>M3dimFree</Function>
+    <Function>M3dimMerge</Function>
+    <Function>M3dimProject</Function>
+    <Function>M3dmetAllocResult</Function>
+    <Function>M3dmetFree</Function>
+    <Function>M3dmetGetResult</Function>
+    <Function>M3dmetStat</Function>
+    <Function>MappAlloc</Function>
+    <Function>MappControl</Function>
+    <Function>MappFileOperation</Function>
+    <Function>MappFree</Function>
+    <Function>MbufAlloc2d</Function>
+    <Function>MbufAllocContainer</Function>
+    <Function>MbufChild2d</Function>
+    <Function>MbufClear</Function>
+    <Function>MbufClearCond</Function>
+    <Function>MbufFree</Function>
+    <Function>MbufImport</Function>
+    <Function>MbufInquire</Function>
+    <Function>MbufRestore</Function>
+    <Function>McalFree</Function>
+    <Function>McalRestore</Function>
+    <Function>MdispAlloc</Function>
+    <Function>MdispControl</Function>
+    <Function>MdispFree</Function>
+    <Function>MdispSelect</Function>
+    <Function>MdispZoom</Function>
+    <Function>MgraAllocList</Function>
+    <Function>MgraClear</Function>
+    <Function>MgraColor</Function>
+    <Function>MgraControl</Function>
+    <Function>MgraFree</Function>
+    <Function>MgraText</Function>
+    <Function>MimShift</Function>
+    <Function>MmodAllocResult</Function>
+    <Function>MmodControl</Function>
+    <Function>MmodDraw</Function>
+    <Function>MmodFind</Function>
+    <Function>MmodFree</Function>
+    <Function>MmodGetResult</Function>
+    <Function>MmodPreprocess</Function>
+    <Function>MmodRestore</Function>
+    <Function>MsysAlloc</Function>
+    <Function>MsysFree</Function>
+  </Functions>
+  <Licenses>
+    <License>Image Analysis</License>
+    <License>Metrology</License>
+    <License>Geometric Model Finder</License>
+    <License>3D Calibration &amp; Supplement</License>
+  </Licenses>
+  <Keywords>
+    <Keyword>Object matching</Keyword>
+    <Keyword>3D profiling</Keyword>
+    <Keyword>3D reconstruction</Keyword>
+    <Keyword>Object detection</Keyword>
+    <Keyword>Geometric pattern matching</Keyword>
+    <Keyword>Graphical annotations</Keyword>
+    <Keyword>Preprocessing</Keyword>
+    <Keyword>Pattern recognition</Keyword>
+    <Keyword>Spatial filtering</Keyword>
+    <Keyword>Pattern matching</Keyword>
+    <Keyword>3D measurement</Keyword>
+    <Keyword>Defect detection</Keyword>
+    <Keyword>3D calibration</Keyword>
+    <Keyword>3D depth map</Keyword>
+    <Keyword>Image filtering</Keyword>
+    <Keyword>Image enhancement</Keyword>
+    <Keyword>Feature matching</Keyword>
+    <Keyword>Image convolution</Keyword>
+    <Keyword>Image arithmetic</Keyword>
+  </Keywords>
+</Example>

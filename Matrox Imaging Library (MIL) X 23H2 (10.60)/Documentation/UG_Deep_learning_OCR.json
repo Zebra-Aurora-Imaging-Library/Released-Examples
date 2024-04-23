@@ -1,0 +1,71 @@
+[{
+  "id": "UG_Deep_learning_OCR",
+  "version": "2024020714",
+  "title": "Deep learning OCR",
+  "subTitles": null,
+  "location": "MIL UG P03: 2D processing and analysis",
+  "pageURL": "content\\UserGuide\\Deep_learning_OCR\\ChapterInformation.htm",
+  "text": " Chapter 16: Deep learning OCR This chapter explains how to perform optical character recognition (OCR) on text with the MIL Deep learning OCR module. This module contains MIL functions prefixed with Mdlocr. MIL Deep Learning OCR module Steps to read strings from an image Basic concepts for the MIL Deep Learning OCR module Requirements and recommendations MIL add-ons and updates Computer requirements for a deep learning OCR context GPU and related installations Deep learning OCR example ",
+  "wordCount": 78,
+  "subEntries": [
+    {
+      "id": "UG_Deep_learning_OCR_MIL_Deep_learning_OCR_module",
+      "version": null,
+      "title": "MIL Deep Learning OCR module",
+      "subTitles": null,
+      "location": "MIL UG P03: 2D processing and analysis",
+      "pageURL": "content\\UserGuide\\Deep_learning_OCR\\MIL_Deep_learning_OCR_module.htm",
+      "text": " MIL Deep Learning OCR module The MIL Deep Learning OCR module is a set of functions that allow you to perform optical character recognition using a deep learning architecture. Unlike the other MIL string reading modules, the Deep Learning OCR module does not require fonts or string models to read text in an image. By default, the Deep Learning OCR module can read all text in an image within the default character height bounds. You can change these bounds to include larger or smaller text if needed. To improve robustness or to select a subset of strings to read, a string model can be defined. You can define the model from a read string occurrence at a location in an image, or you can define the model explicitly. String models are used to limit the strings being read. You can use a string model to read only strings that start or end with a specified string (textual anchor). String models also allow you to set positional constraints. You can restrict positions in string models to a particular character type or to a list of specified characters. For example, to read the twenty-second, the ninth, or the third uppercase letter of the alphabet at the specified position, use the string \"VIC\". The Deep Learning OCR module performs best when reading uppercase letters and digits. Misread characters are more frequent when attempting to read lowercase letters and even more frequent when attempting to read punctuation (disabled by default), so these should be used with caution. The Deep Learning OCR module supports dot-matrix text but will more frequently mismatch characters if the dots are well segmented. In these cases, it is recommended to use the SureDotOCR module to read dot-matrix text. While the Deep Learning OCR module does not use fonts, it tends to perform better with some fonts. Some recommended fonts include: Bahnschrift. Bierstadt. Trebuchet. Mairyo UI. Tahoma. Verdana. Cascadia Code. Some fonts that are unreliable include: Arial. Calibri. Liberation Sans. Cambria. MIL Deep Learning OCR module ",
+      "wordCount": 337,
+      "subEntries": []
+    },
+    {
+      "id": "UG_Deep_learning_OCR_Steps_to_reading_a_string_in_an_image",
+      "version": null,
+      "title": "Steps to read strings from an image",
+      "subTitles": null,
+      "location": "MIL UG P03: 2D processing and analysis",
+      "pageURL": "content\\UserGuide\\Deep_learning_OCR\\Steps_to_reading_a_string_in_an_image.htm",
+      "text": " Steps to read strings from an image The following steps provide a basic methodology for using the MIL Deep Learning OCR module: Allocate a Deep Learning OCR context, using MdlocrAlloc(). Allocate a Deep Learning OCR result buffer to hold the results of the read operation, using MdlocrAllocResult(). Set general read settings. Set the dimensions of the area that encompasses all text, using MdlocrControl() with M_TARGET_MAX_SIZE_X and M_TARGET_MAX_SIZE_Y. If necessary, modify other context settings, using MdlocrControl(). If you plan to add a string model from a read result, you must ensure that the string will be read properly at this step. For example, you can set the list of characters that are accepted by the read operation using MdlocrControl() with M_ACCEPTED_CHARS and adjust the maximum allowed intercharacter gap with M_INTERCHAR_MAX_WIDTH. Preprocess the Deep Learning OCR context, using MdlocrPreprocess(). Perform a read operation on the specified target image, using MdlocrRead() with M_READ_ALL. If you want to restrict the string being read, you can define a string model. A string model can be defined from the results. Note, if the string occurrence you want to make a model from was improperly read, repeat steps 3.b. to 5. Draw the results, using MdlocrDraw(). You can use MdlocrDraw() with M_DRAW_STRING_INDEX to see which index is associated with which string. Use the mouse to get the string occurrence index at its location (MdlocrGetStringIndex()). Note, you can use the index from the draw operation directly and skip this step. Use MdlocrDefineModelFromResult() to define a model from the specified string result. If necessary, adjust the settings of the string model using MdlocrControlStringModel() and the positional constraints stored in the string model using MdlocrControlConstraint(). You can also manually define a string model using MdlocrDefineModel() and adjust settings and positional constraints in the same manner. You must preprocess the Deep Learning OCR context again, using MdlocrPreprocess(). Perform a second read operation with a string model on the specified target image, using MdlocrRead() with M_MODEL_BASED. Retrieve the required results from the Deep Learning OCR result buffer, using MdlocrGetResult(). If necessary, draw the results, using MdlocrDraw(). For example, you can specify M_DRAW_STRING_BOX to draw a bounding box around the string; then, specify M_DRAW_STRING to draw an annotation of the string under the bounding box. If necessary, save your Deep Learning OCR context, using MdlocrSave() or MdlocrStream(). Free all your allocated objects, using MdlocrFree(), unless M_UNIQUE_ID was specified during allocation. Steps to read strings from an image ",
+      "wordCount": 406,
+      "subEntries": []
+    },
+    {
+      "id": "UG_Deep_learning_OCR_Basic_concepts",
+      "version": null,
+      "title": "Basic concepts for the MIL Deep Learning OCR module",
+      "subTitles": null,
+      "location": "MIL UG P03: 2D processing and analysis",
+      "pageURL": "content\\UserGuide\\Deep_learning_OCR\\Basic_concepts.htm",
+      "text": " Basic concepts for the MIL Deep Learning OCR module The basic concepts and vocabulary conventions for the MIL Deep Learning OCR module are: Character. A symbol, such as a digit, letter (upper and lowercase) or punctuation mark (disabled by default). Constraint. A restriction that limits the characters that can be read at a position in a string. This includes the type of character (letters, digits) or a list of accepted characters. Deep learning (DL). A method in machine learning that uses learning techniques related to neural networks. Deep Learning OCR context. A MIL object that stores the prediction engine, all settings, constraints, and string models with which to read text. String. A linear sequence of aligned characters. If the distance between two successive characters is greater than the maximum space allowed, the characters are considered part of two strings. Characters on separate lines are always in separate strings. String model. A data structure, within a Deep Learning OCR context, that stores settings and positional constraints of a string to read in the target image. String occurrence. A string, read from the target image, that respects the specifications of a Deep Learning OCR context, including string model settings and positional constraints. Target image. The image in which to read strings. Basic concepts for the MIL Deep Learning OCR module ",
+      "wordCount": 220,
+      "subEntries": []
+    },
+    {
+      "id": "UG_Deep_learning_OCR_Requirements_and_recommendations",
+      "version": null,
+      "title": "Requirements and recommendations",
+      "subTitles": [
+        "MIL add-ons and updates",
+        "Computer requirements for a deep learning OCR context",
+        "GPU and related installations"
+      ],
+      "location": "MIL UG P03: 2D processing and analysis",
+      "pageURL": "content\\UserGuide\\Deep_learning_OCR\\Requirements_and_recommendations.htm",
+      "text": " Requirements and recommendations The Deep Learning OCR module has computer related requirements, such as a minimum amount of memory and a GPU, that are additional to what is already required to run MIL. To take advantage of available hardware and maximize performance, such as reading on a GPU, you should install the required MIL add-ons and updates. To validate that your system can optimally perform Deep Learning OCR read operations, a Deep Learning OCR prediction engine test is available in the MILConfig utility under the DLOCR item. MIL add-ons and updates To maximize the capabilities of the Deep Learning OCR module, you should install the latest MIL add-ons and updates. MIL add-ons and updates are available for download through the Updates item found in the MILConfig utility. In particular, check for MIL add-ons related to OpenVINO predict engines, and CUDA predict engines. For more information, refer to the whatsnew release note. Computer requirements for a deep learning OCR context To use a Deep Learning OCR context, note the requirements and recommendations for the following: GPU and CPU. Prediction might be faster on a GPU. Use the MILConfig utility under the DLOCR item to change the predict engine and number of cores. Performance should be analyzed on your own applications. GPU related requirements and recommendations depends on whether you have installed the latest MIL add-ons. The GPU must be from NVIDIA (for example, Quadro P1000, GTX 1650, RTX 2060, and RTX 2070). The NVIDIA GPU driver version must be at least 452.39. The supported GPU compute capabilities range from 3.5 to 8.6; the recommended minimum is 6.0. For more information on compute capability, refer to the CUDA GPUs | NVIDIA Developer page at https://developer.nvidia.com/cuda-gpus (support for CUDA on NVIDIA GPUs is provided with a MIL X Service Pack add-on). The recommended graphics driver for Intel Integrated Graphics when using the Intel OpenVINO provider for predicting is 27.20.100.9079 (support for OpenVINO prediction is provided with a MIL X Service Pack add-on). When using a GPU for read operations, one CPU core is still needed. Using a CPU with a higher clock rate, rather than a higher number of cores, is recommended. If using the CPU for read operations, a high-end multi-core CPU is recommended. It is recommended to have at least 4 gigabytes of GPU memory. Operating system and main memory. You must use a 64-bit Windows 10 operating system (or later). It is recommended that main memory is at least twice the size of the GPU's memory. SSD. It is recommended to disable features and processes that can severely reduce disk performance, such as file indexing and anti-virus processes. GPU and related installations You should install the most appropriate drivers and updates for any machine learning component you are using, such as GPUs and iGPUs. These drivers and updates are not specific to MIL and are typically available for download by right-clicking on the device name (such as the specific GPU you are using) listed under the Display adapters item found in Microsoft Window's Device Manager. If necessary, you can follow these steps to verify whether your GPU is installed correctly: Open the Windows Command Prompt (press the Windows key + R and type \"cmd\"). Type \"devmgmt.msc\". Ensure that the GPU is working correctly; for example, there should not be an exclamation point. The following is an example of how a properly functioning GPU is listed: Ensure that you are not using a GPU that should be connected to a monitor and is not. The following is an example of how an improperly connected GPU is listed: If the problem persists, download the latest display driver for your GPU. Requirements and recommendations MIL add-ons and updates Computer requirements for a deep learning OCR context GPU and related installations ",
+      "wordCount": 629,
+      "subEntries": []
+    },
+    {
+      "id": "UG_Deep_learning_OCR_Deep_learning_OCR_example",
+      "version": null,
+      "title": "Deep learning OCR example",
+      "subTitles": null,
+      "location": "MIL UG P03: 2D processing and analysis",
+      "pageURL": "content\\UserGuide\\Deep_learning_OCR\\Deep_learning_OCR_example.htm",
+      "text": " Deep learning OCR example The Deep Learning OCR example Mdlocr.cpp illustrates how to read text and define a string model from results. Specifically, the example reads a product's expiry date and lot number. mdlocr.cpp To run this example, use the Matrox Example Launcher in the MIL Control Center. Deep learning OCR example ",
+      "wordCount": 54,
+      "subEntries": []
+    }
+  ]
+}]

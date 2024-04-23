@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="USDotNumberStr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+      <Category Name="Industries"/>
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Reading"/>
+    </Category>
+    <Category Name="Modules">
+      <Category Name="Buffer"/>
+      <Category Name="Display"/>
+      <Category Name="Image Processing"/>
+      <Category Name="String Reader"/>
+    </Category>
+    <Category Name="What's New">
+      <Category Name="MIL 10.0 PP2" New="1"/>
+    </Category>
+  </Categories>
+  <Description>
+    This example demonstrates how to use the String Reader module to read a U.S.
+    Department of Transportation number. A vertical top-hat filtering is applied
+    before the read operation to enhance image quality.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+    <Function>MappAllocDefault</Function>
+    <Function>MappFreeDefault</Function>
+    <Function>MbufAlloc2d</Function>
+    <Function>MbufClear</Function>
+    <Function>MbufFree</Function>
+    <Function>MbufInquire</Function>
+    <Function>MbufRestore</Function>
+    <Function>MdispControl</Function>
+    <Function>MdispSelect</Function>
+    <Function>MgraAllocList</Function>
+    <Function>MgraColor</Function>
+    <Function>MgraFree</Function>
+    <Function>MimMorphic</Function>
+    <Function>MstrAllocResult</Function>
+    <Function>MstrDraw</Function>
+    <Function>MstrFree</Function>
+    <Function>MstrGetResult</Function>
+    <Function>MstrPreprocess</Function>
+    <Function>MstrRead</Function>
+    <Function>MstrRestore</Function>
+  </Functions>
+  <Licenses>
+     <License>String Reader and SureDotOCR</License>
+  </Licenses>
+  <Keywords>
+    <Keyword>Optical character recognition</Keyword>
+    <Keyword>Preprocessing</Keyword>
+    <Keyword>Image filtering</Keyword>
+    <Keyword>Image enhancement</Keyword>
+  </Keywords>
+</Example>

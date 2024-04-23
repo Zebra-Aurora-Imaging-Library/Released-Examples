@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+         <!--link href="milcopilotHelp.css" rel="stylesheet" type="text/css"-->
+
+         <style type="text/css">
+            body {
+            font-size: 12.0pt;
+            font-family: "Calibri", sans-serif;
+            margin-bottom: 1px;
+            }
+
+            dt {
+            font-weight: bold;
+            }
+
+            h1
+            {
+            font-size:22.0pt;
+            font-family:"Calibri", sans-serif;
+            color:#595959;
+            }
+
+            h2
+            {
+            font-size:16.0pt;
+            font-family:"Calibri Light", sans-serif;
+            color:#2E74B5;
+            page-break-after:avoid;
+            }
+
+            }
+         </style>
+
+      </head>
+   <body>
+      <div>
+         <h1>ExternalUserFunction</h1>
+         <h2>MIL CoPilot Sample Workspace</h2>
+      </div>
+    <p>This workspace shows how to use an external function inside MIL CoPilot.</p>
+    <p>Using the blob module, we locate a nut or bolt in the image. For each blob occurrence, 
+       we use our external user function, MoveChild, defined in python to move a pre-allocated child buffer to the location of the occurrence. 
+       The external user function gets the location of the bounding box from the blob results, and move and resizes the child buffer. 
+       The child buffer is then displayed.</p>
+   </body>
+</html>

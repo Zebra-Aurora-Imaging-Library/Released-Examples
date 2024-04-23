@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Mfunc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="410" Name="General"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This example shows the use of the MIL Function Developer Tool Kit 
+                         and how MIL and custom code can be mixed to create a custom 
+                         MIL function that accesses the data pointer of a MIL buffer directly in order to process it. 
+                         The example creates a Master MIL function that registers all the parameters to MIL and 
+                         calls the Slave function. The Slave function retrieves all the parameters, gets the pointers 
+                         to the MIL image buffers, uses them to access the data directly, and adds a constant.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+  <Language>Python</Language>
+ </Languages>
+ <Functions>
+  <Function>MdispFree</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufControl</Function>
+  <Function>MbufDiskInquire</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufLoad</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispSelect</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+  <Function>MsysInquire</Function>
+  <Function>MfuncAlloc</Function>
+  <Function>MfuncParamMilId</Function>
+  <Function>MfuncParamDataPointer</Function>
+  <Function>MfuncCall</Function>
+  <Function>MfuncErrorReport</Function>
+  <Function>MfuncFree</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+ <Keywords>
+  <Keyword/>
+ </Keywords>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

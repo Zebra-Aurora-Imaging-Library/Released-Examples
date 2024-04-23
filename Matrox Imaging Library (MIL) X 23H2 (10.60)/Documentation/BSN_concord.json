@@ -1,0 +1,34 @@
+[{
+  "id": "BSN_concord",
+  "version": "2024020714",
+  "title": "Matrox Concord G-Series",
+  "subTitles": null,
+  "location": "MIL Hardware-specific Notes",
+  "pageURL": "content\\BoardSpecificNotes\\concord\\ChapterInformation.htm",
+  "text": " Matrox Concord G-Series This chapter discusses features of MIL that are particular to Matrox Concord G-Series. Information regarding specific functions is integrated into the functions' reference topics. For any additions/modifications to this chapter or the MIL Reference, refer to the Matrox GigE release notes. Matrox Concord G-Series overview Using Matrox Concord G-Series with MIL ",
+  "wordCount": 56,
+  "subEntries": [
+    {
+      "id": "BSN_concord_Matrox_Concord_specific_features",
+      "version": null,
+      "title": "Matrox Concord G-Series overview",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\concord\\Matrox_Concord_specific_features.htm",
+      "text": " Matrox Concord G-Series overview Matrox Concord G-Series is a GigE Vision Gigabit Ethernet network interface card (NICs) that provides optimum support for the GigE Vision camera interface standard. There are two versions of the G-Series: Matrox Concord GX (a GigE PCI adapter) and Matrox Concord GE (a GigE PCIe adapter). Unlike generic NICs, using Matrox Concord G-Series with MIL does not require manually adjusting advanced driver properties. Matrox Concord G-Series comes equipped with auto medium-dependent interface crossover ports (MDIX). MDIX ports simplify setup by automatically detecting and using the appropriate connection type, eliminating the need for cross-over cables. In addition to being prelicensed for use with the MIL drivers for GigE Vision, the Matrox Concord G-Series can act as a fingerprint for licensing supplemental MIL functionality. The boards can also store a supplemental MIL license, which facilitates the process of moving to a new PC. Matrox Concord G-Series overview ",
+      "wordCount": 151,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_concord_Using_Matrox_Concord_with_MIL",
+      "version": null,
+      "title": "Using Matrox Concord G-Series with MIL",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\concord\\Using_Matrox_Concord_with_MIL.htm",
+      "text": " Using Matrox Concord G-Series with MIL To use your Matrox Concord G-Series with MIL, you must allocate a MIL GigE Vision system (M_SYSTEM_GIGE_VISION), using MsysAlloc(). This allocation opens communication with all GigE Vision compliant boards (Gigabit Ethernet NIC) and allows MIL to use their resources. You can then access and grab from multiple connected GigE Vision-compliant cameras by allocating a digitizer for each connected camera (using MdigAlloc() with M_DEVn). Each process can allocate only one MIL GigE Vision system. Each camera can be used by one process (executable) at a time. For additional information, refer to the Matrox GigE Vision driver chapter in the MIL Hardware-specific Notes. Matrox Concord G-Series information in the MIL Reference can be found in the paragraphs and values marked as being supported by the GigE Vision driver. Refer to the Matrox GigE Vision driver release notes for any additions/modifications to this chapter. Using Matrox Concord G-Series with MIL ",
+      "wordCount": 155,
+      "subEntries": []
+    }
+  ]
+}]

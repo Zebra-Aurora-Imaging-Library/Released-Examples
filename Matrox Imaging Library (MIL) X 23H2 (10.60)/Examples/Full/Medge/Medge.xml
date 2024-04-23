@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Medge" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="290" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Machining"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Counting"/>
+   <Category Name="Finding/Locating"/>
+   <Category Name="Measuring"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Edge Finder"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 U80" NewWorkspace ="1"/>
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This program uses the MIL Edge Finder module to find and measure the outer diameter of good seals in a target image.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <Language>MIL CoPilot</Language>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufRestore</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MedgeAlloc</Function>
+  <Function>MedgeAllocResult</Function>
+  <Function>MedgeCalculate</Function>
+  <Function>MedgeControl</Function>
+  <Function>MedgeDraw</Function>
+  <Function>MedgeFree</Function>
+  <Function>MedgeGetResult</Function>
+  <Function>MedgeSelect</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraFree</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+  <Licenses>
+  <License>Edge Finder</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Edge detection</Keyword>
+ </Keywords>
+</Example>

@@ -1,0 +1,40 @@
+
+
+body {
+    background: white;
+    font-family: sans-serif;
+}
+
+img {
+    border: none;
+}
+pre {
+    font-size:16px;   
+}
+input[type="button"] {
+    font-size: 14px;
+    visibility:hidden;
+
+
+}
+label {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.left {
+    float: left;
+    padding-left:10px;
+    font-size: 26px;
+    font-weight: bold;
+}     
+
+.right {
+    float: right;
+    padding-left:10px;
+}
+
+.content {
+    clear: left;
+    padding: 20px
+}     

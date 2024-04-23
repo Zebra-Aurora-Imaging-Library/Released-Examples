@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Mthread" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="240" Name="General"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This program shows how to use threads in a MIL application and synchronize them with events. 
+                         It creates 4 processing threads that are used to work in 4 different regions of a display buffer.
+   </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <Language>Python</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MappInquire</Function>
+  <Function>MappTimer</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufCopyColor2d</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufLoad</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MdispInquire</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraArcFill</Function>
+  <Function>MgraRectFill</Function>
+  <Function>MgraText</Function>
+  <Function>MimArith</Function>
+  <Function>MimConvolve</Function>
+  <Function>MimRotate</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+  <Function>MsysInquire</Function>
+  <Function>MthrAlloc</Function>
+  <Function>MthrControl</Function>
+  <Function>MthrFree</Function>
+  <Function>MthrWait</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+  <Licenses>
+  <License>Image Analysis</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Multithreading</Keyword>
+  <Keyword>Image filtering</Keyword>
+  <Keyword>Geometric transformation</Keyword>
+  <Keyword>Spatial filtering</Keyword>
+  <Keyword>Image convolution</Keyword>
+ </Keywords>
+</Example>

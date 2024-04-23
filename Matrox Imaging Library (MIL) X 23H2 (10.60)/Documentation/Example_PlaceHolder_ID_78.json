@@ -1,0 +1,16 @@
+[{
+  "id": "Example_PlaceHolder_ID",
+  "version": "2024020714",
+  "title": "Example_PlaceHolder_Title",
+  "wordCount": 0,
+  "subEntries": [
+    {
+      "id": "Examples_General_MappStart_CPP_mappstart_cpp",
+      "version": "2024020714",
+      "title": "mappstart.cpp",
+      "location": "Sample Code from MIL Examples",
+      "text": " Top /******************************************************************************/ /* * File name: MAppStart.cpp * Location: See Matrox Example Launcher in the MIL Control Center * * * Synopsis: This program allocates a MIL application and system, then displays * a welcoming message using graphics functions. It also shows how * to check for errors. * * Copyright (C) Matrox Electronic Systems Ltd., 1992-2024. * All Rights Reserved */ #include &lt;mil.h&gt; int MosMain(void) { MIL_ID MilApplication, /* Application identifier. */ MilSystem, /* System identifier. */ MilDisplay, /* Display identifier. */ MilImage; /* Image buffer identifier. */ /* Allocate a default MIL application, system, display and image. */ MappAllocDefault(M_DEFAULT, &amp;MilApplication, &amp;MilSystem, &amp;MilDisplay, M_NULL, &amp;MilImage); /* If no allocation errors. */ if (!MappGetError(M_DEFAULT, M_GLOBAL, M_NULL)) { /* Perform graphic operations in the display image. */ MgraControl(M_DEFAULT, M_COLOR, 0xF0); MgraFont(M_DEFAULT, M_FONT_DEFAULT_LARGE); MgraText(M_DEFAULT, MilImage, 160L, 230L, MIL_TEXT(\" Welcome to MIL !!! \")); MgraControl(M_DEFAULT, M_COLOR, 0xC0); MgraRect(M_DEFAULT, MilImage, 100L, 150L, 530L, 340L); MgraRect(M_DEFAULT, MilImage, 120L, 170L, 510L, 320L); MgraRect(M_DEFAULT, MilImage, 140L, 190L, 490L, 300L); /* Print a message. */ MosPrintf(MIL_TEXT(\"\\nSYSTEM ALLOCATION:\\n\")); MosPrintf(MIL_TEXT(\"------------------\\n\\n\")); MosPrintf(MIL_TEXT(\"System allocation successful.\\n\\n\")); MosPrintf(MIL_TEXT(\" \\\"Welcome to MIL !!!\\\"\\n\\n\")); } else MosPrintf(MIL_TEXT(\"System allocation error !\\n\\n\")); /* Wait for a key press. */ MosPrintf(MIL_TEXT(\"Press any key to end.\\n\")); MosGetch(); /* Free defaults. */ MappFreeDefault(MilApplication, MilSystem, MilDisplay, M_NULL, MilImage); return 0; } ",
+      "wordCount": 211
+    }
+  ]
+}]

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{3944CD1E-9E2C-4D2C-BF98-CD171AC953BD}") = "CalculateVolumeDiagnostic", "CalculateVolumeDiagnostic.vcxproj", "{6A6E8E1E-3126-4D20-AB22-CD009792301C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A6E8E1E-3126-4D20-AB22-CD009792301C}.Debug|x64.ActiveCfg = Debug|x64
+		{6A6E8E1E-3126-4D20-AB22-CD009792301C}.Debug|x64.Build.0 = Debug|x64
+		{6A6E8E1E-3126-4D20-AB22-CD009792301C}.Release|x64.ActiveCfg = Release|x64
+		{6A6E8E1E-3126-4D20-AB22-CD009792301C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82F16B51-3A06-439E-BF65-BAE7C409EDE0}
+	EndGlobalSection
+EndGlobal

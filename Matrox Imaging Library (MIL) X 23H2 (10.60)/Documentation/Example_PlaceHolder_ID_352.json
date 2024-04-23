@@ -1,0 +1,16 @@
+[{
+  "id": "Example_PlaceHolder_ID",
+  "version": "2024020714",
+  "title": "Example_PlaceHolder_Title",
+  "wordCount": 0,
+  "subEntries": [
+    {
+      "id": "Examples_DistributedMIL_General_DMILRemap_CPP_DMILRemapSlave_dmilremapslave_cpp",
+      "version": "2024020714",
+      "title": "dmilremapslave.cpp",
+      "location": "Sample Code from MIL Examples",
+      "text": " Top /*****************************************************************************************/ /* * File name: DMILRemapSlave.cpp * Location: See Matrox Example Launcher in the MIL Control Center * * * Synopsis: This example shows how to use the MIL Function Development module to * create a custom asynchronous MIL function that does a series of MIL * commands on a target system in a single call from the host. * * It contains the SlaveCustomRemap() slave function. * * Copyright (C) Matrox Electronic Systems Ltd., 1992-2024. * All Rights Reserved */ #include &lt;mil.h&gt; /* Slave MIL Function prototypes. */ #ifdef __cplusplus extern \"C\" { #endif void MFTYPE SlaveCustomRemap(MIL_ID Func); #ifdef __cplusplus } #endif /* Slave MIL Function definition. */ /* ------------------------------ */ void MFTYPE SlaveCustomRemap(MIL_ID Func) { MIL_ID SrcImage, DstImage, OwnerSystem, ExtremeResult, Lut; MIL_UINT Option; MIL_INT MinAndMax[2]; /* Read the parameters. */ MfuncParamValue(Func, 1, &amp;SrcImage); MfuncParamValue(Func, 2, &amp;DstImage); MfuncParamValue(Func, 3, &amp;Option); /* Find the Owner system of the destination image. */ MbufInquire(SrcImage, M_OWNER_SYSTEM, &amp;OwnerSystem); /* Find the Minimum and Maximum values of the image. */ MimAllocResult(OwnerSystem, 2L, M_EXTREME_LIST, &amp;ExtremeResult); MimFindExtreme(SrcImage, ExtremeResult, M_MIN_VALUE+M_MAX_VALUE); MimGetResult(ExtremeResult, M_VALUE, MinAndMax); MimFree(ExtremeResult); //* Create a LUT to remap the values from Min to Max to 0x00-0xFF. */ MbufAlloc1d(OwnerSystem, 256, 8+M_UNSIGNED, M_LUT, &amp;Lut); MgenLutRamp(Lut, MinAndMax[0], 0x00, MinAndMax[1], 0xFF); //* Remap the values. */ MimLutMap(SrcImage, DstImage, Lut); //* Free the Lut buffer */ MbufFree(Lut); } ",
+      "wordCount": 220
+    }
+  ]
+}]

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset=utf-8 />
+    <link type="text/css" href="mil.css" rel="stylesheet">
+    <title>Mil Web Example</title>
+  </head>
+  <body onload="Start()">
+    <div id="top">
+      <div class="left">
+	<img id="MILLOGO" src="mil.png" alt="MIL Logo" width="64" height="64">MgraWeb Example
+      </div>
+      <div class="right">
+	<label id="IntState"></label><input type="button" id="Interactive" value="Take control" onclick="OnSetInteractive()">
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="MilDiv" class="content">
+      <canvas id="displaycanvas"  width="640" height="480"> </canvas>
+      <br>
+      <pre id="textpre"> </pre>
+      <pre id="updatepre"> </pre>
+    </div>
+    <div id="log"> </div>
+    <input type="button" id="Continue" value="Continue" title=" Continue execution" onclick="OnContinue()">
+    <input type="button" id="Quit" value="Quit" title="end the example" onclick="OnQuit()"><br><br>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="mil.js"></script>
+    <script type="text/javascript" src="mgraweb.js"></script>
+  </body>
+</html>
+

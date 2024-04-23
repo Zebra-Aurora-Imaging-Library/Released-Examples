@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="RegisteredGoldenTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Electronics"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Inspecting/Proofing/Verifying"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+   <Category Name="Calibration"/>
+   <Category Name="Blob Analysis"/>
+   <Category Name="Geometric Model Finder"/>
+   <Category Name="Registration"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This example performs defect detection analysis by comparing a target image 
+                        made of tiles and with a golden template. In the first step, a flat field 
+                        correction is applied to the target image to flatten the image. In the 
+                        second step, the registration module is used to align each tile with the 
+                        golden template, and a map of the differences between the aligned tile and 
+                        the golden template is calculated. Finally, the map of differences is 
+                        analyzed to determine the presence of defects.
+   </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MblobAlloc</Function>
+  <Function>MblobAllocResult</Function>
+  <Function>MblobCalculate</Function>
+  <Function>MblobControl</Function>
+  <Function>MblobDraw</Function>
+  <Function>MblobFree</Function>
+  <Function>MblobGetResult</Function>
+  <Function>MblobSelect</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufCopyColor2d</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufLoad</Function>
+  <Function>MbufRestore</Function>
+  <Function>McalAlloc</Function>
+  <Function>McalDraw</Function>
+  <Function>McalFixture</Function>
+  <Function>McalFree</Function>
+  <Function>McalInquire</Function>
+  <Function>McalTransformCoordinate</Function>
+  <Function>McalUniform</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraControl</Function>
+  <Function>MgraFree</Function>
+  <Function>MgraRectAngle</Function>
+  <Function>MgraText</Function>
+  <Function>MimAlloc</Function>
+  <Function>MimArith</Function>
+  <Function>MimBinarize</Function>
+  <Function>MimControl</Function>
+  <Function>MimDilate</Function>
+  <Function>MimErode</Function>
+  <Function>MimFlatField</Function>
+  <Function>MimFree</Function>
+  <Function>MimRank</Function>
+  <Function>MmodAlloc</Function>
+  <Function>MmodAllocResult</Function>
+  <Function>MmodControl</Function>
+  <Function>MmodDefine</Function>
+  <Function>MmodDraw</Function>
+  <Function>MmodFind</Function>
+  <Function>MmodFree</Function>
+  <Function>MmodGetResult</Function>
+  <Function>MmodPreprocess</Function>
+  <Function>MregAlloc</Function>
+  <Function>MregAllocResult</Function>
+  <Function>MregCalculate</Function>
+  <Function>MregControl</Function>
+  <Function>MregDraw</Function>
+  <Function>MregFree</Function>
+  <Function>MregGetResult</Function>
+  <Function>MregSetLocation</Function>
+  <Function>MregTransformImage</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>Geometric Model Finder</License>
+  <License>Registration</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>2D calibration</Keyword>
+  <Keyword>Image stitching</Keyword>
+  <Keyword>Image registration</Keyword>
+  <Keyword>Image alignment</Keyword>
+  <Keyword>Object matching</Keyword>
+  <Keyword>Defect detection</Keyword>
+  <Keyword>Pattern recognition</Keyword>
+  <Keyword>Image arithmetic</Keyword>
+  <Keyword>Blob analysis</Keyword>
+ </Keywords>
+</Example>

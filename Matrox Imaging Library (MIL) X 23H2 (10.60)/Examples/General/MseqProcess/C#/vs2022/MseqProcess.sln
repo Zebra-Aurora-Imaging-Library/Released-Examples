@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MseqProcess", "MseqProcess.csproj", "{F4080D85-A1FE-45C6-A24B-B3AB1701F8B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4080D85-A1FE-45C6-A24B-B3AB1701F8B8}.Debug|x64.ActiveCfg = Debug|x64
+		{F4080D85-A1FE-45C6-A24B-B3AB1701F8B8}.Debug|x64.Build.0 = Debug|x64
+		{F4080D85-A1FE-45C6-A24B-B3AB1701F8B8}.Release|x64.ActiveCfg = Release|x64
+		{F4080D85-A1FE-45C6-A24B-B3AB1701F8B8}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D6C85FE-7FF5-4FF5-A4C8-7840C9B893C1}
+	EndGlobalSection
+EndGlobal

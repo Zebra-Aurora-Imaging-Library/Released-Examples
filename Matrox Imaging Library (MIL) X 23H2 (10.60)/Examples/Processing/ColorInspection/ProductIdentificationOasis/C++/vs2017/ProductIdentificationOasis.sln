@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProductIdentificationOasis", "ProductIdentificationOasis.vcxproj", "{24F0EC0B-8FC2-47AC-9AC2-2A04B825661A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24F0EC0B-8FC2-47AC-9AC2-2A04B825661A}.Debug|x64.ActiveCfg = Debug|x64
+		{24F0EC0B-8FC2-47AC-9AC2-2A04B825661A}.Debug|x64.Build.0 = Debug|x64
+		{24F0EC0B-8FC2-47AC-9AC2-2A04B825661A}.Release|x64.ActiveCfg = Release|x64
+		{24F0EC0B-8FC2-47AC-9AC2-2A04B825661A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F0EE818-3AD7-4964-9146-1B515C1D52DE}
+	EndGlobalSection
+EndGlobal

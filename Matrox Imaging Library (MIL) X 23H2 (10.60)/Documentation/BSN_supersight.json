@@ -1,0 +1,59 @@
+[{
+  "id": "BSN_supersight",
+  "version": "2024020714",
+  "title": "Matrox Supersight",
+  "subTitles": null,
+  "location": "MIL Hardware-specific Notes",
+  "pageURL": "content\\BoardSpecificNotes\\supersight\\ChapterInformation.htm",
+  "text": " Matrox Supersight This chapter discusses features of MIL that are particular to Matrox Supersight, and ways that optimize its performance. Matrox Supersight information regarding specific functions is integrated into the functions' reference topics. Refer to the Matrox Supersight release notes for any additions/modifications to this chapter or the MIL Reference. Matrox Supersight overview Summary of Matrox Supersight SHB board features Note on nomenclature Using MIL with a Matrox Supersight SHB board Backplane communications for DMIL remote systems Matrox Supersight SHB flow diagram ",
+  "wordCount": 84,
+  "subEntries": [
+    {
+      "id": "BSN_supersight_Matrox_Supersight_specific_features",
+      "version": null,
+      "title": "Matrox Supersight overview",
+      "subTitles": [
+        "Summary of Matrox Supersight SHB board features",
+        "Note on nomenclature"
+      ],
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\supersight\\Matrox_Supersight_specific_features.htm",
+      "text": " Matrox Supersight overview The Matrox Supersight family consists of the Matrox Supersight Solo, Matrox Supersight Dual, and Matrox Supersight Quad units. The Matrox Supersight family is a series of self-contained high-performance computing (HPC) platforms, which have a PCIe switched fabric backplane that supports Matrox Supersight SHB-Q370 system Host boards (SHBs) and multiple auxiliary PCIe boards (such as GPU boards (display boards), boards with Processing FPGAs, and frame grabbers) in one chassis. The three types of Matrox Supersight units differ as follows: Name of unit Maximum number of possible SHBs Matrox Supersight Solo 1 Matrox Supersight Dual 2 Matrox Supersight Quad 4 Each SHB in the unit acts as a separate computer with its own UEFI, operating system, memory, hard disk drives, USB connectors, network connectors, integrated graphics controller, and add-on boards. The graphics controller allows you to send analog video data to a high-resolution analog display device using the VGA connector (external) and digital video data to a high-resolution digital display device using the DisplayPort connector (found internally on the SHB-Q370 board and not available on the SHB bracket). The selected configuration file establishes which add-on boards an SHB controls. One Matrox Supersight SHB, along with any additional boards that are connected to the SHB through the backplane is considered a node on your network. One Matrox Supersight Quad unit can have up to 4 SHBs, and therefore there could be up to 4 nodes on your network. Summary of Matrox Supersight SHB board features The following table outlines the features currently available for Matrox Supersight SHB-Q370. Features Matrox Supersight SHB-Q370 CPU Yes (Intel i7-8700) Host memory up to 64 Gbytes Networking 2 Gbit Ethernet ports (10/100/1000 BaseT Ethernet) Number of supported UARTS 3 RS-232 headers Number of auxiliary signals 0 Note on nomenclature This manual refers to the Matrox Supersight Solo unit, the Matrox Supersight Dual unit, and the Matrox Supersight Quad unit as Matrox Supersight units. When necessary, it distinguishes between them using their full name. Matrox Supersight overview Summary of Matrox Supersight SHB board features Note on nomenclature ",
+      "wordCount": 343,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_supersight_Using_Matrox_Supersight_with_MIL",
+      "version": null,
+      "title": "Using MIL with a Matrox Supersight SHB board",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\supersight\\Using_Matrox_Supersight_with_MIL.htm",
+      "text": " Using MIL with a Matrox Supersight SHB board MIL treats a Matrox Supersight SHB board as a normal computer. Accordingly, you do not allocate a Matrox Supersight SHB board as a system. To use the processing power of a Matrox Supersight SHB board, you need to allocate a Host system using MsysAlloc() with M_SYSTEM_HOST. To use the features of an installed Matrox frame grabber or I/O board, you must first allocate the board as a MIL system. Refer to the MIL Hardware-specific Notes for that board. Note that when installing a redistribution (runtime) version of MIL on Matrox Supersight, the license number will be based on the hardware fingerprint of your unit. This means that you will not be able to copy the licensed version of MIL to another computer. Using MIL with a Matrox Supersight SHB board ",
+      "wordCount": 140,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_supersight_Backplane_communications_for_DMIL_remote_systems",
+      "version": null,
+      "title": "Backplane communications for DMIL remote systems",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\supersight\\Backplane_communications_for_DMIL_remote_systems.htm",
+      "text": " Backplane communications for DMIL remote systems When using a Matrox Supersight SHB board, you can allocate a DMIL system that uses the PCIe backplane to communicate with other Matrox Supersight SHB boards installed in the unit and their associated boards. Note that, to allocate a DMIL remote system on a Matrox Supersight SHB board, you must install MIL on the hard disk connected to your Matrox Supersight SHB board. To allocate a remote system, the SystemDescriptor parameter of MsysAlloc() must specify the type of system to allocate, as well as identify the location of the target SHB in your Matrox Supersight unit. The full syntax for the SystemDescriptor parameter is as follows: \"dmilpcie://RemoteComputerName/MILSystemType\" where RemoteComputerIdentifier should be replaced with the name of your target Matrox Supersight SHB installed in the same Matrox Supersight unit. The MILSystemType should be either M_SYSTEM_HOST or the system type of the frame grabber, GPU, or processing FPGA board installed in the same Matrox Supersight unit. The \"://\" and \"/\" are required separators. Backplane communications for DMIL remote systems ",
+      "wordCount": 175,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_supersight_Matrox_Supersight_board_flow_diagram",
+      "version": null,
+      "title": "Matrox Supersight SHB flow diagram",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\supersight\\Matrox_Supersight_board_flow_diagram.htm",
+      "text": " Matrox Supersight SHB flow diagram The following diagram illustrates the data flow of Matrox Supersight SHB-Q370. Matrox Supersight SHB flow diagram ",
+      "wordCount": 23,
+      "subEntries": []
+    }
+  ]
+}]

@@ -1,0 +1,17 @@
+[{
+  "id": "Readme_MatroxIntellicam",
+  "version": "2023100322",
+  "title": "MatroxIntellicam",
+  "wordCount": 0,
+  "subEntries": [
+    {
+      "id": "Readme_MatroxIntellicam_MatroxIntellicam",
+      "title": "MatroxIntellicam",
+      "location": "MIL Release Notes",
+      "pageURL": "\\MatroxIntellicam\\MatroxIntellicam.htm",
+      "text": " Matrox Imaging Library (MIL) 10 Update 20 Release Notes (Matrox Intellicam) April 2017 ?(c) Copyright Matrox Electronic Systems Ltd., 1992-2016. &nbsp; This document outlines what is new with Matrox Intellicam and explains the current limitations and particularities. Contents 1.???????? Matrox Intellicam 1.1??? Summary of bug fixes &nbsp; 1.&nbsp;&nbsp; Matrox Intellicam 1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Summary of bug fixes ?&nbsp; Having insufficient non-paged memory did not always get reported properly and led to incorrect video acquisition (typically black video or a frame rate of 0 fps). Matrox Intellicam now reports an appropriate error message telling users to increase non-paged memory using Matrox MilConfig utility. ?&nbsp; Fixed inconsistencies in the menus associated with Matrox GigE Vision, Matrox USB3 Vision, or Matrox Clarity UHD systems. ",
+      "wordCount": 121,
+      "subEntries": []
+    }
+  ]
+}]

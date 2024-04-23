@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="HandEyeCalibration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Calibration"/>
+   <Category Name="3D Display"/>
+   <Category Name="3D Graphics"/>
+  </Category>
+  <Category Name="What's New">
+       <Category Name="MIL 10.0 SP5" New="1"/>
+										 
+  </Category>
+ </Categories>
+    <Description>
+	This example shows how to calibrate a 3D robotics setup where 
+    a 3D camera is attached to a robotic arm.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>M3ddispAlloc</Function>
+  <Function>M3ddispControl</Function>
+  <Function>M3ddispInquire</Function>
+  <Function>M3ddispSelect</Function>
+  <Function>M3ddispSetView</Function>
+  <Function>M3dgeoAlloc</Function>
+  <Function>M3dgeoFree</Function>
+  <Function>M3dgeoMatrixGet</Function>
+  <Function>M3dgeoMatrixPut</Function>
+  <Function>M3dgeoMatrixSetTransform</Function>
+  <Function>M3dgraControl</Function>
+  <Function>M3dmodAlloc</Function>
+  <Function>M3dmodAllocResult</Function>
+  <Function>M3dmodControl</Function>
+  <Function>M3dmodDefine</Function>
+  <Function>M3dmodDraw3d</Function>
+  <Function>M3dmodFind</Function>
+  <Function>M3dmodGetResult</Function>
+  <Function>M3dmodPreprocess</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappControl</Function>
+  <Function>McalAlloc</Function>
+  <Function>McalCalculateHandEye</Function>
+  <Function>McalFree</Function>
+  <Function>MsysAlloc</Function>
+ </Functions>
+ <Licenses>
+      <License>Geometric Model Finder</License>
+      <License>3D Calibration &amp; Supplement</License>
+ </Licenses>
+ <Keywords>
+    <Keyword>3D calibration</Keyword>
+	<Keyword>3D depth map</Keyword>   
+    <Keyword>3D VGR</Keyword>
+ </Keywords>
+</Example>

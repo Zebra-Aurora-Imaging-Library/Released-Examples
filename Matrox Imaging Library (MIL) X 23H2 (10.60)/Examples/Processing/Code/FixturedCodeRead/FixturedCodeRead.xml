@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="FixturedCodeRead" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Electronics"/>
+   <Category Name="Packaging"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Identifying"/>
+  </Category>
+  <Category Name="Modules">
+    <Category Name="Buffer"/>
+    <Category Name="Calibration"/>
+    <Category Name="Code Reader"/>
+    <Category Name="Display"/>
+    <Category Name="Graphics"/>
+    <Category Name="Pattern Matching"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP5"/>
+   <Category Name="MIL 9.0 PP2" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program contains an example of reading a 1D Code 39 with fixturing 
+                        using the Code Reader module.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+   <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappFree</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufLoad</Function>
+      <Function>MbufRestore</Function>
+      <Function>MbufSetRegion</Function>
+      <Function>McalAlloc</Function>
+      <Function>McalDraw</Function>
+      <Function>McalFixture</Function>
+      <Function>McalFree</Function>
+      <Function>McalUniform</Function>
+      <Function>McodeAlloc</Function>
+      <Function>McodeAllocResult</Function>
+      <Function>McodeControl</Function>
+      <Function>McodeDraw</Function>
+      <Function>McodeFree</Function>
+      <Function>McodeGetResult</Function>
+      <Function>McodeModel</Function>
+      <Function>McodeRead</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispControl</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispInquire</Function>
+      <Function>MdispSelect</Function>
+      <Function>MgraAllocList</Function>
+      <Function>MgraBackColor</Function>
+      <Function>MgraColor</Function>
+      <Function>MgraControl</Function>
+      <Function>MgraFree</Function>
+      <Function>MgraRectAngle</Function>
+      <Function>MgraText</Function>
+      <Function>MpatAlloc</Function>
+      <Function>MpatAllocResult</Function>
+      <Function>MpatControl</Function>
+      <Function>MpatDefine</Function>
+      <Function>MpatDraw</Function>
+      <Function>MpatFind</Function>
+      <Function>MpatFree</Function>
+      <Function>MpatGetResult</Function>
+      <Function>MpatPreprocess</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+   </Functions>
+   <Licenses>
+  <License>Machine Vision</License>
+  <License>Identification</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Linear barcodes</Keyword>
+  <Keyword>Fixturing</Keyword>
+  <Keyword>Region of interest</Keyword>
+  <Keyword>ROI</Keyword>
+  <Keyword>Pattern recognition</Keyword>
+ </Keywords>
+</Example>

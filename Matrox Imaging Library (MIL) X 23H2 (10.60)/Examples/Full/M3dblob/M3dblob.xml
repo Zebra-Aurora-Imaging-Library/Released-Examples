@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="M3dblob" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="430" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Machining"/>
+   <Category Name="Automation"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Finding/Locating"/>
+   <Category Name="Counting"/>
+   <Category Name="3D profiling"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="3D Blob Analysis"/>
+   <Category Name="3D Geometry"/>
+   <Category Name="3D Image Processing"/>
+   <Category Name="3D Display"/>
+   <Category Name="3D Graphics"/>
+   <Category Name="3D Blob Analysis"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Buffer"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP6"/>
+   <Category Name="MIL 10.0 SP5" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program demonstrates how to use the 3d segmentation module to
+              identify objects in a scene and separate them into categories.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <Language>Python</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+ </Languages>
+ <Functions>
+      <Function>M3dblobAlloc</Function>
+      <Function>M3dblobAllocResult</Function>
+      <Function>M3dblobCalculate</Function>
+      <Function>M3dblobCombine</Function>
+      <Function>M3dblobControl</Function>
+      <Function>M3dblobDraw3d</Function>
+      <Function>M3dblobFree</Function>
+      <Function>M3dblobGetResult</Function>
+      <Function>M3dblobSegment</Function>
+      <Function>M3dblobSelect</Function>
+      <Function>M3dgeoAlloc</Function>
+      <Function>M3dgeoFree</Function>
+      <Function>M3dgeoMatrixGetTransform</Function>
+      <Function>M3ddispAlloc</Function>
+      <Function>M3ddispFree</Function>
+      <Function>M3ddispInquire</Function>
+      <Function>M3ddispSelect</Function>
+      <Function>M3dgraAlloc</Function>
+      <Function>M3dgraControl</Function>
+      <Function>M3dgraCopy</Function>
+      <Function>M3dgraFree</Function>
+      <Function>M3dgraInquire</Function>
+      <Function>M3dgraRemove</Function>
+      <Function>M3dimCalibrateDepthMap</Function>
+      <Function>M3dimProject</Function>
+      <Function>MappAlloc</Function>
+      <Function>MappControl</Function>
+      <Function>MappFree</Function>
+      <Function>MappHookFunction</Function>
+      <Function>MbufAlloc2d</Function>
+      <Function>MbufAllocColor</Function>
+      <Function>MbufControl</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufImport</Function>
+      <Function>MbufInquireContainer</Function>
+      <Function>MbufRestore</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispControl</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispInquire</Function>
+      <Function>MdispSelect</Function>
+      <Function>MdispZoom</Function>
+      <Function>MgenLutFunction</Function>
+      <Function>MgraAllocList</Function>
+      <Function>MgraControl</Function>
+      <Function>MgraControlList</Function>
+      <Function>MgraDots</Function>
+      <Function>MgraFree</Function>
+      <Function>MgraRectAngle</Function>
+      <Function>MobjInquire</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>3D Calibration &amp; Supplement</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>3D segmentation</Keyword>
+ </Keywords>
+</Example>

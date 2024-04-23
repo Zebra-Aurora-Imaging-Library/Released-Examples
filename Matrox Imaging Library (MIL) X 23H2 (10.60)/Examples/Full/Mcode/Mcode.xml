@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Mcode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="340" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Electronics"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Identifying"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Code Reader"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+   <Category Name="MIL 10.0 U59" NewWorkspace ="1"/>
+  </Category>
+ </Categories>
+ <Description>This program decodes a linear Code 39 and a DataMatrix code.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <Language>MIL CoPilot</Language>  
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+  <Language>Python</Language>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufChild2d</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufRestore</Function>
+  <Function>McodeAlloc</Function>
+  <Function>McodeAllocResult</Function>
+  <Function>McodeControl</Function>
+  <Function>McodeFree</Function>
+  <Function>McodeGetResult</Function>
+  <Function>McodeModel</Function>
+  <Function>McodeRead</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraBackColor</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraRect</Function>
+  <Function>MgraText</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+  <Licenses>
+  <License>Identification</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Linear barcodes</Keyword>
+  <Keyword>Matrix barcodes</Keyword>
+ </Keywords>
+</Example>

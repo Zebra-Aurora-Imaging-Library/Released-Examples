@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MbufColor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="10" Name="General"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications">
+   <Category Name="Preprocessing"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+   <Category Name="MIL 10.0 U44"/>       
+  </Category>
+ </Categories>
+ <Description>This example demonstrates color buffer manipulations. It first loads a color image and adds color annotations.
+              If image processing is available, it converts the image to Hue, Luminance and Saturation (HLS), 
+              adds a certain offset to the luminance component and converts the image back to Red, Green, 
+              Blue (RGB) to display the result. 
+     </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+  <Language>MIL CoPilot</Language>
+  <Language>Python</Language>
+ </Languages>
+ <Functions>
+  <Function>MdispFree</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufChild2d</Function>
+  <Function>MbufChildColor</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufDiskInquire</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufLoad</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraText</Function>
+  <Function>MimArith</Function>
+  <Function>MimConvert</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Preprocessing</Keyword>
+ </Keywords>
+</Example>

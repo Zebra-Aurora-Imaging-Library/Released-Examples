@@ -1,0 +1,389 @@
+[
+  {
+    "id": "Customize_MIL_Help",
+    "version": "2024020714",
+    "title": "Part 1: Customizing MIL Help, support, and trademarks",
+    "location": "MIL UG P01: Customizing MIL Help, support, and trademarks",
+    "pageURL": "content\\UserGuide\\PartInformation_Customize_MIL_Help.htm",
+    "text": " Top Part 1 Customizing MIL Help, support, and trademarks This part consists of the following chapters: Chapter 0: About MIL Help ",
+    "wordCount": 23,
+    "subEntries": [
+      {
+        "id": "about",
+        "wordCount": 0
+      }
+    ]
+  },
+  {
+    "id": "MIL_in_a_nutshell",
+    "title": "Part 2: MIL in a nutshell",
+    "location": "MIL UG P02: MIL in a nutshell",
+    "pageURL": "content\\UserGuide\\PartInformation_MIL_in_a_nutshell.htm",
+    "text": " Top Part 2 MIL in a nutshell This part consists of the following chapters: Chapter 1: Introduction Chapter 2: Building an application ",
+    "wordCount": 24,
+    "subEntries": [
+      {
+        "id": "introduction",
+        "wordCount": 0
+      },
+      {
+        "id": "building-application",
+        "wordCount": 0
+      }
+    ]
+  },
+  {
+    "id": "2D_processing_and_analysis",
+    "title": "Part 3: 2D processing and analysis",
+    "location": "MIL UG P03: 2D processing and analysis",
+    "pageURL": "content\\UserGuide\\PartInformation_2D_processing_and_analysis.htm",
+    "text": " Top Part 3 2D processing and analysis This part consists of the following chapters: Chapter 3: Fundamental image processing Chapter 4: Advanced image processing Chapter 5: Specialized image processing Chapter 6: Blob analysis Chapter 7: Pattern matching Chapter 8: Geometric Model Finder Chapter 9: Advanced Geometric Matcher Chapter 10: Edge Finder Chapter 11: Registration Chapter 12: Correlation stitching registration and mosaicing Chapter 13: Optical character recognition Chapter 14: String Reader Chapter 15: SureDotOCR Chapter 16: Deep learning OCR Chapter 17: Codes Chapter 18: More on grading codes Chapter 19: Measurement Chapter 20: Bead Chapter 21: Metrology Chapter 22: Color processing and analysis ",
+    "wordCount": 104,
+    "subEntries": [
+      {
+        "id": "image",
+        "wordCount": 0
+      },
+      {
+        "id": "advanced-image",
+        "wordCount": 0
+      },
+      {
+        "id": "Specialized-image",
+        "wordCount": 0
+      },
+      {
+        "id": "blob",
+        "wordCount": 0
+      },
+      {
+        "id": "pattern",
+        "wordCount": 0
+      },
+      {
+        "id": "model-finder",
+        "wordCount": 0
+      },
+      {
+        "id": "advanced-geometric-matcher",
+        "wordCount": 0
+      },
+      {
+        "id": "edge-finder",
+        "wordCount": 0
+      },
+      {
+        "id": "registration",
+        "wordCount": 0
+      },
+      {
+        "id": "CorrelationStitchingRegistration",
+        "wordCount": 0
+      },
+      {
+        "id": "ocr",
+        "wordCount": 0
+      },
+      {
+        "id": "string",
+        "wordCount": 0
+      },
+      {
+        "id": "SureDotOCR",
+        "wordCount": 0
+      },
+      {
+        "id": "Deep_learning_OCR",
+        "wordCount": 0
+      },
+      {
+        "id": "codes",
+        "wordCount": 0
+      },
+      {
+        "id": "more_on_grading_codes",
+        "wordCount": 0
+      },
+      {
+        "id": "meas",
+        "wordCount": 0
+      },
+      {
+        "id": "bead",
+        "wordCount": 0
+      },
+      {
+        "id": "metrology",
+        "wordCount": 0
+      },
+      {
+        "id": "color",
+        "wordCount": 0
+      }
+    ]
+  },
+  {
+    "id": "2D_related_information",
+    "title": "Part 4: 2D related information",
+    "location": "MIL UG P04: 2D related information",
+    "pageURL": "content\\UserGuide\\PartInformation_2D_related_information.htm",
+    "text": " Top Part 4 2D related information This part consists of the following chapters: Chapter 23: Data buffers Chapter 24: Lookup tables Chapter 25: Displaying an image Chapter 26: Generating graphics Chapter 27: Grabbing with your digitizer Chapter 28: Calibrating your camera setup Chapter 29: Fixturing in MIL Chapter 30: JPEG and JPEG2000 compression Chapter 31: Sequences ",
+    "wordCount": 58,
+    "subEntries": [
+      {
+        "id": "data-buffers",
+        "wordCount": 0
+      },
+      {
+        "id": "lut",
+        "wordCount": 0
+      },
+      {
+        "id": "display",
+        "wordCount": 0
+      },
+      {
+        "id": "graphics",
+        "wordCount": 0
+      },
+      {
+        "id": "grabbing",
+        "wordCount": 0
+      },
+      {
+        "id": "calibration",
+        "wordCount": 0
+      },
+      {
+        "id": "fixturing",
+        "wordCount": 0
+      },
+      {
+        "id": "jpeg",
+        "wordCount": 0
+      },
+      {
+        "id": "Sequence",
+        "wordCount": 0
+      }
+    ]
+  },
+  {
+    "id": "3D_processing_and_analysis",
+    "title": "Part 5: 3D processing and analysis",
+    "location": "MIL UG P05: 3D processing and analysis",
+    "pageURL": "content\\UserGuide\\PartInformation_3D_processing_and_analysis.htm",
+    "text": " Top Part 5 3D processing and analysis This part consists of the following chapters: Chapter 32: 3D processing and analysis overview Chapter 33: Common tasks with 3D data Chapter 34: 3D analysis using planar views of an object Chapter 35: 3D image processing Chapter 36: 3D blob analysis Chapter 37: 3D model finder Chapter 38: 3D measurement Chapter 39: 3D metrology Chapter 40: 3D registration ",
+    "wordCount": 67,
+    "subEntries": [
+      {
+        "id": "3D_processing_and_analysis_overview",
+        "wordCount": 0
+      },
+      {
+        "id": "Common_tasks_with_3D_data",
+        "wordCount": 0
+      },
+      {
+        "id": "3D_analysis_using_planar_views_of_an_object",
+        "wordCount": 0
+      },
+      {
+        "id": "3D_Image_processing",
+        "wordCount": 0
+      },
+      {
+        "id": "3D_Blob_analysis",
+        "wordCount": 0
+      },
+      {
+        "id": "3D_Model_finder",
+        "wordCount": 0
+      },
+      {
+        "id": "3D_Measurement",
+        "wordCount": 0
+      },
+      {
+        "id": "3D_Metrology",
+        "wordCount": 0
+      },
+      {
+        "id": "3D_Registration",
+        "wordCount": 0
+      }
+    ]
+  },
+  {
+    "id": "3D_related_information",
+    "title": "Part 6: 3D related information",
+    "location": "MIL UG P06: 3D related information",
+    "pageURL": "content\\UserGuide\\PartInformation_3D_related_information.htm",
+    "text": " Top Part 6 3D related information This part consists of the following chapters: Chapter 41: 3D Containers Chapter 42: Grabbing from 3D sensors Chapter 43: 3D Display and graphics Chapter 44: Using the 3D Geometry module Chapter 45: Fixturing in 3D Chapter 46: 3D reconstruction using laser line profiling ",
+    "wordCount": 51,
+    "subEntries": [
+      {
+        "id": "3D_Containers",
+        "wordCount": 0
+      },
+      {
+        "id": "Grabbing_from_3D_sensors",
+        "wordCount": 0
+      },
+      {
+        "id": "3D_Display_and_graphics",
+        "wordCount": 0
+      },
+      {
+        "id": "Using_the_3D_Geometry_module",
+        "wordCount": 0
+      },
+      {
+        "id": "Fixturing_in_3D",
+        "wordCount": 0
+      },
+      {
+        "id": "3D_reconstruction_using_laser_line_profiling",
+        "wordCount": 0
+      }
+    ]
+  },
+  {
+    "id": "Machine_learning_overview_and_fundamental_concepts",
+    "title": "Part 7: Machine learning fundamentals",
+    "location": "MIL UG P07: Machine learning fundamentals",
+    "pageURL": "content\\UserGuide\\PartInformation_Machine_learning_overview_and_fundamental_concepts.htm",
+    "text": " Top Part 7 Machine learning fundamentals This part consists of the following chapters: Chapter 47: Machine learning with the MIL Classification module Chapter 48: Datasets Chapter 49: Training Chapter 50: Prediction ",
+    "wordCount": 33,
+    "subEntries": [
+      {
+        "id": "ML_Classification_and_classifier_overview",
+        "wordCount": 0
+      },
+      {
+        "id": "Datasets",
+        "wordCount": 0
+      },
+      {
+        "id": "Training",
+        "wordCount": 0
+      },
+      {
+        "id": "ML_Predicting_and_advanced_techniques",
+        "wordCount": 0
+      }
+    ]
+  },
+  {
+    "id": "Machine_learning_tasks",
+    "title": "Part 8: Machine learning tasks",
+    "location": "MIL UG P08: Machine learning tasks",
+    "pageURL": "content\\UserGuide\\PartInformation_Machine_learning_tasks.htm",
+    "text": " Top Part 8 Machine learning tasks This part consists of the following chapters: Chapter 51: Image classification Chapter 52: Segmentation Chapter 53: Object detection Chapter 54: Anomaly detection Chapter 55: Feature classification ",
+    "wordCount": 34,
+    "subEntries": [
+      {
+        "id": "ML_Image_classification",
+        "wordCount": 0
+      },
+      {
+        "id": "ML_Coarse_segmentation",
+        "wordCount": 0
+      },
+      {
+        "id": "ML_Object_detection",
+        "wordCount": 0
+      },
+      {
+        "id": "ML_Anomaly_detection",
+        "wordCount": 0
+      },
+      {
+        "id": "ML_Feature_classification",
+        "wordCount": 0
+      }
+    ]
+  },
+  {
+    "id": "Communication",
+    "title": "Part 9: Communication",
+    "location": "MIL UG P09: Communication",
+    "pageURL": "content\\UserGuide\\PartInformation_Communication.htm",
+    "text": " Top Part 9 Communication This part consists of the following chapters: Chapter 56: I/O signals and communicating with external devices Chapter 57: Industrial communication ",
+    "wordCount": 26,
+    "subEntries": [
+      {
+        "id": "IOsignals",
+        "wordCount": 0
+      },
+      {
+        "id": "IndCom",
+        "wordCount": 0
+      }
+    ]
+  },
+  {
+    "id": "Other_programming_languages_APIs_and_operating_systems",
+    "title": "Part 10: Other programming languages, APIs, and operating systems",
+    "location": "MIL UG P10: Other programming languages, APIs, and operating systems",
+    "pageURL": "content\\UserGuide\\PartInformation_Other_programming_languages_APIs_and_operating_systems.htm",
+    "text": " Top Part 10 Other programming languages, APIs, and operating systems This part consists of the following chapters: Chapter 58: Using MILweb to monitor your application Chapter 59: Using MIL with Python Chapter 60: Using MIL with.NET Chapter 61: Using MIL under Linux ",
+    "wordCount": 44,
+    "subEntries": [
+      {
+        "id": "MILweb",
+        "wordCount": 0
+      },
+      {
+        "id": "Python",
+        "wordCount": 0
+      },
+      {
+        "id": "NET",
+        "wordCount": 0
+      },
+      {
+        "id": "using",
+        "wordCount": 0
+      }
+    ]
+  },
+  {
+    "id": "Misc",
+    "title": "Part 11: Miscellaneous",
+    "location": "MIL UG P11: Miscellaneous",
+    "pageURL": "content\\UserGuide\\PartInformation_Misc.htm",
+    "text": " Top Part 11 Miscellaneous This part consists of the following chapters: Chapter 62: Distributed MIL Chapter 63: Hosting files on a MIL HTTP server Chapter 64: Development and debugging tools and techniques Chapter 65: Multi-processing, multi-core, and multi-threading Chapter 66: Using MIL with a Processing FPGA Chapter 67: The MIL function development module Chapter 68: Distribution and licensing ",
+    "wordCount": 60,
+    "subEntries": [
+      {
+        "id": "distributed-mil",
+        "wordCount": 0
+      },
+      {
+        "id": "mil_http_servers",
+        "wordCount": 0
+      },
+      {
+        "id": "debugging_tools",
+        "wordCount": 0
+      },
+      {
+        "id": "multiprocessing",
+        "wordCount": 0
+      },
+      {
+        "id": "fpga",
+        "wordCount": 0
+      },
+      {
+        "id": "function",
+        "wordCount": 0
+      },
+      {
+        "id": "licensing",
+        "wordCount": 0
+      }
+    ]
+  }
+]

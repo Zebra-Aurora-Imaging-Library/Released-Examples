@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MetrologyOnBlobs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+         <Category Name="Electronics"/>
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Inspecting/Proofing/Verifying"/>
+      <Category Name="Measuring"/>
+    </Category>
+    <Category Name="Modules">
+      <Category Name="Buffer"/>
+      <Category Name="Display"/>
+      <Category Name="Graphics"/>
+      <Category Name="Image Processing"/>
+      <Category Name="Metrology"/>
+      <Category Name="Blob Analysis"/>
+    </Category>
+    <Category Name="What's New">
+      <Category Name="MIL 10.0 PP2" New="1"/>
+    </Category>
+  </Categories>
+  <Description>
+    This example demonstrates metrology operations along blob contours.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+     <Function>MappAlloc</Function>
+     <Function>MappFree</Function>
+     <Function>MblobAlloc</Function>
+     <Function>MblobAllocResult</Function>
+     <Function>MblobCalculate</Function>
+     <Function>MblobControl</Function>
+     <Function>MblobDraw</Function>
+     <Function>MblobFree</Function>
+     <Function>MblobGetResult</Function>
+     <Function>MblobSelect</Function>
+     <Function>MbufFree</Function>
+     <Function>MbufInquire</Function>
+     <Function>MbufRestore</Function>
+     <Function>MdispAlloc</Function>
+     <Function>MdispControl</Function>
+     <Function>MdispFree</Function>
+     <Function>MdispSelect</Function>
+     <Function>MgraAllocList</Function>
+     <Function>MgraColor</Function>
+     <Function>MgraFree</Function>
+     <Function>MimBinarize</Function>
+     <Function>MmetAddFeature</Function>
+     <Function>MmetAddTolerance</Function>
+     <Function>MmetAlloc</Function>
+     <Function>MmetAllocResult</Function>
+     <Function>MmetCalculate</Function>
+     <Function>MmetControl</Function>
+     <Function>MmetDraw</Function>
+     <Function>MmetFree</Function>
+     <Function>MmetPut</Function>
+     <Function>MmetSetRegion</Function>
+     <Function>MsysAlloc</Function>
+     <Function>MsysFree</Function>
+  </Functions>
+  <Licenses>
+    <License>Image Analysis</License>
+    <License>Metrology</License>
+  </Licenses>
+  <Keywords>
+    <Keyword>Graphical annotations</Keyword>
+    <Keyword>Object dimensions</Keyword>
+    <Keyword>Blob analysis</Keyword>
+    <Keyword>Metrology</Keyword>
+  </Keywords>
+</Example>

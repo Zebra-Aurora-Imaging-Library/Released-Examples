@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MimDeinterlace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications">
+   <Category Name="Preprocessing"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Digitizer"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This program performs the deinterlacing of frames from an interlaced video.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <Language>C#</Language>
+  <LinuxLanguage>C++</LinuxLanguage>  
+  <LinuxLanguage>C#</LinuxLanguage>  
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufRestore</Function>
+  <Function>MdigAlloc</Function>
+  <Function>MdigControl</Function>
+  <Function>MdigFree</Function>
+  <Function>MdigGrab</Function>
+  <Function>MdigGrabContinuous</Function>
+  <Function>MdigHalt</Function>
+  <Function>MdigInquire</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MimAlloc</Function>
+  <Function>MimControl</Function>
+  <Function>MimDeinterlace</Function>
+  <Function>MimFree</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+  <Function>MsysInquire</Function>
+ </Functions>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+  <Notes>
+  <Note>Requires a digitizer</Note>
+ </Notes>
+ <Keywords>
+  <Keyword>Image enhancement</Keyword>
+  <Keyword>Interlaced image</Keyword>
+  <Keyword>Preprocessing</Keyword>
+ </Keywords>
+</Example>

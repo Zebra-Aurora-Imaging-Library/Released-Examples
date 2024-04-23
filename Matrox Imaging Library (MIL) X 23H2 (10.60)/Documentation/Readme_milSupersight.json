@@ -1,0 +1,17 @@
+[{
+  "id": "Readme_milSupersight",
+  "version": "2023100322",
+  "title": "milSupersight",
+  "wordCount": 0,
+  "subEntries": [
+    {
+      "id": "Readme_milSupersight_MilSuperSight",
+      "title": "MilSuperSight",
+      "location": "MIL Release Notes",
+      "pageURL": "\\milSupersight\\MilSuperSight.htm",
+      "text": " ------------------------------------------------------------------------------- Matrox Imaging Library (MIL) 10.0 Update 120 Release Notes (MilSupersight) October, 2021 (c) Copyright Matrox Electronic Systems Ltd., 1992-2021. ------------------------------------------------------------------------------- This document outlines what is new with MIL for Matrox Supersight and explains the current limitations and particularities when using MIL with Matrox Supersight. It also presents last minute information that did not make it into the manual or on-line help. Note that this text file serves to complement your manual. The information found in this file overrides your formally documented material. Contents 1. Matrox Supersight with MIL. 1.1 What's new in MIL 10 Update 120. 1.1.1 Overview. 1.1.2 Bug fixes. 1.1.3 Known issues. 1.2 What's new in MIL 10 Update 99. 1.2.1 Overview. 1.2.2 Bug fixes. 1.2.3 Known issues. 1.3 What's new in MIL 10 Update 56. 1.3.1 Overview. 1.3.2 Bug fixes. 1.4 What's new in MIL 10 Update 11. 1.5 What's new in MIL 9 Update 65 and MIL 10. 1.5.1 Overview. 1.5.2 Bug fixes. 1.6 MIL 9.0 Update 7. =============================================================================== 1. Matrox Supersight with MIL 1.1 What's new in MIL 10 Update 120 1.1.1 Overview. - Added support for Supersight Solo 7. - Added sightpwr.exe command line tool to perform power operations on the platform. 1.1.2 Bug fixes. - Distributed MIL protocol dmilpcie now working for Supersight Quad family 1.1.3 Known issues. 1.2 What's new in MIL 10 Update 99 1.2.1 Overview. - Added support for Supersight Quad. - Virtual NIC is now enabled by default - Support for new chassis cooling solution 1.2.2 Bug fixes. - Fixed compatibility issues with Windows 7. (Supersight e2) - Fixed OS crash when freeing dmilpcie connection. (Supersight e2) 1.2.3 Known issues. - Distributed MIL protocol dmilpcie not working for Supersight Quad family 1.3 What's new in MIL 10 Update 56 1.3.1 Overview. - Support for new SHB for Supersight Solo 1.3.2 Bug fixes. - Fixed hang issues with dmilpcie. 1.4 What's new in MIL 10 Update 11 - Fixed SupersightCfg alarms for Supersight Solo. - Fixed dmilpcie connection issues after Slave SHB restart. 1.5 What's new in MIL 9 Update 65 and MIL 10. 1.5.1 Overview. - Added support for Supersight Solo. - Updated SupersightCfg. 1.5.2 Bug fixes. - Fixed connection issues with dmilpcie. 1.6 MIL 9.0 Update 7. - Additions to MsysAlloc(), SystemDescriptor parameter: - dmilpcie: Use dmilpcie instead of dmiltcp to use the Supersight PCIe connection when using Distributed MIL. Usage is: &quot;dmilpcie://RemoteComputerName/MILSystemType&quot;. The IP address is not supported. - Additions to MilConfig. - The Distributed MIL server can now be started at the logon of the user. This permits MILGPU to be used with Distributed MIL. - Added the dmilpcie protocol in the Connections page of Distributed MIL. - Licenses. License permissions of the Main board are now propagated to all slave SHBs (System Host Board). ",
+      "wordCount": 462,
+      "subEntries": []
+    }
+  ]
+}]

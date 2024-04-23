@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="DepthmapGoldenTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+   <Categories>
+      <Category Name="Overview">
+         <Category Name="Advanced">
+            <Category Name="Processing"/>
+         </Category>
+      </Category>
+      <Category Name="Industries">
+         <Category Name="Packaging"/>
+         <Category Name="Machining"/>
+      </Category>
+      <Category Name="Applications">
+         <Category Name="3D profiling"/>
+         <Category Name="Inspecting/Proofing/Verifying"/>
+         <Category Name="Finding/Locating"/>
+      </Category>
+      <Category Name="Modules">
+         <Category Name="3D Image Processing"/>
+         <Category Name="Buffer"/>
+         <Category Name="Display"/>
+         <Category Name="Graphics"/>
+         <Category Name="Image Processing"/>
+      </Category>
+      <Category Name="What's New">
+	     <Category Name="MIL 10.0 SP4"/>
+         <Category Name="MIL 10.0 PP3" New="1"/>
+      </Category>
+   </Categories>
+   <Description>
+        This program demonstrates how to detect various defects of a 3D object compared to a perfect reference of the object.
+   </Description>
+   <Languages>
+      <Language>C++</Language>
+      <LinuxLanguage>C++</LinuxLanguage>
+   </Languages>
+   <Functions>
+        <Function>M3dimArith</Function>
+        <Function>MappAlloc</Function>
+        <Function>MappFree</Function>
+        <Function>MbufAlloc2d</Function>
+        <Function>MbufAllocColor</Function>
+        <Function>MbufChild2d</Function>
+        <Function>MbufChildColor</Function>
+        <Function>MbufChildColor2d</Function>
+        <Function>MbufClear</Function>
+        <Function>MbufClearCond</Function>
+        <Function>MbufDiskInquire</Function>
+        <Function>MbufFree</Function>
+        <Function>MbufImport</Function>
+        <Function>MbufInquire</Function>
+        <Function>MbufPut1d</Function>
+        <Function>MbufPutColor</Function>
+        <Function>MdispAlloc</Function>
+        <Function>MdispControl</Function>
+        <Function>MdispFree</Function>
+        <Function>MdispSelect</Function>
+        <Function>MdispZoom</Function>
+        <Function>MgenLutFunction</Function>
+        <Function>MgenLutRamp</Function>
+        <Function>MgraColor</Function>
+        <Function>MgraControl</Function>
+        <Function>MgraFont</Function>
+        <Function>MgraFontScale</Function>
+        <Function>MgraRectFill</Function>
+        <Function>MgraText</Function>
+        <Function>MimBinarize</Function>
+        <Function>MimLutMap</Function>
+        <Function>MimResize</Function>
+        <Function>MsysAlloc</Function>
+        <Function>MsysFree</Function>
+   </Functions>
+   <Licenses>
+      <License>Image Analysis</License>
+      <License>3D Calibration &amp; Supplement</License>
+   </Licenses>
+   <Keywords>
+      <Keyword>Defect detection</Keyword>
+      <Keyword>Object matching</Keyword>
+      <Keyword>LUT</Keyword>
+      <Keyword>3D depth map</Keyword>
+   </Keywords>
+</Example>

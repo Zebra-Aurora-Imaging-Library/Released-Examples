@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Mcal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="330" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Electronics"/>
+   <Category Name="Machining"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Measuring"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Measurement"/>
+   <Category Name="Metrology"/>
+   <Category Name="Calibration"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 U44"/>  
+   <Category Name="MIL 10.0 PP2"/>
+   <Category Name="Older"/>  
+  </Category>
+ </Categories>
+ <Description>This example demonstrates the usage of the Calibration module.
+ </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <Language>Python</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+  <Language>MIL CoPilot</Language>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufLoad</Function>
+  <Function>MbufRestore</Function>
+  <Function>McalAlloc</Function>
+  <Function>McalAssociate</Function>
+  <Function>McalControl</Function>
+  <Function>McalDraw</Function>
+  <Function>McalFree</Function>
+  <Function>McalGetCoordinateSystem</Function>
+  <Function>McalGrid</Function>
+  <Function>McalInquire</Function>
+  <Function>McalSetCoordinateSystem</Function>
+  <Function>McalTransformImage</Function>
+  <Function>McalUniform</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraBackColor</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraControl</Function>
+  <Function>MgraFree</Function>
+  <Function>MgraText</Function>
+  <Function>MmeasAllocMarker</Function>
+  <Function>MmeasDraw</Function>
+  <Function>MmeasFindMarker</Function>
+  <Function>MmeasFree</Function>
+  <Function>MmeasGetResult</Function>
+  <Function>MmeasSetMarker</Function>
+  <Function>MmeasSetScore</Function>
+  <Function>MmetAddFeature</Function>
+  <Function>MmetAlloc</Function>
+  <Function>MmetAllocResult</Function>
+  <Function>MmetCalculate</Function>
+  <Function>MmetDraw</Function>
+  <Function>MmetFree</Function>
+  <Function>MmetGetResult</Function>
+  <Function>MmetSetRegion</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>Metrology</License>
+  <License>3D Calibration &amp; Supplement</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Object dimensions</Keyword>
+  <Keyword>2D calibration</Keyword>
+  <Keyword>Preprocessing</Keyword>
+  <Keyword>Metrology</Keyword>
+  <Keyword>Measurement</Keyword>
+ </Keywords>
+</Example>

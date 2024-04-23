@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="CircleShapeFinder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Machining"/>
+   <Category Name="Packaging"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Finding/Locating"/>
+   <Category Name="Inspecting/Proofing/Verifying"/>
+   <Category Name="Measuring"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Geometric Model Finder"/>
+   <Category Name="Calibration"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP5"/>
+   <Category Name="MIL 10.0 PP1" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This example uses model finder M_SHAPE_CIRCLE to define circle models and search for circles
+               in target images. A simple circle finder example is presented first (multiple
+               occurrences and a small radius range with good search conditions), followed by
+               more complex examples (multiple occurrences and a large radius range in a
+               complex scene with bad search conditions) and finally an example showing 
+               how M_RESOLUTION_COARNESS_LEVEL can be used to find very small circles.
+ </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MappTimer</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufRestore</Function>
+  <Function>McalAssociate</Function>
+  <Function>McalFree</Function>
+  <Function>McalRestore</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraFree</Function>
+  <Function>MmodAlloc</Function>
+  <Function>MmodAllocResult</Function>
+  <Function>MmodControl</Function>
+  <Function>MmodDefine</Function>
+  <Function>MmodDraw</Function>
+  <Function>MmodFind</Function>
+  <Function>MmodFree</Function>
+  <Function>MmodGetResult</Function>
+  <Function>MmodPreprocess</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>Geometric Model Finder</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Circle detection</Keyword>
+  <Keyword>Geometric pattern matching</Keyword> 
+  <Keyword>Feature matching</Keyword>
+  <Keyword>Pattern recognition</Keyword>
+ </Keywords>
+</Example>

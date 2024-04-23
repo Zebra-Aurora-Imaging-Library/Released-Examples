@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Continuous3dSegmentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+      <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Finding/Locating"/>
+      <Category Name="Counting"/>
+      <Category Name="3D profiling"/>
+    </Category>
+    <Category Name="Modules">
+         <Category Name="3D Blob Analysis"/>
+         <Category Name="3D Display"/>
+         <Category Name="3D Geometry"/>
+         <Category Name="3D Graphics"/>
+         <Category Name="3D Image Processing"/>
+         <Category Name="3D Metrology"/>
+         <Category Name="Buffer"/>
+         <Category Name="Digitizer"/>
+    </Category>
+    <Category Name="What's New">
+	  <Category Name="MIL 10.0 SP5"/>
+    </Category>
+  </Categories>
+  <Description>
+    This program continuously scans a conveyor and counts the passing objects.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+      <Function>M3dblobAlloc</Function>
+      <Function>M3dblobAllocResult</Function>
+      <Function>M3dblobCalculate</Function>
+      <Function>M3dblobCombine</Function>
+      <Function>M3dblobControl</Function>
+      <Function>M3dblobControlDraw</Function>
+      <Function>M3dblobDraw3d</Function>
+      <Function>M3dblobExtract</Function>
+      <Function>M3dblobFree</Function>
+      <Function>M3dblobGetResult</Function>
+      <Function>M3dblobInquireDraw</Function>
+      <Function>M3dblobSegment</Function>
+      <Function>M3dblobSelect</Function>
+      <Function>M3ddispAlloc</Function>
+      <Function>M3ddispControl</Function>
+      <Function>M3ddispFree</Function>
+      <Function>M3ddispInquire</Function>
+      <Function>M3ddispSelect</Function>
+      <Function>M3dgeoAlloc</Function>
+      <Function>M3dgeoBox</Function>
+      <Function>M3dgeoDraw3d</Function>
+      <Function>M3dgeoFree</Function>
+      <Function>M3dgeoInquire</Function>
+      <Function>M3dgeoMatrixSetTransform</Function>
+      <Function>M3dgraAdd</Function>
+      <Function>M3dgraControl</Function>
+      <Function>M3dgraCopy</Function>
+      <Function>M3dgraInquire</Function>
+      <Function>M3dgraNode</Function>
+      <Function>M3dgraRemove</Function>
+      <Function>M3dimCrop</Function>
+      <Function>M3dimStat</Function>
+      <Function>M3dimTranslate</Function>
+      <Function>M3dmetFit</Function>
+      <Function>MappAlloc</Function>
+      <Function>MappControl</Function>
+      <Function>MappFileOperation</Function>
+      <Function>MappFree</Function>
+      <Function>MbufAllocComponent</Function>
+      <Function>MbufAllocContainer</Function>
+      <Function>MbufClear</Function>
+      <Function>MbufClone</Function>
+      <Function>MbufConvert3d</Function>
+      <Function>MbufCopyClip</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufFreeComponent</Function>
+      <Function>MbufInquireContainer</Function>
+      <Function>MdigAlloc</Function>
+      <Function>MdigFree</Function>
+      <Function>MdigGetHookInfo</Function>
+      <Function>MdigGrab</Function>
+      <Function>MdigProcess</Function>
+      <Function>MobjInquire</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+  </Functions>
+  <Notes>
+    <Note>Example might not be compatible with older compilers</Note>
+  </Notes>    
+  <Licenses>
+    <License>Image Analysis</License>
+    <License>Metrology</License>
+    <License>3D Calibration &amp; Supplement</License>
+    </Licenses>
+  <Keywords>
+    <Keyword>3D segmentation</Keyword>
+    <Keyword>Line scan systems</Keyword>
+    <Keyword>Graphical annotations</Keyword>
+  </Keywords>
+</Example>

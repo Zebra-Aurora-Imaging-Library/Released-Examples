@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MdispWindowQt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="115" Name="General"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Digitizer"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 PP3"/>
+   <Category Name="MIL 9.0" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program displays a welcoming message in a user-defined window and grabs (if supported) in it. 
+                         It uses the MIL system and the MdispSelectWindow() function to display the MIL buffer in a 
+                         user-created client window.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MdispFree</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufFree</Function>
+  <Function>MdigAlloc</Function>
+  <Function>MdigFree</Function>
+  <Function>MdigGrabContinuous</Function>
+  <Function>MdigHalt</Function>
+  <Function>MdigInquire</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispSelect</Function>
+  <Function>MdispSelectWindow</Function>
+  <Function>MgraFont</Function>
+  <Function>MgraRect</Function>
+  <Function>MgraText</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+  <Function>MsysInquire</Function>
+ </Functions>
+ <Notes>
+  <Note>Supports digitizer use</Note>
+ </Notes>
+ <Keywords>
+  <Keyword>User interface</Keyword>
+  <Keyword>Graphical annotations</Keyword>
+ </Keywords>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

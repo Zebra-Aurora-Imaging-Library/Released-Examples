@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="UnwarpMultiviewCylinder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+      <Category Name="Packaging"/>
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Stitching"/>
+    </Category>
+    <Category Name="Modules">
+      <Category Name="Buffer"/>
+      <Category Name="Calibration"/>
+      <Category Name="Display"/>
+      <Category Name="Graphics"/>
+      <Category Name="Metrology"/>
+    </Category>
+    <Category Name="What's New">
+      <Category Name="MIL 10.0 PP2" New="1"/>
+    </Category>
+  </Categories>
+  <Description>
+    This program shows how to unwarp multiple views to straighten a fixed
+    cylinder into a single flattened image using the calibration module.
+    The straightened views are optionally registered and smoothly rendered
+    using the registration tool.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+    <Function>MappAllocDefault</Function>
+    <Function>MappFreeDefault</Function>
+    <Function>MbufAlloc2d</Function>
+    <Function>MbufChild2d</Function>
+    <Function>MbufClear</Function>
+    <Function>MbufCopy</Function>
+    <Function>MbufFree</Function>
+    <Function>MbufRestore</Function>
+    <Function>McalAlloc</Function>
+    <Function>McalAssociate</Function>
+    <Function>McalControl</Function>
+    <Function>McalDraw</Function>
+    <Function>McalFree</Function>
+    <Function>McalGrid</Function>
+    <Function>McalInquire</Function>
+    <Function>McalTransformImage</Function>
+    <Function>McalUniform</Function>
+    <Function>MdispAlloc</Function>
+    <Function>MdispControl</Function>
+    <Function>MdispFree</Function>
+    <Function>MdispSelect</Function>
+    <Function>MgraAllocList</Function>
+    <Function>MgraClear</Function>
+    <Function>MgraColor</Function>
+    <Function>MgraFree</Function>
+    <Function>MimArith</Function>
+    <Function>MregAlloc</Function>
+    <Function>MregAllocResult</Function>
+    <Function>MregCalculate</Function>
+    <Function>MregControl</Function>
+    <Function>MregFree</Function>
+    <Function>MregGetResult</Function>
+    <Function>MregSetLocation</Function>
+    <Function>MregTransformImage</Function>
+  </Functions>
+  <Licenses>
+    <License>Image Analysis</License>
+    <License>Metrology</License>
+  </Licenses>
+  <Keywords>
+    <Keyword>2D calibration</Keyword>
+    <Keyword>Image registration</Keyword>
+    <Keyword>Unwarping</Keyword>
+    <Keyword>Image stitching</Keyword>
+  </Keywords>
+</Example>

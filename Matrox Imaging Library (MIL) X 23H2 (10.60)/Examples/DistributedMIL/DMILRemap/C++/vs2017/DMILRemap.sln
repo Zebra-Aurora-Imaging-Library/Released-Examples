@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DMILRemap", "..\DMILRemapMaster\vs2017\DMILRemap.vcxproj", "{0C04DB36-AA3E-4E61-AED1-73BB942B6121}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DMILRemapSlave", "..\DMILRemapSlave\vs2017\DMILRemapSlave.vcxproj", "{F468B1FD-081D-4E42-A1B5-36AD8F061A30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C04DB36-AA3E-4E61-AED1-73BB942B6121}.Debug|x64.ActiveCfg = Debug|x64
+		{0C04DB36-AA3E-4E61-AED1-73BB942B6121}.Debug|x64.Build.0 = Debug|x64
+		{0C04DB36-AA3E-4E61-AED1-73BB942B6121}.Release|x64.ActiveCfg = Release|x64
+		{0C04DB36-AA3E-4E61-AED1-73BB942B6121}.Release|x64.Build.0 = Release|x64
+		{F468B1FD-081D-4E42-A1B5-36AD8F061A30}.Debug|x64.ActiveCfg = Debug|x64
+		{F468B1FD-081D-4E42-A1B5-36AD8F061A30}.Debug|x64.Build.0 = Debug|x64
+		{F468B1FD-081D-4E42-A1B5-36AD8F061A30}.Release|x64.ActiveCfg = Release|x64
+		{F468B1FD-081D-4E42-A1B5-36AD8F061A30}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE35651F-F2E1-43E2-BA02-A42108B60403}
+	EndGlobalSection
+EndGlobal

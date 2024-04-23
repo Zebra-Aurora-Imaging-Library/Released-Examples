@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="FixturingUsingBlob" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Electronics"/>
+   <Category Name="Packaging"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Identifying"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Calibration"/>
+   <Category Name="Code Reader"/>
+   <Category Name="Blob Analysis"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 PP1" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program contains an example of reading a 1D Code 39 with fixturing 
+                        using the Blob module.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MappTimer</Function>
+  <Function>MblobAlloc</Function>
+  <Function>MblobAllocResult</Function>
+  <Function>MblobCalculate</Function>
+  <Function>MblobControl</Function>
+  <Function>MblobDraw</Function>
+  <Function>MblobFree</Function>
+  <Function>MblobGetResult</Function>
+  <Function>MblobSelect</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufRestore</Function>
+  <Function>MbufSetRegion</Function>
+  <Function>McalAlloc</Function>
+  <Function>McalDraw</Function>
+  <Function>McalFixture</Function>
+  <Function>McalFree</Function>
+  <Function>McalUniform</Function>
+  <Function>McodeAlloc</Function>
+  <Function>McodeAllocResult</Function>
+  <Function>McodeControl</Function>
+  <Function>McodeDraw</Function>
+  <Function>McodeFree</Function>
+  <Function>McodeGetResult</Function>
+  <Function>McodeModel</Function>
+  <Function>McodeRead</Function>
+  <Function>MdigAlloc</Function>
+  <Function>MdigFree</Function>
+  <Function>MdigGetHookInfo</Function>
+  <Function>MdigProcess</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispGetHookInfo</Function>
+  <Function>MdispHookFunction</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraControl</Function>
+  <Function>MgraControlList</Function>
+  <Function>MgraCopy</Function>
+  <Function>MgraFree</Function>
+  <Function>MgraInquireList</Function>
+  <Function>MgraInteractive</Function>
+  <Function>MimBinarize</Function>
+  <Function>MthrAlloc</Function>
+  <Function>MthrControl</Function>
+  <Function>MthrFree</Function>
+  <Function>MthrWait</Function>  
+ </Functions>
+ <Licenses>
+  <License>Machine Vision</License>
+  <License>Identification</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Linear barcodes</Keyword>
+  <Keyword>Fixturing</Keyword>
+  <Keyword>Region of interest</Keyword>
+  <Keyword>ROI</Keyword>
+  <Keyword>Blob analysis</Keyword>
+ </Keywords>
+</Example>

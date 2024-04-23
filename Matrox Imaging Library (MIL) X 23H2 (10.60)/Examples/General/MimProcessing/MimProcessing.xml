@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MimProcessing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="220" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Pharmaceutical/Medical"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Counting"/>
+   <Category Name="Finding/Locating"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Image Processing"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP6"/>
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This program uses different image processing primitives to automatically binarize an image and to
+              determine the number of cell nuclei that are larger than a certain size in an image of a tissue sample.
+   </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+  <Language>Python</Language>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MappInquire</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufRestore</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispLut</Function>
+  <Function>MdispSelect</Function>
+  <Function>MimAllocResult</Function>
+  <Function>MimArith</Function>
+  <Function>MimBinarize</Function>
+  <Function>MimClose</Function>
+  <Function>MimFindExtreme</Function>
+  <Function>MimFree</Function>
+  <Function>MimGetResult</Function>
+  <Function>MimLabel</Function>
+  <Function>MimOpen</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+  <Function>MsysInquire</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+  <Licenses>
+  <License>Image Analysis</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Image segmentation</Keyword>
+  <Keyword>Morphology</Keyword>
+  <Keyword>Object detection</Keyword>
+  <Keyword>LUT</Keyword>
+  <Keyword>Pseudo colors</Keyword>
+ </Keywords>
+</Example>

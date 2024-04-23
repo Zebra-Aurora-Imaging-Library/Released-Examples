@@ -1,0 +1,24 @@
+[{
+  "id": "Example_PlaceHolder_ID",
+  "version": "2024020714",
+  "title": "Example_PlaceHolder_Title",
+  "wordCount": 0,
+  "subEntries": [
+    {
+      "id": "Examples_Core_General_MdispWebForm_CS_app_xaml",
+      "version": "2024020714",
+      "title": "app.xaml",
+      "location": "Sample Code from MIL Examples",
+      "text": " Top /* * File name: App.xaml.cs * Location: See Matrox Example Launcher in the MIL Control Center * */ using System; using System.Collections.Generic; using System.Configuration; using System.Data; using System.Linq; using System.Reflection; using System.Windows; using Microsoft.Win32; //******************************************************************************** // Copyright (C) Matrox Electronic Systems Ltd., 1992-2024. // All Rights Reserved //******************************************************************************** namespace MdispWebForm { /// &lt;summary&gt; /// Interaction logic for App.xaml /// &lt;/summary&gt; public partial class App : Application { private void Application_Startup(object sender, StartupEventArgs e) { MainWindow wnd; // First add registry key, if it doesn't already exist. Necessary due to limitations with IE about websockets // (https://msdn.microsoft.com/en-us/library/ee330736(v=vs.85).aspx#websocket_maxconn) string subKeyName = @\"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\MAIN\\FeatureControl\\FEATURE_WEBSOCKET_MAXCONNECTIONSPERSERVER\"; string valueName = Assembly.GetExecutingAssembly().GetName().Name + \".exe\"; SetRegistryValue(subKeyName, valueName, 0x00000080, RegistryValueKind.DWord); // Then instantiate MainWindow (passing url to constructor, if given by user) if (e.Args.Length == 1) { wnd = new MainWindow(e.Args[0]); } else { wnd = new MainWindow(); } MainWindow = wnd; wnd.Show(); } public void SetRegistryValue(string registrySubKeyName, string valueName, object valueToSet, RegistryValueKind registryKind) { try { // Get current value in registry (if it already exists) object currentValueInRegistry = Registry.GetValue(registrySubKeyName, valueName, null); // If it doesn't exist, or a different value, we (re)create it if (!valueToSet.Equals(currentValueInRegistry)) { Registry.SetValue(registrySubKeyName, valueName, valueToSet, registryKind); } } catch (Exception e) { Console.WriteLine(\"Exception occurred: \" + e.Message); } } } } ",
+      "wordCount": 211
+    },
+    {
+      "id": "Examples_Core_General_MdispWebForm_CS_mainwindow_xaml",
+      "version": "2024020714",
+      "title": "mainwindow.xaml",
+      "location": "Sample Code from MIL Examples",
+      "text": " Top /* * File name: MainWindow.xaml.cs * Location: See Matrox Example Launcher in the MIL Control Center * */ using System; using System.Collections.Generic; using System.Linq; using System.Text; using System.Windows; using System.Windows.Controls; using System.Windows.Input; using System.Windows.Media; using System.Windows.Navigation; using System.Windows.Shapes; //******************************************************************************** // Copyright (C) Matrox Electronic Systems Ltd., 1992-2024. // All Rights Reserved //******************************************************************************** namespace MdispWebForm { /// &lt;summary&gt; /// Interaction logic for MainWindow.xaml /// &lt;/summary&gt; public partial class MainWindow : Window { public MainWindow(string url) { InitializeComponent(); this.URLBox.Text = url; this.Title = \"MdispWebForm\"; } public MainWindow() { InitializeComponent(); this.URLBox.Text = null; this.Title = \"MdispWebForm\"; } private void Window_Loaded(object sender, RoutedEventArgs e) { NavigateToWebPage(this.URLBox.Text); } private void Button_Click(object sender, RoutedEventArgs e) { NavigateToWebPage(this.URLBox.Text); } private void NavigateToWebPage(string url) { if (Uri.IsWellFormedUriString(URLBox.Text, UriKind.Absolute)) { Uri uri = new Uri(URLBox.Text); MainBrowser.Navigate(uri); StatusBarTextBlock.Foreground = Brushes.Black; StatusBarTextBlock.Text = \"\"; } else if (string.IsNullOrEmpty(URLBox.Text)) { StatusBarTextBlock.Foreground = Brushes.Black; StatusBarTextBlock.Text = \"Please enter a valid URL\"; } else { StatusBarTextBlock.Foreground = Brushes.Red; StatusBarTextBlock.Text = \"Error: Please enter valid URL\"; } } private void MainBrowser_Navigated(object sender, NavigationEventArgs e) { if (URLBox.Text != e.Uri.AbsoluteUri) { URLBox.Text = e.Uri.AbsoluteUri; } } private void URLBox_KeyDown(object sender, KeyEventArgs e) { if (e.Key == Key.Enter) { NavigateToWebPage(this.URLBox.Text); } } } } ",
+      "wordCount": 200
+    }
+  ]
+}]

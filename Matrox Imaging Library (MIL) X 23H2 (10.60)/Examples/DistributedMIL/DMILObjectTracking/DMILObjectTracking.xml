@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="DMILObjectTracking" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+
+   <Categories>
+     <Category Name="Overview">
+       <Category Name="Distributed MIL"/>
+     </Category>
+
+     <Category Name="Modules">
+         <Category Name="Buffer"/>
+         <Category Name="Digitizer"/>
+         <Category Name="Display"/>
+      </Category>
+     <Category Name="What's New">
+       <Category Name="MIL 9.0" New="1"/>
+     </Category>
+   </Categories>
+  <Description>
+    This example uses DistributedMIL to create an autonomous processing
+    loop that runs directly on target system. The processing loop does
+    object tracking.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappControl</Function>
+      <Function>MappFileOperation</Function>
+      <Function>MappFree</Function>
+      <Function>MappGetError</Function>
+      <Function>MappInquire</Function>
+    <Function>MappTimer</Function>
+    <Function>MbufAlloc1d</Function>
+      <Function>MbufAlloc2d</Function>
+      <Function>MbufAllocColor</Function>
+      <Function>MbufClear</Function>
+    <Function>MbufCopy</Function>
+      <Function>MbufCopyColor</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufGet</Function>    
+      <Function>MbufHookFunction</Function>
+      <Function>MbufInquire</Function>
+      <Function>MbufPut</Function>
+      <Function>MdigAlloc</Function>
+      <Function>MdigFree</Function>
+    <Function>MdigGetHookInfo</Function>
+    <Function>MdigGrab</Function>
+    <Function>MdigInquire</Function>
+    <Function>MdigProcess</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispSelect</Function>
+     <Function>MfuncErrorReport</Function>
+     <Function>MpatAlloc</Function>
+    <Function>MpatAllocResult</Function>
+    <Function>MpatDefine</Function>    
+    <Function>MpatDraw</Function>
+    <Function>MpatFind</Function>
+    <Function>MpatFree</Function>
+    <Function>MpatGetResult</Function>
+    <Function>MpatPreprocess</Function>
+    <Function>MpatControl</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+      <Function>MsysInquire</Function>
+      <Function>MthrAlloc</Function>
+      <Function>MthrControl</Function>
+      <Function>MthrFree</Function>
+      <Function>MthrWait</Function>
+   </Functions>
+  <Notes>
+    <Note>Requires compilation</Note>
+  </Notes>
+ <Keywords>
+  <Keyword>Distributed computing</Keyword>
+ </Keywords>
+  <Licenses>
+      <License>Distributed MIL</License>
+    <License>Machine Vision</License>
+   </Licenses>
+</Example>

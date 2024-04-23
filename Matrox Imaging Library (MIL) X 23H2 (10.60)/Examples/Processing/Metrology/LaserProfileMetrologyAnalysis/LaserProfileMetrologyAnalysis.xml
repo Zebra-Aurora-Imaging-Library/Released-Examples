@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="LaserProfileMetrologyAnalysis" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+         <Category Name="Machining"/>
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Inspecting/Proofing/Verifying"/>
+      <Category Name="Measuring"/>
+	  <Category Name="3D profiling"/>
+    </Category>
+    <Category Name="Modules">
+      <Category Name="Buffer"/>
+      <Category Name="Display"/>
+      <Category Name="Graphics"/>
+      <Category Name="Image Processing"/>
+      <Category Name="Metrology"/>
+    </Category>
+    <Category Name="What's New">
+      <Category Name="MIL 10.0 PP3" New="1"/>
+    </Category>
+  </Categories>
+  <Description>
+    This example uses the Metrology module to measure and verify 
+	various features along an acquired laser line profile of a part.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+     <Function>MappAlloc</Function>
+  	 <Function>MappFree</Function>
+	 <Function>MbufFree</Function>
+	 <Function>MbufImport</Function>
+	 <Function>MdispAlloc</Function>
+	 <Function>MdispControl</Function>
+	 <Function>MdispFree</Function>
+	 <Function>MdispPan</Function>
+	 <Function>MdispSelect</Function>
+	 <Function>MdispZoom</Function>
+	 <Function>MgraAllocList</Function>
+	 <Function>MgraClear</Function>
+	 <Function>MgraColor</Function>
+	 <Function>MgraControlList</Function>
+	 <Function>MgraFree</Function>
+	 <Function>MgraInquireList</Function>
+	 <Function>MgraText</Function>
+	 <Function>MimAlloc</Function>
+	 <Function>MimAllocResult</Function>
+	 <Function>MimFree</Function>
+	 <Function>MimGetResultSingle</Function>
+	 <Function>MimLocatePeak1d</Function>
+	 <Function>MmetAddFeature</Function>
+	 <Function>MmetAddTolerance</Function>
+	 <Function>MmetAlloc</Function>
+	 <Function>MmetAllocResult</Function>
+	 <Function>MmetCalculate</Function>
+	 <Function>MmetControl</Function>
+	 <Function>MmetDraw</Function>
+	 <Function>MmetFree</Function>
+	 <Function>MmetGetResult</Function>
+	 <Function>MmetPut</Function>
+ 	 <Function>MmetSetRegion</Function>
+  </Functions>
+  <Notes>
+    <Note>Example might not be compatible with older compilers</Note>
+  </Notes>       
+  <Licenses>
+    <License>Image Analysis</License>
+    <License>Metrology</License>
+  </Licenses>
+  <Keywords>
+    <Keyword>Metrology</Keyword>
+	<Keyword>3D profiling</Keyword>
+	<Keyword>3D measurement</Keyword>
+	<Keyword>Object dimensions</Keyword>
+	<Keyword>Gauging</Keyword>
+	<Keyword>3D laser scanner</Keyword>
+  </Keywords>
+</Example>

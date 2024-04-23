@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M3dgraInteractive", "M3dgraInteractive.csproj", "{ABDC9897-F6D2-4C70-BE17-8FA31AD4BD43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABDC9897-F6D2-4C70-BE17-8FA31AD4BD43}.Debug|x64.ActiveCfg = Debug|x64
+		{ABDC9897-F6D2-4C70-BE17-8FA31AD4BD43}.Debug|x64.Build.0 = Debug|x64
+		{ABDC9897-F6D2-4C70-BE17-8FA31AD4BD43}.Release|x64.ActiveCfg = Release|x64
+		{ABDC9897-F6D2-4C70-BE17-8FA31AD4BD43}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB39B432-D90A-4C5C-8C10-C8B82A8F296E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="DMILAddConstant" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+
+   <Categories>
+     <Category Name="Overview">
+       <Category Name="Distributed MIL"/>
+     </Category>
+
+      <Category Name="Modules">
+         <Category Name="Buffer"/>
+         <Category Name="Display"/>
+         <Category Name="Image Processing"/>
+      </Category>
+     <Category Name="What's New">
+       <Category Name="MIL 9.0" New="1"/>
+     </Category>
+
+   </Categories>
+  <Description>
+    This program shows how to use the MIL Function Development module to
+                create a custom MIL function that adds a constant to an image using
+                custom C code that access the buffer's data pointer directly. 
+                This function is then run on a remote system.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+   <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappControl</Function>
+      <Function>MappFileOperation</Function>
+      <Function>MappFree</Function>
+      <Function>MappGetError</Function>
+      <Function>MappInquire</Function>
+      <Function>MappTimer</Function>
+      <Function>MbufControl</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufInquire</Function>
+      <Function>MbufRestore</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispSelect</Function>
+      <Function>MfuncErrorReport</Function>
+      <Function>MimArith</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+      <Function>MsysInquire</Function>
+   </Functions>
+  <Notes>
+    <Note>Requires compilation</Note>
+  </Notes>
+  <Keywords>
+  <Keyword>Distributed computing</Keyword>
+ </Keywords>
+  <Licenses>
+      <License>Distributed MIL</License>
+      <License>MIL Lite only</License>
+   </Licenses>
+</Example>

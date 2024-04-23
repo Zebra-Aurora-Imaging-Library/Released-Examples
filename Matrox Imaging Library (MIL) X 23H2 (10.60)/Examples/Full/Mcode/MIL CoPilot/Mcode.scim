@@ -1,0 +1,4 @@
+#Version :20
+
+ws.showViewee(IMObject==>31)
+ws.showViewee(IMOperation==>40)

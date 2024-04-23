@@ -1,0 +1,21 @@
+[{
+  "id": "Readme_MILNET",
+  "version": "2023100322",
+  "title": "MIL.NET",
+  "wordCount": 0,
+  "subEntries": [
+    {
+      "id": "Readme_MILNET_UsingMILwith.Net5",
+      "title": "UsingMILwith.Net5",
+      "location": "MIL Release Notes",
+      "pageURL": "\\MIL.NET\\UsingMILwith.Net5.htm",
+      "text": " Matrox Imaging Library (MIL) Using MIL with .NET 5 Release Notes February 2022 (c) Copyright Matrox Electronic Systems Ltd., 1992-2022. 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Requirements 1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Microsoft Visual Studio 2019 You must use Microsoft Visual Studio 2019 version 16.8.0 or greater to create a MIL application with .NET 5. You must also install the .NET Core cross-platform development toolset. You can do so from the Visual Studio 2019 installer, by selecting it from the Workloads tab when you are asked to choose which components to install. 1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .NET SDK You must use .NET 5.0 SDK to create applications targeting .NET 5. Depending on the options you selected when you install Microsoft Visual Studio 2019, this SDK might have been installed automatically. If this SDK is not installed, you can download it from https://dotnet.microsoft.com/download/dotnet/5.0. 1.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NuGet Package Sources Visual Studio.NET5 examples may require additional NuGet packages. It is highly recommended to have nuget.org configured as a package source to install and/or restore packages. Package sources can be configured in Visual Studio under Options-&gt;NuGet Package Manager-&gt;Package Sources 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using the MIL.NET NuGet packages 2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Create a new .NET Core console application project Start Microsoft Visual Studio 2019 and create a new project. Create a new .NET Core console application. &nbsp; 2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add the MIL NuGet package to your project Open the Visual Studio NuGet package manager by clicking the Manage NuGet Packages… button in the Project menu. &nbsp; In the presented dialog, set Package source to MIL.NET. &nbsp; Select the Matrox.MatroxImagingLibrary package under the Browse tab. &nbsp; Microsoft Visual Studio will display information about the Matrox.MatroxImagingLibrary package. &nbsp; &nbsp; Click the Install button to add the Matrox.MatroxImagingLibrary package to your project &nbsp; 2.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Configure your project 2.3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Modify the target platform By default, Microsoft Visual Studio creates .NET 5.0 projects with a build configuration that does not target a specific platform (Any CPU). MIL is only supported for projects that target either the x86 or x64 platform. Typically, Microsoft Visual Studio will report warning MSB3270 if you do not specify x86 or x64 as the target platform. Use the following procedure to configure the target platform for your project: 2.3.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open the Configuration manager &nbsp; 2.3.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add a new solution platform &nbsp; &nbsp; 2.3.1.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Set the new platform to x86 or x64 2.3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Modify the target framework By default, your project might target a previous version of the .NET framework instead of .NET 5.0. To use MIL with .NET 5, you must change the target to .NET 5.0. Note that future Microsoft Visual Studio project templates will likely support .NET 5.0 by default. Use the following procedure to configure your project to target .NET 5.0: 2.3.2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open the project's properties &nbsp; 2.3.2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Change the target framework Select NET 5.0 from the Target framework drop-down list of the Application tab. 2.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Start coding your application ",
+      "wordCount": 471,
+      "subEntries": []
+    },
+    {
+      "id": "UsingMILwith.Net5_files",
+      "wordCount": 0
+    }
+  ]
+}]

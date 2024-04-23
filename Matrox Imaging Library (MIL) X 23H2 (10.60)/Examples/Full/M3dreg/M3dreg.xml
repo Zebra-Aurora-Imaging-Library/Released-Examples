@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="M3dreg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="450" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Machining"/>
+   <Category Name="Automation"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Stitching"/>
+   <Category Name="3D profiling"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="3D Registration"/>
+   <Category Name="Buffer"/>
+   <Category Name="3D Display"/>
+   <Category Name="3D Graphics"/>
+   <Category Name="Image Processing"/>
+   <Category Name="3D Image Processing"/>
+   <Category Name="3D Geometry"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP4" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program demonstrates how to use the 3D surface registration
+              to register several partial point clouds of a 3D object
+			  and stitch them into a single complete point cloud.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <Language>Python</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+ </Languages>
+ <Functions>
+   <Function>M3dregAlloc</Function>
+   <Function>M3dregAllocResult</Function>
+   <Function>M3dregControl</Function>
+   <Function>M3dregInquire</Function>
+   <Function>M3dregSetLocation</Function>
+   <Function>M3dregCalculate</Function>
+   <Function>M3dregMerge</Function>
+   <Function>M3dregFree</Function>
+   <Function>M3dimAlloc</Function>
+   <Function>M3dimAllocResult</Function>
+   <Function>M3dimControl</Function>
+   <Function>M3dimStat</Function>
+   <Function>M3dimGetResult</Function>
+   <Function>M3dimFree</Function>
+   <Function>M3ddispCopy</Function>
+   <Function>M3dgeoInquire</Function>
+   <Function>M3dgeoLine</Function>
+   <Function>MappAlloc</Function>
+   <Function>MappFree</Function>
+   <Function>MappTimer</Function>
+   <Function>MbufAllocContainer</Function>
+   <Function>MbufInquireContainer</Function>
+   <Function>MbufImport</Function>
+   <Function>MbufAllocColor</Function>
+   <Function>MbufAlloc2d</Function>
+   <Function>MbufClear</Function>
+   <Function>MbufFree</Function>
+   <Function>M3ddispAlloc</Function>
+   <Function>M3ddispControl</Function>
+   <Function>M3ddispSelect</Function>
+   <Function>M3ddispFree</Function>
+   <Function>MsysAlloc</Function>
+   <Function>MsysFree</Function>
+   <Function>M3ddispSetView</Function>
+   <Function>MappControl</Function>
+   <Function>MbufAllocComponent</Function>
+   <Function>MobjInquire</Function>
+   <Function>M3dimCalculateMapSize</Function>
+   <Function>M3dimCalibrateDepthMap</Function>
+   <Function>M3dimProject</Function>
+   <Function>M3dimRotate</Function>
+   <Function>MdispAlloc</Function>
+   <Function>MdispFree</Function>
+   <Function>MdispSelect</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>Registration</License>
+  <License>3D Calibration &amp; Supplement</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>3D registration</Keyword>
+  <Keyword>3D surface alignment</Keyword>
+ </Keywords>
+</Example>

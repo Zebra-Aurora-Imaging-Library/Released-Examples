@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="SimpleDefectDetection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Packaging"/>
+   <Category Name="Machining"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Inspecting/Proofing/Verifying"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+   <Category Name="Calibration"/>
+   <Category Name="Blob Analysis"/>
+   <Category Name="Geometric Model Finder"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This example demontrates how to perform basic defect detection 
+                         using various methods to extract the differences and to binarize 
+                         them. The application uses MIL's fixturing capabilities in 
+                         conjunction with Model Finder to align target occurences with the 
+                         template image.
+   </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MbufChildColor</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MblobAlloc</Function>
+  <Function>MblobAllocResult</Function>
+  <Function>MblobCalculate</Function>
+  <Function>MblobDraw</Function>
+  <Function>MblobFree</Function>
+  <Function>MbufAlloc1d</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufChild2d</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufRestore</Function>
+  <Function>McalAlloc</Function>
+  <Function>McalDraw</Function>
+  <Function>McalFixture</Function>
+  <Function>McalFree</Function>
+  <Function>McalTransformImage</Function>
+  <Function>McalUniform</Function>
+  <Function>McolDistance</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgenLutRamp</Function>
+  <Function>MgraAlloc</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraControl</Function>
+  <Function>MgraControlList</Function>
+  <Function>MgraFree</Function>
+  <Function>MgraInquireList</Function>
+  <Function>MgraLine</Function>
+  <Function>MgraRectAngle</Function>
+  <Function>MgraText</Function>
+  <Function>MimAllocResult</Function>
+  <Function>MimArith</Function>
+  <Function>MimBinarize</Function>
+  <Function>MimConvert</Function>
+  <Function>MimConvolve</Function>
+  <Function>MimFree</Function>
+  <Function>MimGetResult</Function>
+  <Function>MimHistogram</Function>
+  <Function>MimLutMap</Function>
+  <Function>MimMorphic</Function>
+  <Function>MimOpen</Function>
+  <Function>MmodAlloc</Function>
+  <Function>MmodAllocResult</Function>
+  <Function>MmodControl</Function>
+  <Function>MmodDefine</Function>
+  <Function>MmodDraw</Function>
+  <Function>MmodFind</Function>
+  <Function>MmodFree</Function>
+  <Function>MmodGetResult</Function>
+  <Function>MmodInquire</Function>
+  <Function>MmodPreprocess</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>Geometric Model Finder</License>
+  <License>Color Analysis</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Image segmentation</Keyword>
+  <Keyword>Defect detection</Keyword>
+  <Keyword>Image thresholding</Keyword>
+  <Keyword>Image arithmetic</Keyword>
+  <Keyword>Blob analysis</Keyword>
+  <Keyword>Color distance</Keyword>
+ </Keywords>
+</Example>

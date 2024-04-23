@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdispWebForm", "MdispWebForm.csproj", "{97D13D40-86C6-46E3-9F01-4EEE24DB894C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97D13D40-86C6-46E3-9F01-4EEE24DB894C}.Debug|x64.ActiveCfg = Debug|x64
+		{97D13D40-86C6-46E3-9F01-4EEE24DB894C}.Debug|x64.Build.0 = Debug|x64
+		{97D13D40-86C6-46E3-9F01-4EEE24DB894C}.Release|x64.ActiveCfg = Release|x64
+		{97D13D40-86C6-46E3-9F01-4EEE24DB894C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

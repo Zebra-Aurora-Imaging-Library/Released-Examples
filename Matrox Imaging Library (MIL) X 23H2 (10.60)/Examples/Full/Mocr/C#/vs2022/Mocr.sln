@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mocr", "Mocr.csproj", "{8CE4617B-8F75-4A2D-8110-D9E291A27435}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CE4617B-8F75-4A2D-8110-D9E291A27435}.Debug|x64.ActiveCfg = Debug|x64
+		{8CE4617B-8F75-4A2D-8110-D9E291A27435}.Debug|x64.Build.0 = Debug|x64
+		{8CE4617B-8F75-4A2D-8110-D9E291A27435}.Release|x64.ActiveCfg = Release|x64
+		{8CE4617B-8F75-4A2D-8110-D9E291A27435}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86E5D681-3B06-4CC4-A555-479564C77CAB}
+	EndGlobalSection
+EndGlobal

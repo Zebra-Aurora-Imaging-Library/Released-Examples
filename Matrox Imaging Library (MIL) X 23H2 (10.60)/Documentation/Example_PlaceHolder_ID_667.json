@@ -1,0 +1,16 @@
+[{
+  "id": "Example_PlaceHolder_ID",
+  "version": "2024020714",
+  "title": "Example_PlaceHolder_Title",
+  "wordCount": 0,
+  "subEntries": [
+    {
+      "id": "Examples_General_MimHistogram_Python_mimhistogram_py",
+      "version": "2024020714",
+      "title": "mimhistogram.py",
+      "location": "Sample Code from MIL Examples",
+      "text": " Top #!/usr/bin/env python3 # -*- coding: utf-8 -*- ########################################################################## # # File name: MimHistogram.py # # Synopsis: This program loads an image of a tissue sample, calculates its intensity # histogram and draws it. # # Copyright (C) Matrox Electronic Systems Ltd., 1992-2024. # All Rights Reserved import mil as MIL # Target MIL image file specifications. IMAGE_FILE = MIL.M_IMAGE_PATH + \"Cell.mbufi\" # Number of possible pixel intensities. HIST_NUM_INTENSITIES = 256 HIST_SCALE_FACTOR = 8 HIST_X_POSITION = 250 HIST_Y_POSITION = 450 def MimHistogramExample(): XStart = [] YStart = [] XEnd = [] YEnd = [] AnnotationColor = MIL.M_COLOR_RED # Allocate a default MIL application, system, display and image. MilApplication, MilSystem, MilDisplay = MIL.MappAllocDefault(MIL.M_DEFAULT, DigIdPtr=MIL.M_NULL, ImageBufIdPtr=MIL.M_NULL) # Restore source image into an automatically allocated image buffer. MilImage = MIL.MbufRestore(IMAGE_FILE, MilSystem) # Display the image buffer and prepare for overlay annotations. MIL.MdispSelect(MilDisplay, MilImage) MIL.MdispControl(MilDisplay, MIL.M_OVERLAY, MIL.M_ENABLE) MilOverlayImage = MIL.MdispInquire(MilDisplay, MIL.M_OVERLAY_ID) # Allocate a histogram result buffer. HistResult = MIL.MimAllocResult(MilSystem, HIST_NUM_INTENSITIES, MIL.M_HIST_LIST) # Calculate the histogram. MIL.MimHistogram(MilImage, HistResult) # Get the results. HistValues = MIL.MimGetResult(HistResult, MIL.M_VALUE) # Draw the histogram in the overlay. MIL.MgraControl(MIL.M_DEFAULT, MIL.M_COLOR, AnnotationColor) for i in range(HIST_NUM_INTENSITIES): XStart.append(i+HIST_X_POSITION+1) YStart.append(HIST_Y_POSITION) XEnd.append(i+HIST_X_POSITION+1) YEnd.append(HIST_Y_POSITION-(int(HistValues[i]/HIST_SCALE_FACTOR))) MIL.MgraLines(MIL.M_DEFAULT, MilOverlayImage, HIST_NUM_INTENSITIES, XStart, YStart, XEnd, YEnd, MIL.M_DEFAULT) # Print a message. print(\"\\nHISTOGRAM:\") print(\"----------\\n\") print(\"The histogram of the image was calculated and drawn.\") print(\"Press any key to end.\\n\") MIL.MosGetch() # Free all allocations. MIL.MimFree(HistResult) MIL.MbufFree(MilImage) MIL.MappFreeDefault(MilApplication, MilSystem, MilDisplay, MIL.M_NULL, MIL.M_NULL) return 0 if __name__ == \"__main__\": MimHistogramExample() ",
+      "wordCount": 239
+    }
+  ]
+}]

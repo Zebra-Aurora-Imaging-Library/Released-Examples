@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Multi3dCameraRegistrationFromFeatures"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+	  <Category Name="Automation"/>
+	  <Category Name="Machining"/>
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Inspecting/Proofing/Verifying"/>
+    </Category>
+    <Category Name="Modules">
+	  <Category Name="3D Display"/>
+	  <Category Name="3D Geometry"/>
+	  <Category Name="3D Graphics"/>
+	  <Category Name="3D Image Processing"/>
+	  <Category Name="Buffer"/>
+	  <Category Name="Calibration"/>
+	  <Category Name="Code Reader"/>	  
+    </Category>
+    <Category Name="What's New">
+       <Category Name="MIL 10.0 SP5" New="1"/>
+    </Category>    
+   </Categories>
+
+  <Description>
+    This example demonstrate how to merge point clouds using 
+    3d point features extracted using the reflectance.
+  </Description>
+
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+
+  <Functions>
+      <Function>M3ddispAlloc</Function>
+      <Function>M3ddispControl</Function>
+      <Function>M3ddispFree</Function>
+      <Function>M3ddispInquire</Function>
+      <Function>M3ddispSelect</Function>
+      <Function>M3ddispSetView</Function>
+      <Function>M3dgeoAlloc</Function>
+      <Function>M3dgeoFree</Function>
+      <Function>M3dgeoInquire</Function>
+      <Function>M3dgraControl</Function>
+      <Function>M3dgraDots</Function>
+      <Function>M3dgraRemove</Function>
+      <Function>M3dimFindTransformation</Function>
+      <Function>M3dimGetList</Function>
+      <Function>M3dimMatrixTransform</Function>
+      <Function>M3dimMerge</Function>
+      <Function>MappAlloc</Function>
+      <Function>MappControl</Function>
+      <Function>MappFileOperation</Function>
+      <Function>MappFree</Function>
+      <Function>MappHookFunction</Function>
+      <Function>MbufAllocContainer</Function>
+      <Function>MbufChildColor</Function>
+      <Function>MbufConvert3d</Function>
+      <Function>MbufCreateColor</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufImport</Function>
+      <Function>MbufInquireContainer</Function>
+      <Function>McalAlloc</Function>
+      <Function>McalAssociate</Function>
+      <Function>McalControl</Function>
+      <Function>McalFree</Function>
+      <Function>McalGrid</Function>
+      <Function>McalInquire</Function>
+      <Function>McodeAlloc</Function>
+      <Function>McodeAllocResult</Function>
+      <Function>McodeFree</Function>
+      <Function>McodeGetResult</Function>
+      <Function>McodeModel</Function>
+      <Function>McodeRead</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+  </Functions>
+  <Notes>
+    <Note>Example might not be compatible with older compilers</Note>
+  </Notes> 
+  <Licenses>
+  	  <License>Image Analysis</License>
+      <License>Identification</License>
+      <License>Geometric Model Finder</License>
+      <License>3D Calibration &amp; Supplement</License>
+  </Licenses>
+  <Keywords>
+    <Keyword>Fixturing</Keyword>
+	<Keyword>3D reconstruction</Keyword>
+	<Keyword>3D calibration</Keyword>
+	<Keyword>Geometric transformation</Keyword>
+  </Keywords>
+
+</Example>

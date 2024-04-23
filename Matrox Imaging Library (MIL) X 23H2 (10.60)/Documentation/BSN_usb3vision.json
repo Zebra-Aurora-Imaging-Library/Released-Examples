@@ -1,0 +1,36 @@
+[{
+  "id": "BSN_usb3vision",
+  "version": "2024020714",
+  "title": "Matrox USB3 Vision driver",
+  "subTitles": null,
+  "location": "MIL Hardware-specific Notes",
+  "pageURL": "content\\BoardSpecificNotes\\usb3vision\\ChapterInformation.htm",
+  "text": " Matrox USB3 Vision driver This chapter discusses features of MIL that are particular to the Matrox USB3 Vision driver, and ways that optimize its performance. Information regarding using this driver with specific functions is integrated into the functions' reference topics. Refer to the Matrox USB3 Vision driver release note for any additions/modifications to this chapter or the MIL Reference. Matrox USB3 Vision driver overview Using the Matrox USB3 Vision driver with MIL Non-paged memory usage ",
+  "wordCount": 77,
+  "subEntries": [
+    {
+      "id": "BSN_usb3vision_Matrox_USB3_Vision_specific_features",
+      "version": null,
+      "title": "Matrox USB3 Vision driver overview",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\usb3vision\\Matrox_USB3_Vision_specific_features.htm",
+      "text": " Matrox USB3 Vision driver overview The Matrox USB3 Vision driver allows you to use a USB 3.0 port on your computer to grab from USB3 Vision-compatible cameras with MIL. You can also use the driver to set features of the camera. Matrox USB3 Vision driver overview ",
+      "wordCount": 48,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_usb3vision_Using_Matrox_USB3_Vision_with_MIL",
+      "version": null,
+      "title": "Using the Matrox USB3 Vision driver with MIL",
+      "subTitles": [
+        "Non-paged memory usage"
+      ],
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\usb3vision\\Using_Matrox_USB3_Vision_with_MIL.htm",
+      "text": " Using the Matrox USB3 Vision driver with MIL To use ther Matrox USB3 Vision driver with MIL, you must allocate a MIL USB3 Vision system (M_SYSTEM_USB3_VISION), using MsysAlloc(). This allocation opens general communication with all the USB3 Vision-compliant cameras (or devices) connected to your computer. Then, allocate a digitizer for each camera (USB3.0 camera) that you want to use to grab images and/or access directly, using MdigAlloc(). Each process (executable) can allocate only one MIL USB3 Vision system; an error will occur if you try to allocate more than one. Multiple processes can allocate a MIL USB3 Vision system. To inquire the current value of the required USB3 Vision camera feature, use MdigInquireFeature(). If a USB3 Vision feature is not already set to the required value, use MdigControlFeature() to change the value of the feature. Functionality is also supported with the conventional MIL functions MdigInquire() and MdigControl(). To learn the list of GenICam-standard features available, refer to the GenICam-standard Feature Naming Convention, available on the GenICam website at: http://www.genicam.org. Additional GenICam-extension features might be available; check your camera's manual and Matrox Intellicam's Feature Browser for details. You can also use Matrox Intellicam's Feature Browser to access the USB3 Vision-compliant camera's device description file (XML), providing an interface to view and change the camera's configuration. For more information, refer to the Using MIL with GenICam section of Chapter 27: Grabbing with your digitizer. Matrox USB3 Vision information in the MIL Reference can be found in the paragraphs and values marked as being supported by the USB Vision driver. Refer to the Matrox USB3 Vision release notes for any additions/modifications to this chapter. Non-paged memory usage With each call to MdigAlloc(), a certain amount of memory is reserved so that MIL can create internal buffers. To calculate the exact amount of memory reserved, inquire the amount of non-paged memory used before and again after you call MdigAlloc(); to perform the inquire, use MappInquire() with M_NON_PAGED_MEMORY_USED. MIL uses this reserved non-paged memory when grabbing and when decoding image data received in \"chunk mode\". If your application requires more non-paged memory than is currently available, increase the amount of non-paged memory accessible to MIL using the MILConfig utility. Using the Matrox USB3 Vision driver with MIL Non-paged memory usage ",
+      "wordCount": 377,
+      "subEntries": []
+    }
+  ]
+}]

@@ -1,0 +1,91 @@
+[{
+  "id": "BSN_clarity-UHD-u36",
+  "version": "2024020714",
+  "title": "Matrox Clarity UHD",
+  "subTitles": null,
+  "location": "MIL Hardware-specific Notes",
+  "pageURL": "content\\BoardSpecificNotes\\clarity-UHD-u36\\ChapterInformation.htm",
+  "text": " Matrox Clarity UHD This section discusses features of MIL that are particular to Matrox Clarity UHD and ways that optimize the board's performance. Matrox Clarity HD information regarding specific functions is integrated into the functions' reference topics. Refer to the Matrox Clarity UHD release notes for any additions/modifications to the MIL Hardware-specific Notes in this chapter or in the MIL Reference. Matrox Clarity UHD overview Acquisition features Other features Summary of Matrox Clarity UHD features Using Matrox Clarity UHD with MIL Cameras that can be connected to Matrox Clarity UHD Data input channels of acquisition paths Switching between cameras of the same type Switching between cameras of different types Grabbing a single field Automatic camera detection with Matrox Clarity UHD Matrox Clarity UHD tools Matrox Clarity UHD Bench utility Matrox Clarity UHD Performance Monitor utility Matrox Clarity UHD System Monitor tool Matrox Clarity UHD board flow diagrams ",
+  "wordCount": 149,
+  "subEntries": [
+    {
+      "id": "BSN_clarity-UHD-u36_Matrox_Clarity_UHD_overview",
+      "version": null,
+      "title": "Matrox Clarity UHD overview",
+      "subTitles": [
+        "Acquisition features",
+        "Other features",
+        "Summary of Matrox Clarity UHD features"
+      ],
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\clarity-UHD-u36\\Matrox_Clarity_UHD_overview.htm",
+      "text": " Matrox Clarity UHD overview Matrox Clarity UHD is a high-performance frame grabber, supporting standard definition (SD) analog video, high-definition (HD) analog and digital video, and ultra-high-definition (UHD) digital video input. Matrox Clarity UHD can be purchased with the additional feature of a H.264 encoder for video compression/decompression. Acquisition features Matrox Clarity UHD has eight independent acquisition paths which support the acquisition of up to 4 Gbytes (4096 Mbytes/sec) combined bandwidth from 10 possible connectors. The number of simultaneous grabs that a Matrox Clarity UHD can perform depends on the available connections and data formats used. Buffer pixel format Maximum number of streams that can be grabbed and displayed Monochrome 8-bit 4 x 2160p60 streams and 4 x 1080p60 streams, or 6 x 2160p30 streams and 2 x 1080p60 streams, or 8 x 1080p60 streams YUV 4:2:0 8-bit 4 x 2160p60 streams, or 6 x 2160p30 streams and 2 x 1080p60 streams, or 8 x 1080p60 streams YUV 4:2:2 8-bit 3 x 2160p60 streams, or 6 x 2160p30 streams, or 8 x 1080p60 streams YUV 4:2:2 10-bit 2 x 2160p60 streams and one 1080p60 stream, or 4 x 2160p30 streams and one 1080p60 stream, or 8 x 1080p60 streams RGB 8-bit planar or YUV 4:4:4 8-bit planar 2 x 2160p60 streams, or 4 x 2160p30 streams, or 8 x 1080p60 streams BGR32 8-bit packed one 2160p60 stream and 2 x 1080p60 streams, or 3 x 2160p30 streams, or 6 x 1080p60 streams RGB 10-bit packed 3 x 2160p30 streams, or 6 x 1080p60 streams Other features Matrox Clarity UHD supports cropping (ROI capture), and subsampling (that is, downscaling) by integer factors of 1 to16. When grabbing from an SDI source into a monochrome 8-bit, YUV16, or BGR32 packed buffer, Matrox Clarity UHD automatically converts the incoming data, using the proper color space equations, depending on the input resolution (ITU-R BT.601 for SD, ITU-R BT.709 for HD, and ITU-R BT.2020 for UHD). Note that, typically SDI streams are natively in YUV format. When grabbing into a YUV16 packed buffer, the input data is not converted. If Matrox Clarity UHD has been purchased with the H.264 encoder option, the board can offload video compression/decompression from the Host, as well as perform video compression of the grabbed video input. Summary of Matrox Clarity UHD features The following table outlines the features currently available on Matrox Clarity UHD. Features Matrox Clarity UHD PCIe board type (Form factor) x8 half-length board Acquisition format Monochrome 8-bit, YUV16 (YCrCB) packed, and BGR32 packed Number of acquisition paths 8 independent Number of supported hardware triggers 0 Number of auxiliary signals 0 On-board memory 4 Gbytes of DDR3 SDRAM Digitizer LUT No Number of display paths 0 Color space conversion specifications ITU-R BT.601, ITU-R BT.709, ITU-R BT.2020 Additional features Formatting features (subsampling and cropping). Hooks for camera plug/unplug. Automatic input detection. Temperature and fan monitoring. Optional features H.264 video compression and decompression available on the Matrox Clarity UHD CLA4GHDSAE model Matrox Clarity UHD overview Acquisition features Other features Summary of Matrox Clarity UHD features ",
+      "wordCount": 506,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_clarity-UHD-u36_Using_Matrox_Clarity_UHD_with_MIL",
+      "version": null,
+      "title": "Using Matrox Clarity UHD with MIL",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\clarity-UHD-u36\\Using_Matrox_Clarity_UHD_with_MIL.htm",
+      "text": " Using Matrox Clarity UHD with MIL To use any Matrox Clarity UHD, you must allocate it as a MIL Clarity UHD system using MsysAlloc() with M_SYSTEM_CLARITY_UHD. This allocation opens communications with your Matrox Clarity UHD and allows MIL to use its resources. You can allocate a MIL Clarity UHD system for your board in multiple processes (executables). However, multiple processes cannot allocate a digitizer for the same acquisition path simultaneously. Matrox Clarity UHD supports the following grab buffer pixel formats: MIL grab buffer format Description 1 band 8-bit Monochrome 8-bit M_YUV16 + M_PACKED YUV 4:2:2 8-bit M_YUV24 + M_PLANAR YUV 4:4:4 8-bit planar RGB 3 band 8-bit RGB 8-bit planar M_BGR32 + M_PACKED BGR32 8-bit packed buffer If Matrox Clarity UHD has been purchased with the H.264 encoder option, you can use the MIL Sequence module to perform on-board H.264 video compression or decompression. To compress a sequence, you must allocate a sequence context using MseqAlloc() with M_SEQ_COMPRESS; to decompress a sequence, you must allocate a sequence context using MseqAlloc() with M_SEQ_DECOMPRESS. For more information on H.264 video compression and decompression, see Inputs and outputs of an H.264 compression or decompression. Refer to the Matrox Clarity UHD release notes for any additions/modifications to the MIL Hardware-specific Notes in this chapter or in the MIL Reference. Using Matrox Clarity UHD with MIL ",
+      "wordCount": 223,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_clarity-UHD-u36_Cameras_that_can_be_connected_to_Matrox_Clarity_UHD",
+      "version": null,
+      "title": "Cameras that can be connected to Matrox Clarity UHD",
+      "subTitles": [
+        "Data input channels of acquisition paths",
+        "Switching between cameras of the same type",
+        "Switching between cameras of different types",
+        "Grabbing a single field"
+      ],
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\clarity-UHD-u36\\Cameras_that_can_be_connected_to_Matrox_Clarity_UHD.htm",
+      "text": " Cameras that can be connected to Matrox Clarity UHD You can allocate up to eight independent MIL digitizers on your Matrox Clarity UHD, using MdigAlloc(). The connector used determines the digitizer device number assigned. In all but two cases, each connector uses an independent acquisition path. However, M_DEV2 corresponds to both an HDMI and an analog connector; both of these connectors use the same independent acquisition path. Therefore, if both connectors are connected to a camera, you cannot grab simultaneously from both cameras. This is also the case for M_DEV3. Digitizer device number Connector Name Resolutions supported M_DEV0 Mini-HDMI (type C) connector 0 Supports grabbing at up to DVI-D and HDMI 2.0 non-interlaced (up to 2160p60) and interlaced resolutions (1080i50, 1080i59.94, and 1080i60). M_DEV1 Mini-HDMI (type C) connector 1 M_DEV2 Mini-HDMI (type C) connector 2 Supports grabbing at up to DVI-D and HDMI 1.4 non-interlaced (up to 1920x1200p60) and interlaced resolutions (1080i50, 1080i59.94, and 1080i60). Analog connector 0 Supports grabbing at up to DVI-A (analog) non-interlaced (up to 1920x1200p60) and interlaced resolutions (1080i50 fps, 1080i59.94, and 1080i60); in addition, it supports grabbing at SD (analog) resolutions for RS170 (720 x 486 i30), CCIR (720 x 576 i25), NTSC (720 x 486 i30), NTSC/YC (720 x 486 i30), PAL (720 x 576 i25), PAL/YC (720 x 576 i25), NTSC RGB (640 x 480 i30), PAL RGB (768 x 576 i25). M_DEV3 Mini-HDMI (type C) connector 3 Same as M_DEV2. Analog connector 1 M_DEV4 Mini Display Port 1.2 connector 0 Supports grabbing at Display Port 1.2 non-interlaced resolutions of up to 2160p60 and interlaced resolutions of 1080i50, 1080i59.94, and 1080i60. M_DEV5 Mini Display Port 1.2 connector 1 M_DEV6 SDI connector 0 Supports grabbing at up to: SD resolutions (NTSC (720x486 @30fps) and PAL (720x576 @25 fps). HD resolutions (720p50, 720p59.94, 720p60, 1080p23.98, 1080p24, 1080p25, 1080p29.97, 1080p30, 1080p50, 1080p59.94, 1080p60, 1080i50, 1080i59.94, 1080i60). 2K DCI resolutions (2K 23.98p, 2K 24p, 2K 25p). UHD resolutions (2160p23.98, 2160p24, 2160p25, 2160p29.97, 2160p30, 2160p50, 2160p59.94, 2160p60). 4K DCI resolutions (4K 23.98p, 4K 24p, 4K 25p). M_DEV7 SDI connector 1 In addition, if not used with a component RGB camera, M_DEV2 and M_DEV3 have three data channels. You can connect a composite color/monochrome camera to each channel and switch between them, using MdigControl() with M_CHANNEL. You can only grab from one data channel per M_DEVn at a time. Data input channels of acquisition paths For M_DEV2 and M_DEV3, you can choose to use the 3 data input channels independently (meaning that you grab from only one channel at a time). If you have a camera that is connected to a channel other than the first of its digitizer, you must specify the channel, using MdigControl() with M_CHANNEL. Switching between cameras of the same type When connecting several cameras of the same data format to different data input channels of a digitizer, allocate a single digitizer with the appropriate DCF for the first camera and use MdigControl() with M_CHANNEL to switch between the others of the same type. Switching between cameras of different types When connecting cameras of different data formats to different data input channels of a digitizer, you must use a different DCF for each camera. You could allocate a digitizer, grab the required frame, free the digitizer, and then allocate the digitizer again with the second DCF; this can increase the time required for the operation. MIL can circumvent this problem by using a fast DCF-switching technique which is outlined in the steps below: Make as many calls to MdigAlloc() as you have cameras, with different formats, from which you want to grab. Specify the required digitizer settings using MdigControl() and MdigHookFunction() for each allocated digitizer. Specify the channel to use for the grab using M_CHANNEL. Call MdigGrab() with an allocated digitizer identifier. Note that if this call uses a digitizer identifier different from the previous call, a DCF switch will occur. If there is a grab in progress with one digitizer, calling any of the following functions with any other digitizer will result in an error: MdigGrab(), MdigGrabContinuous(), MdigInquire(), MdigProcess(), MdigAlloc(), and MdigFree(). To synchronize your grabs with different digitizers, use MthrWait(). Grabbing a single field With interlaced scanning cameras, 2 fields are grabbed by default; therefore one call to MdigGrab() will grab both the odd and even fields. You can change the number of fields to 1 and have MIL treat each field as one frame using MdigControl() with M_GRAB_FIELD_NUM, grabbing every second row and storing them in sequential rows. Therefore, the grab time is reduced by half. This control type can only be set to 1 or 2, and should only be used for interlaced video. When set to 1, each field is treated like a frame and the following digitizer events occur relative to the grabbed field: M_GRAB_FRAME_START, M_GRAB_END, and M_GRAB_FRAME_END. To achieve 60 fps in NTSC or 50 fps in PAL, the control type M_GRAB_START_MODE must be set to M_FIELD_START. Cameras that can be connected to Matrox Clarity UHD Data input channels of acquisition paths Switching between cameras of the same type Switching between cameras of different types Grabbing a single field ",
+      "wordCount": 853,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_clarity-UHD-u36_Automatic_camera_detection_with_Matrox_Clarity_UHD",
+      "version": null,
+      "title": "Automatic camera detection with Matrox Clarity UHD",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\clarity-UHD-u36\\Automatic_camera_detection_with_Matrox_Clarity_UHD.htm",
+      "text": " Automatic camera detection with Matrox Clarity UHD With Matrox Clarity UHD, MIL provides autodetect DCFs and specific resolution DCFs. To use an autodetect DCF when allocating a digitizer, a camera must be connected to the specified acquisition path (M_DEVn). To use a specific resolution DCF, a camera does not necessarily need to be connected before the allocation. You can hook a function to the event that occurs when a camera is connected or disconnected from the board using MsysHookFunction() with the M_CAMERA_PRESENT hook type. In the hook-handler function, you can inquire whether the event occurred upon the connection or disconnection of the camera using MsysGetHookInfo() with M_CAMERA_PRESENT; you can establish to which acquisition path the camera was connected or disconnected from using MsysGetHookInfo() with M_NUMBER. Based on this information, you can allocate or free the digitizer for the camera in the hook-handler function. The following example demonstrates how to use automatic camera detection with Matrox Clarity UHD: MultiCameraDisplay.cpp. To run the example, you can use Example Launcher. Automatic camera detection with Matrox Clarity UHD ",
+      "wordCount": 176,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_clarity-UHD-u36_Matrox_Clarity_UHD_tools",
+      "version": null,
+      "title": "Matrox Clarity UHD tools",
+      "subTitles": [
+        "Matrox Clarity UHD Bench utility",
+        "Matrox Clarity UHD Performance Monitor utility",
+        "Matrox Clarity UHD System Monitor tool"
+      ],
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\clarity-UHD-u36\\Matrox_Clarity_UHD_tools.htm",
+      "text": " Matrox Clarity UHD tools There are two Matrox Clarity UHD external applications (utilities) available (Matrox Clarity UHD Bench and Matrox Clarity UHD Performance Monitor) and one Matrox Clarity UHD tool integrated in the MILConfig utility (Matrox Clarity UHD System Monitor tool). To access these utilities and this tool, launch the MILConfig utility. Then, select the Boards Clarity UHD item from the tree structure in the presented interface. The utilities are located in the Launch external applications and Matrox Clarity UHD System Monitor panes, respectively. Matrox Clarity UHD Bench utility The Matrox Clarity UHD Bench utility calculates the real-time transfer speed of the PCIe slot (in Mbytes/sec) from: Matrox Clarity UHD to Host. Host to Matrox Clarity UHD. Matrox Clarity UHD Performance Monitor utility The Matrox Clarity UHD Performance Monitor utility is integrated in the Microsoft Windows Performance Monitor and is used to monitor information about Matrox Clarity UHD. One of the main uses is to monitor transfer usage of the DMA engine. Matrox Clarity UHD System Monitor tool The Matrox Clarity UHD system monitor tool is integrated in the MILConfig utility. It is used to display the temperature of the acquisition controller and the Host interface of the board. Matrox Clarity UHD tools Matrox Clarity UHD Bench utility Matrox Clarity UHD Performance Monitor utility Matrox Clarity UHD System Monitor tool ",
+      "wordCount": 222,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_clarity-UHD-u36_Matrox_Clarity_UHD_board_flow_diagrams",
+      "version": null,
+      "title": "Matrox Clarity UHD board flow diagrams",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\clarity-UHD-u36\\Matrox_Clarity_UHD_board_flow_diagrams.htm",
+      "text": " Matrox Clarity UHD board flow diagrams The following diagram illustrates the data flow of Matrox Clarity UHD. Matrox Clarity UHD board flow diagrams ",
+      "wordCount": 25,
+      "subEntries": []
+    }
+  ]
+}]

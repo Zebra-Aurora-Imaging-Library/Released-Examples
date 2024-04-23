@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="CenteredLabelInspection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Food and Beverage"/>
+   <Category Name="Packaging"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Identifying"/>
+   <Category Name="Inspecting/Proofing/Verifying"/>
+   <Category Name="Measuring"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+   <Category Name="Calibration"/>
+   <Category Name="Pattern Matching"/>
+   <Category Name="Metrology"/>
+   <Category Name="Color Analysis"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This example shows the inspection of lid labels on three product lanes.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+   <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappFree</Function>
+      <Function>MbufAlloc2d</Function>
+      <Function>MbufAllocColor</Function>
+      <Function>MbufChild2d</Function>
+      <Function>MbufChildMove</Function>
+      <Function>MbufClear</Function>
+      <Function>MbufCopy</Function>
+      <Function>MbufCreateColor</Function>
+      <Function>MbufDiskInquire</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufImportSequence</Function>
+      <Function>MbufInquire</Function>
+      <Function>McalAssociate</Function>
+      <Function>McalDraw</Function>
+      <Function>McalFixture</Function>
+      <Function>McalRelativeOrigin</Function>
+      <Function>McalUniform</Function>
+      <Function>McolAllocResult</Function>
+      <Function>McolFree</Function>
+      <Function>McolGetResult</Function>
+      <Function>McolMatch</Function>
+      <Function>McolPreprocess</Function>
+      <Function>McolRestore</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispControl</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispGetHookInfo</Function>
+      <Function>MdispHookFunction</Function>
+      <Function>MdispInquire</Function>
+      <Function>MdispSelect</Function>
+      <Function>MgraAlloc</Function>
+      <Function>MgraAllocList</Function>
+      <Function>MgraArcAngle</Function>
+      <Function>MgraClear</Function>
+      <Function>MgraColor</Function>
+      <Function>MgraControl</Function>
+      <Function>MgraControlList</Function>
+      <Function>MgraCopy</Function>
+      <Function>MgraDraw</Function>
+      <Function>MgraFont</Function>
+      <Function>MgraFree</Function>
+      <Function>MgraInquire</Function>
+      <Function>MgraInquireList</Function>
+      <Function>MgraLines</Function>
+      <Function>MgraRect</Function>
+      <Function>MgraText</Function>
+      <Function>MimConvert</Function>
+      <Function>MmetAllocResult</Function>
+      <Function>MmetCalculate</Function>
+      <Function>MmetDraw</Function>
+      <Function>MmetFree</Function>
+      <Function>MmetGetResult</Function>
+      <Function>MmetName</Function>
+      <Function>MmetRestore</Function>
+      <Function>MpatAllocResult</Function>
+      <Function>MpatDraw</Function>
+      <Function>MpatFind</Function>
+      <Function>MpatFree</Function>
+      <Function>MpatGetResult</Function>
+      <Function>MpatPreprocess</Function>
+      <Function>MpatRestore</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+   </Functions>
+ <Licenses>
+  <License>Machine Vision</License>
+  <License>Color Analysis</License>
+  <License>Metrology</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Object matching</Keyword>
+  <Keyword>Object dimensions</Keyword>
+  <Keyword>2D calibration</Keyword>
+  <Keyword>Fixturing</Keyword>
+  <Keyword>Color analysis</Keyword>
+  <Keyword>Pattern recognition</Keyword>
+  <Keyword>Color matching</Keyword>
+  <Keyword>Metrology</Keyword>
+ </Keywords>
+</Example>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="GumPackInspection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+      <Category Name="Packaging"/>
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Inspecting/Proofing/Verifying"/>
+    </Category>
+    <Category Name="Modules">
+      <Category Name="Buffer"/>
+      <Category Name="Calibration"/>
+      <Category Name="Display"/>
+      <Category Name="Graphics"/>
+      <Category Name="Measurement"/>
+      <Category Name="Image Processing"/>
+    </Category>
+    <Category Name="What's New">
+      <Category Name="MIL 10.0 PP2" New="1"/>
+    </Category>
+  </Categories>
+  <Description>
+    This program verifies the presence and absence of gums from a stack
+    of gum packs acquired using an extended depth of field camera.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+    <Function>MappAlloc</Function>
+    <Function>MappFree</Function>
+    <Function>MbufAlloc2d</Function>
+    <Function>MbufChild2d</Function>
+    <Function>MbufChildMove</Function>
+    <Function>MbufClear</Function>
+    <Function>MbufClearCond</Function>
+    <Function>MbufCopy</Function>
+    <Function>MbufDiskInquire</Function>
+    <Function>MbufFree</Function>
+    <Function>MbufInquire</Function>
+    <Function>MbufLoad</Function>
+    <Function>McalControl</Function>
+    <Function>McalDraw</Function>
+    <Function>McalFixture</Function>
+    <Function>McalTransformImage</Function>
+    <Function>McalUniform</Function>
+    <Function>MdispAlloc</Function>
+    <Function>MdispControl</Function>
+    <Function>MdispFree</Function>
+    <Function>MdispInquire</Function>
+    <Function>MdispSelect</Function>
+    <Function>MdispZoom</Function>
+    <Function>MgraAllocList</Function>
+    <Function>MgraClear</Function>
+    <Function>MgraColor</Function>
+    <Function>MgraControl</Function>
+    <Function>MgraFree</Function>
+    <Function>MgraRectAngle</Function>
+    <Function>MimAlloc</Function>
+    <Function>MimAllocResult</Function>
+    <Function>MimArith</Function>
+    <Function>MimBinarize</Function>
+    <Function>MimControl</Function>
+    <Function>MimFree</Function>
+    <Function>MimGetResult</Function>
+    <Function>MimInquire</Function>
+    <Function>MimStatCalculate</Function>
+    <Function>MmeasAllocMarker</Function>
+    <Function>MmeasFindMarker</Function>
+    <Function>MmeasFree</Function>
+    <Function>MmeasGetResult</Function>
+    <Function>MmeasGetResultSingle</Function>
+    <Function>MmeasSetMarker</Function>
+    <Function>MmeasSetScore</Function>
+    <Function>MsysAlloc</Function>
+    <Function>MsysFree</Function>
+  </Functions>
+  <Licenses>
+    <License>Image Analysis</License>
+    </Licenses>
+  <Keywords>
+    <Keyword>Measurement</Keyword>
+    <Keyword>Object dimensions</Keyword>
+    <Keyword>Fixturing</Keyword>
+    <Keyword>Warping</Keyword>
+    <Keyword>Extended depth of field</Keyword>
+    <Keyword>Defect detection</Keyword>
+    </Keywords>
+</Example>

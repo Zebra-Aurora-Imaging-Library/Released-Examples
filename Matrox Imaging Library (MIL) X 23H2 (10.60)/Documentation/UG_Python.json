@@ -1,0 +1,77 @@
+[{
+  "id": "UG_Python",
+  "version": "2024020714",
+  "title": "Using MIL with Python",
+  "subTitles": null,
+  "location": "MIL UG P10: Other programming languages, APIs, and operating systems",
+  "pageURL": "content\\UserGuide\\Python\\ChapterInformation.htm",
+  "text": " Chapter 59: Using MIL with Python This chapter explains how to use MIL while writing Python. MIL with Python overview Importing required libraries and distribution of a MIL application in Python Importing required libraries Distribution MIL functions and constants in Python Void pointers as outputs Exception handling in MIL Asynchronous errors NumPy arrays in Python Allocating and freeing objects in MIL Displaying images MIL hook-type functions in Python MIL Python example ",
+  "wordCount": 73,
+  "subEntries": [
+    {
+      "id": "UG_Python_MIL_with_Python_overview",
+      "version": null,
+      "title": "MIL with Python overview",
+      "subTitles": null,
+      "location": "MIL UG P10: Other programming languages, APIs, and operating systems",
+      "pageURL": "content\\UserGuide\\Python\\MIL_with_Python_overview.htm",
+      "text": " MIL with Python overview MIL supports scripting in Python, for the exact supported versions, see the whatsnew release note. There are certain differences when developing MIL applications in C/C++ and in Python which will be explained in this chapter. This chapter assumes that you have installed and configured the specified Python language version and that Python is in the system path variable. Typically, the term library is used in reference to C/C++, and the term module is used in reference to Python. However, they imply essentially the same thing. For consistency with the rest of the MIL documentation, and to avoid confusion, we use the term library throughout, regardless of the language and context being discussed. MIL with Python overview ",
+      "wordCount": 122,
+      "subEntries": []
+    },
+    {
+      "id": "UG_Python_Installation_and_distribution_in_Python",
+      "version": null,
+      "title": "Importing required libraries and distribution of a MIL application in Python",
+      "subTitles": [
+        "Importing required libraries",
+        "Distribution"
+      ],
+      "location": "MIL UG P10: Other programming languages, APIs, and operating systems",
+      "pageURL": "content\\UserGuide\\Python\\Installation_and_distribution_in_Python.htm",
+      "text": " Importing required libraries and distribution of a MIL application in Python This section discusses the libraries required to develop and distribute MIL applications in Python. Importing required libraries To develop MIL applications in Python, you will need to import the MIL Python wrapper package. During installation, MIL looks for a supported Python installation in the PATH variable and automatically calls pip to install the MIL package in your Python environment. If a supported Python installation is not found during the installation of MIL, you will have to install the MIL package manually. The MIL Python package can be found in the \\Matrox Imaging\\MIL\\Scripting\\pythonwrapper\\dist directory of your MIL installation. To install the MIL package in Windows, use the following statement: pip install mil --no-index --find-links=\"%MIL_PATH%\\..\\scripting\\pythonwrapper\\dist\" To install the MIL package in Linux, use the following statement: pip install mil --no-index --find-links=\"${MILDIR}/scripting/pythonwrapper/dist\" For more information on the pip package installer for Python, see https://pypi.org/project/pip/. To import the MIL wrapper, use the following statement: import mil as MIL Note that importing mil as MIL is just a convention, but one that will be used throughout this chapter. Distribution To run MIL applications developed in Python, your client must have a valid MIL runtime installation, the MIL Python wrapper (which is included in the MIL installation), and a Python interpreter for the version of Python used in your application. Note that the version of Python must be one supported by MIL (Python 3.6 or later). To distribute a MIL application written in Python, follow the exact same instructions as when distributing a MIL application written in C/C++. For more information, see the Interactive redistribution using your custom installation media section of Chapter 68: Distribution and licensing. Make sure to include all your Python scripts and dependencies when distributing your application. If you intend to distribute your application with limited MIL/MIL-Lite content, ensure that the Python wrapper is included in the distribution. Importing required libraries and distribution of a MIL application in Python Importing required libraries Distribution ",
+      "wordCount": 334,
+      "subEntries": []
+    },
+    {
+      "id": "UG_Python_MIL_functions_and_constants_in_Python",
+      "version": null,
+      "title": "MIL functions and constants in Python",
+      "subTitles": [
+        "Void pointers as outputs",
+        "Exception handling in MIL",
+        "Asynchronous errors",
+        "NumPy arrays in Python",
+        "Allocating and freeing objects in MIL",
+        "Displaying images"
+      ],
+      "location": "MIL UG P10: Other programming languages, APIs, and operating systems",
+      "pageURL": "content\\UserGuide\\Python\\MIL_functions_and_constants_in_Python.htm",
+      "text": " MIL functions and constants in Python MIL functions are in the MIL package; therefore, in Python, you must use the prefix MIL. before the names of the MIL functions. The following is an example call to MappControl(): MIL.MappControl(MIL.M_DEFAULT, MIL.M_ERROR, MIL.M_PRINT_DISABLE) Much like MIL function calls, MIL constants must also be prefixed by the chosen package name as is demonstrated above with MIL.M_DEFAULT, MIL.M_ERROR, and MIL.M_PRINT_DISABLE. Void pointers as outputs Many MIL functions have an output parameter that takes a reference to a variable. When using Python, you can omit the void pointer (for example, *UserVarPtr in MdigInquire()) and directly use the return value. The following example demonstrates this functionality in MIL. ProcessFrameCount = MIL.MdigInquire(MilDigitizer, MIL.M_PROCESS_FRAME_COUNT) By default, MIL functions will automatically return what they typically return to their pointer parameters, even if there are multiple pointer parameters. The functions will return this information in the appropriate type. If you do not want a function to return information typically returned to a specific pointer parameter, set that parameter to M_NULL. An example of this can be seen below where MappAllocDefault() is used to allocate an application, a system, and a display, while the digitizer and buffer allocations are explicitly set to M_NULL so that they are not allocated by default. Setting a parameter to M_NULL is the only exception to omitting an output parameter that takes a reference to a variable. MilApplication, MilSystem, MilDisplay = MIL.MappAllocDefault(MIL.M_DEFAULT, DigIdPtr = MIL.M_NULL, ImageBufIdPtr = MIL.M_NULL) Exception handling in MIL In Python, you can use a try/except exception handling structure to implement code that will execute an except block instead of generating a runtime error in a dialog box. The type of exception thrown by MIL is a MilError. This is enabled using MappControl() with M_ERROR set to M_THROW_EXCEPTION. Mapplication = MIL.MappAlloc(MIL.M_NULL, MIL.M_DEFAULT) MIL.MappControl(Mapplication, MIL.M_ERROR, MIL.M_THROW_EXCEPTION) try: Msystem = MIL.MsysAlloc(MIL.M_DEFAULT, \"M_DEFAULT\", MIL.M_DEFAULT, MIL.M_DEFAULT) except MilError as exception: print(\"System Allocation Error: {0}\".format(exception.Message) In Python, runtime checks ensure the type system rules are satisfied. You can enable or disable a MILSafeTypeError exception to be raised if the incorrect type is provided to a pointer, with MsafetypeEnable() or MsafetypeDisable(). Asynchronous errors Asynchronous errors occur independent of the current thread (for example, the camera being unplugged). To handle an asynchronous error, you can hook a function to handle the error event using the MIL.MasyncErrorHook() function in the MIL package. To unhook the function from the asynchronous error event, use MIL.MasyncErrorUnhook(). Note that you should unhook the function from the asynchronous event before freeing the MIL application context. This functionality is only available in Python if it was enabled using MappControl() with M_ERROR set to M_THROW_EXCEPTION. The asynchronous hook function should be declared as follows in Python. def AsyncErrorHookFunction(exception): You can then hook the function to the error event using MIL.MasyncErrorHook(). An example of this is shown below. MIL.MasyncErrorHook(AsyncErrorHookFunction) NumPy arrays in Python While Python lists work in MIL, they do not offer the memory efficient and speed-optimized characteristics of C-style static arrays. For improved performance, you can use NumPy arrays and pass them to parameters that take arrays. By importing NumPy, MIL will automatically allocate and return a NumPy array when applicable. The following code snippet demonstrates using a preallocated NumPy array in MIL. import numpy MIL.MblobCalculate(BlobContext, MimClosedestination, MIL.M_NULL, BlobResult) NbOfBlobs = MIL.MblobGetResult(BlobResult, MIL.M_GENERAL, MIL.M_NUMBER+MIL.M_TYPE_MIL_INT) index_values = numpy.zeros(NbOfBlobs, dtype=numpy.uint64) MIL.MblobGetResult(BlobResult, MIL.M_INCLUDED_BLOBS, MIL.M_INDEX_VALUE, index_values) print(index_values) #Contains the index values If you want to use the NumPy library in your application and still want MIL to return a list, you can control NumPy functionality with MnumpyDisable() and MnumpyEnable(). Allocating and freeing objects in MIL Unlike most memory in Python that is allocated and freed automatically, all objects in MIL must be allocated and freed manually using one of the M...Alloc() and corresponding M...Free() functions. You must free all allocated application contexts, systems, buffers, displays, and any other objects that were allocated when the memory is no longer needed. Displaying images To display images, you can use a standard MIL display or a Tkinter display. To use a Tkinter display, allocate a display using MdispAlloc() and then enable Tkinter mode, using MdispControl() with M_TK_MODE. Once a display is created, use MdispSelectWindow(). For more information, see the Displaying an image in a user-defined window section of Chapter 25: Displaying an image. MIL functions and constants in Python Void pointers as outputs Exception handling in MIL Asynchronous errors NumPy arrays in Python Allocating and freeing objects in MIL Displaying images ",
+      "wordCount": 738,
+      "subEntries": []
+    },
+    {
+      "id": "UG_Python_MIL_hook_functions_in_Python",
+      "version": null,
+      "title": "MIL hook-type functions in Python",
+      "subTitles": null,
+      "location": "MIL UG P10: Other programming languages, APIs, and operating systems",
+      "pageURL": "content\\UserGuide\\Python\\MIL_hook_functions_in_Python.htm",
+      "text": " MIL hook-type functions in Python In MIL, there are functions (for example, MappHookFunction()) that take a callback function and set it as the event handler for a specific type of event (hook-handler function hooks to the event). When the event occurs, the callback function is called. The MIL functions capable of hooking a callback function to an event are referred to as hook-type functions. Hook-type functions take as input a reference to the callback function and the name of the event that should invoke the execution of the callback function. The reference to the callback function must be of a specific callback type. The following table lists the MIL hook-type functions and their associated callback function type. MIL hook-type function Callback type MappHookFunction() MIL_APP_HOOK_FUNCTION_PTR MbufHookFunction() MIL_BUF_HOOK_FUNCTION_PTR MclassHookFunction() MIL_CLASS_HOOK_FUNCTION_PTR McomHookFunction() MIL_COM_HOOK_FUNCTION_PTR MdigFocus() MIL_FOCUS_HOOK_FUNCTION_PTR MdigHookFunction(), MdigProcess() MIL_DIG_HOOK_FUNCTION_PTR MdispHookFunction() MIL_DISP_HOOK_FUNCTION_PTR MfpgaHookFunction() MIL_FPGA_HOOK_FUNCTION_PTR MfuncAlloc() MIL_FUNC_FUNCTION_PTR MgraHookFunction() MIL_GRA_HOOK_FUNCTION_PTR McomHookFunction() MIL_OBJ_HOOK_FUNCTION_PTR MobjHookFunction() MIL_OCR_HOOK_FUNCTION_PTR MseqHookFunction() MIL_SEQ_HOOK_FUNCTION_PTR MsysHookFunction() MIL_SYS_HOOK_FUNCTION_PTR MthrAlloc() MIL_THREAD_FUNCTION_PTR In Python, you can also pass objects directly to hook functions. This is done by defining a Python object and passing it directly to the function. An example of this is shown below. class HookDataStruct( ): def __init__ (self, MilDigitizer, MilImageDisp, ProcessedImageCount): self.MilDigitizer = MilDigitizer self.MilImageDisp = MilImageDisp self.ProcessedImageCount = ProcessedImageCount #... UserHookData = HookDataStruct(MilDigitizer, MilImageDisp, 0) ProcessingFunctionPtr = MIL.MIL_DIG_HOOK_FUNCTION_PTR(ProcessingFunction) MIL.MdigProcess(MilDigitizer, MilGrabBufferList, MilGrabBufferListSize, MIL.M_START, MIL.M_DEFAULT, ProcessingFunctionPtr, UserHookData) The callback function must meet certain requirements. For this information, refer to the description of the corresponding hook-type function. In the example above, MdigProcess() hooks the callback function ProcessingFunction to the end of each grabbed image. MdigProcess() requires that its callback function is declared as follows in Python: def ProcessingFunction(HookType, EventId, HookDataPtr): Where for this example, ProcessingFunction is the callback function, HookType is the type of event that will invoke the call, EventId is the identifier of the event, and HookDataPtr is a pointer to the user data that will be passed to the callback function when it is invoked. MIL hook-type functions in Python ",
+      "wordCount": 327,
+      "subEntries": []
+    },
+    {
+      "id": "UG_Python_MIL_Python_example",
+      "version": null,
+      "title": "MIL Python example",
+      "subTitles": null,
+      "location": "MIL UG P10: Other programming languages, APIs, and operating systems",
+      "pageURL": "content\\UserGuide\\Python\\MIL_Python_example.htm",
+      "text": " MIL Python example The MdigProcess.py example shows how to implement multiple buffering in MIL using the Python wrapper. It covers all the concepts explained in this chapter. mdigprocess.py To run this example, use the Matrox Example Launcher in the MIL Control Center. MIL Python example ",
+      "wordCount": 47,
+      "subEntries": []
+    }
+  ]
+}]

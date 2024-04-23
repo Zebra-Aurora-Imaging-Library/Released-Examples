@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="CropImagesInBatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Core"/>
+      </Category>
+  </Category>
+  <Category Name="Industries">
+  </Category>
+  <Category Name="Applications">
+  </Category>
+   <Category Name="Modules">
+      <Category Name="Buffer"/>
+      <Category Name="Digitizer"/>
+      <Category Name="Image Processing"/>
+   </Category>
+  <Category Name="What's New">
+  <Category Name="MIL 10.0 U116" NewWorkspace ="1" New ="1"/>  
+  </Category>
+ </Categories>
+ <Description>This workspace shows how to crop images from a folder in batch.
+ </Description>
+ <Languages>
+  <Language>MIL CoPilot</Language>
+ </Languages>
+ <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappFree</Function>
+      <Function>MbufAllocColor</Function>
+      <Function>MbufClear</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufSave</Function>
+      <Function>MbufSetRegion</Function>
+      <Function>MdigAlloc</Function>
+      <Function>MdigFree</Function>
+      <Function>MdigGetHookInfo</Function>
+      <Function>MdigInquire</Function>
+      <Function>MdigProcess</Function>
+      <Function>MimRotate</Function>
+      <Function>MobjInquire</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+ </Functions>
+  <Licenses>
+   <License>Image Analysis</License>
+ </Licenses>
+ <Keywords>
+ </Keywords>
+ 
+</Example>

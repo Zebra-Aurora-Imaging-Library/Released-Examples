@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Mpat" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="260" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Electronics"/>
+   <Category Name="Semiconductor"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Finding/Locating"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+   <Category Name="Pattern Matching"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+   <Category Name="MIL 10.0 U44"/>       
+  </Category>
+ </Categories>
+ <Description>This example demonstrates the usage of the Pattern Matching module. 
+   </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <Language>MIL CoPilot</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+ </Languages>
+   <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappFree</Function>
+      <Function>MappGetError</Function>
+      <Function>MappTimer</Function>
+      <Function>MbufAlloc2d</Function>
+      <Function>MbufChild2d</Function>
+      <Function>MbufCopy</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufInquire</Function>
+      <Function>MbufLoad</Function>
+      <Function>MbufRestore</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispControl</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispSelect</Function>
+      <Function>MgraAllocList</Function>
+      <Function>MgraClear</Function>
+      <Function>MgraColor</Function>
+      <Function>MgraControl</Function>
+      <Function>MgraFree</Function>
+      <Function>MimRotate</Function>
+      <Function>MimTranslate</Function>
+      <Function>MpatAlloc</Function>
+      <Function>MpatAllocResult</Function>
+      <Function>MpatControl</Function>
+      <Function>MpatDefine</Function>
+      <Function>MpatDraw</Function>
+      <Function>MpatFind</Function>
+      <Function>MpatFree</Function>
+      <Function>MpatGetResult</Function>
+      <Function>MpatInquire</Function>
+      <Function>MpatPreprocess</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+   </Functions>
+  <Notes>
+  </Notes>
+  <Licenses>
+  <License>Machine Vision</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Object matching</Keyword>
+  <Keyword>Pattern matching</Keyword>
+  <Keyword>Template matching</Keyword>
+  <Keyword>Pattern recognition</Keyword>
+ </Keywords>
+</Example>

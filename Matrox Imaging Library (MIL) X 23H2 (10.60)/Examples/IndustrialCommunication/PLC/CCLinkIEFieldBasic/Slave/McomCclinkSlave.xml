@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="McomCclinkSlave" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+<Categories>
+   <Category Name="Overview">
+    <Category Name="Industrial communication">
+       <Category Name="PLC"/>
+    </Category>
+   </Category>
+
+ <Category Name="Modules">
+  <Category Name="Industrial communication"/>
+ </Category>
+ <Category Name="What's New">
+  <Category Name="Older"/>
+</Category>
+</Categories>
+ <Description>This program allocates a MIL application and system, and then allocate an
+                     industrial communication context to a CC-Link IE Field Basic slave instance,
+                     configured in Milconfig.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <Language>C#</Language>
+ </Languages>
+ <Functions>
+  <Function>MappAllocDefault</Function>
+  <Function>MappFreeDefault</Function>
+  <Function>MappGetError</Function>
+  <Function>McomAlloc</Function>
+  <Function>McomFree</Function>
+  <Function>McomRead</Function>
+  <Function>McomWrite</Function>
+ </Functions>
+ <Notes>
+   <Note>Need a CC-Link IE Field Basic master</Note>
+ </Notes>
+ <Keywords>
+  <Keyword>Industrial communication</Keyword>
+ </Keywords>
+ <Licenses>
+  <License>Industrial Communication</License>
+ </Licenses>
+</Example>

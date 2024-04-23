@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="TireStringRead" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+      <Category Name="Automotive"/>
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Inspecting/Proofing/Verifying"/>
+      <Category Name="Finding/Locating"/>
+      <Category Name="3D profiling"/>
+      <Category Name="ID mark verification"/>
+    </Category>
+    <Category Name="Modules">
+      <Category Name="3D Image Processing"/>
+      <Category Name="Buffer"/>
+      <Category Name="Display"/>
+      <Category Name="Graphics"/>
+      <Category Name="Image Processing"/>
+      <Category Name="Measurement"/>
+      <Category Name="Geometric Model Finder"/>
+      <Category Name="String Reader"/>
+      <Category Name="3D Display"/>
+      <Category Name="3D Graphics"/>
+      <Category Name="3D Geometry"/>
+    </Category>
+    <Category Name="What's New">
+      <Category Name="MIL 10.0 SP5"/>
+      <Category Name="MIL 10.0 SP4"/>
+      <Category Name="MIL 10.0 PP1" New="1"/>
+      <Category Name="MIL 10.0 U24"/>
+      <Category Name="MIL 10.0 U37"/>
+    </Category>
+  </Categories>
+  <Description>
+    This example demonstrates the reading of strings on a tire using 3D
+    sheet-of-light profiling. The system consists of two cameras and one
+    laser. Note that during the setup of the grab, the cameras were
+    synchronized so the same laser scan was provided to all cameras
+    at the same time.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+    <Function>M3ddispAlloc</Function>
+    <Function>M3ddispControl</Function>
+    <Function>M3ddispFree</Function>
+    <Function>M3ddispInquire</Function>
+    <Function>M3ddispSelect</Function>
+    <Function>M3ddispSetView</Function>
+    <Function>M3dgeoAlloc</Function>
+    <Function>M3dgeoBox</Function>
+    <Function>M3dgeoFree</Function>
+    <Function>M3dgraAdd</Function>
+    <Function>M3dgraControl</Function>
+    <Function>M3dimAlloc</Function>
+    <Function>M3dimCalibrateDepthMap</Function>
+    <Function>M3dimControl</Function>
+    <Function>M3dimCrop</Function>
+    <Function>M3dimFillGaps</Function>
+    <Function>M3dimFree</Function>
+    <Function>M3dimProject</Function>
+    <Function>MappAlloc</Function>
+    <Function>MappControl</Function>
+    <Function>MappFileOperation</Function>
+    <Function>MappFree</Function>
+    <Function>MbufAlloc2d</Function>
+    <Function>MbufAllocContainer</Function>
+    <Function>MbufChild2d</Function>
+    <Function>MbufClear</Function>
+    <Function>MbufConvert3d</Function>
+    <Function>MbufCopyColor2d</Function>
+    <Function>MbufFree</Function>
+    <Function>MbufImport</Function>
+    <Function>MbufInquire</Function>
+    <Function>MdispAlloc</Function>
+    <Function>MdispControl</Function>
+    <Function>MdispFree</Function>
+    <Function>MdispSelect</Function>
+    <Function>MdispZoom</Function>
+    <Function>MgraAllocList</Function>
+    <Function>MgraClear</Function>
+    <Function>MgraColor</Function>
+    <Function>MgraControl</Function>
+    <Function>MgraFree</Function>
+    <Function>MgraText</Function>
+    <Function>MimAlloc</Function>
+    <Function>MimFree</Function>
+    <Function>MimHistogramEqualizeAdaptive</Function>
+    <Function>MimPolarTransform</Function>
+    <Function>MimResize</Function>
+    <Function>MimRotate</Function>
+    <Function>MimShift</Function>
+    <Function>MmeasAllocMarker</Function>
+    <Function>MmeasFindMarker</Function>
+    <Function>MmeasFree</Function>
+    <Function>MmeasGetResult</Function>
+    <Function>MmeasSetMarker</Function>
+    <Function>MmodAllocResult</Function>
+    <Function>MmodControl</Function>
+    <Function>MmodFind</Function>
+    <Function>MmodFree</Function>
+    <Function>MmodGetResult</Function>
+    <Function>MmodPreprocess</Function>
+    <Function>MmodRestore</Function>
+    <Function>MstrAllocResult</Function>
+    <Function>MstrDraw</Function>
+    <Function>MstrFree</Function>
+    <Function>MstrGetResult</Function>
+    <Function>MstrPreprocess</Function>
+    <Function>MstrRead</Function>
+    <Function>MstrRestore</Function>
+    <Function>MsysAlloc</Function>
+    <Function>MsysFree</Function>
+  </Functions>
+  <Licenses>
+    <License>Image Analysis</License>
+    <License>Geometric Model Finder</License>
+    <License>String Reader and SureDotOCR</License>
+    <License>3D Calibration &amp; Supplement</License>
+  </Licenses>
+  <Keywords>
+    <Keyword>Object matching</Keyword>
+    <Keyword>Optical character recognition</Keyword>
+    <Keyword>3D profiling</Keyword>
+    <Keyword>Circle detection</Keyword>
+    <Keyword>3D reconstruction</Keyword>
+    <Keyword>Object detection</Keyword>
+    <Keyword>Geometric pattern matching</Keyword>
+    <Keyword>Graphical annotations</Keyword>
+    <Keyword>Preprocessing</Keyword>
+    <Keyword>Pattern recognition</Keyword>
+    <Keyword>Spatial filtering</Keyword>
+    <Keyword>Pattern matching</Keyword>
+    <Keyword>Defect detection</Keyword>
+    <Keyword>3D calibration</Keyword>
+    <Keyword>3D depth map</Keyword>
+    <Keyword>Polar-to-rectangular</Keyword>
+    <Keyword>Image filtering</Keyword>
+    <Keyword>Image enhancement</Keyword>
+    <Keyword>Feature matching</Keyword>
+    <Keyword>Image convolution</Keyword>
+    <Keyword>Image arithmetic</Keyword>
+    <Keyword>OCR</Keyword>
+    <Keyword>3D laser scanner</Keyword>
+  </Keywords>
+</Example>

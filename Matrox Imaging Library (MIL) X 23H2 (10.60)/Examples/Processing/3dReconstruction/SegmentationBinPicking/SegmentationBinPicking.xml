@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="SegmentationBinPicking" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+      <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+      <Category Name="Machining"/>
+      <Category Name="Automation"/>
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Finding/Locating"/>
+      <Category Name="3D profiling"/>
+    </Category>
+    <Category Name="Modules">
+         <Category Name="3D Blob Analysis"/>
+         <Category Name="3D Display"/>
+         <Category Name="3D Geometry"/>
+         <Category Name="3D Graphics"/>
+         <Category Name="3D Image Processing"/>
+         <Category Name="3D Metrology"/>
+         <Category Name="Buffer"/>
+    </Category>
+    <Category Name="What's New">
+	  <Category Name="MIL 10.0 SP6"/>
+	  <Category Name="MIL 10.0 SP5" New="1"/>
+    </Category>
+  </Categories>
+  <Description>
+    This example performs 3d segmentation to identify and pick up objects in a bin.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+      <Function>M3dblobAlloc</Function>
+      <Function>M3dblobAllocResult</Function>
+      <Function>M3dblobCalculate</Function>
+      <Function>M3dblobCombine</Function>
+      <Function>M3dblobControl</Function>
+      <Function>M3dblobControlDraw</Function>
+      <Function>M3dblobCopyResult</Function>
+      <Function>M3dblobDraw3d</Function>
+      <Function>M3dblobFree</Function>
+      <Function>M3dblobGetResult</Function>
+      <Function>M3dblobSegment</Function>
+      <Function>M3dblobSelect</Function>
+      <Function>M3dblobSort</Function>
+      <Function>M3ddispAlloc</Function>
+      <Function>M3ddispControl</Function>
+      <Function>M3ddispFree</Function>
+      <Function>M3ddispInquire</Function>
+      <Function>M3ddispSelect</Function>
+      <Function>M3ddispSetView</Function>
+      <Function>M3dgeoAlloc</Function>
+      <Function>M3dgeoConstruct</Function>
+      <Function>M3dgeoFree</Function>
+      <Function>M3dgeoInquire</Function>
+      <Function>M3dgeoLine</Function>
+      <Function>M3dgeoMatrixGet</Function>
+      <Function>M3dgeoMatrixSetTransform</Function>
+      <Function>M3dgraAxis</Function>
+      <Function>M3dgraBox</Function>
+      <Function>M3dgraControl</Function>
+      <Function>M3dgraCopy</Function>
+      <Function>M3dgraCylinder</Function>
+      <Function>M3dgraGrid</Function>
+      <Function>M3dgraInquire</Function>
+      <Function>M3dgraNode</Function>
+      <Function>M3dgraRemove</Function>
+      <Function>M3dgraSphere</Function>
+      <Function>M3dimAlloc</Function>
+      <Function>M3dimAllocResult</Function>
+      <Function>M3dimControl</Function>
+      <Function>M3dimCrop</Function>
+      <Function>M3dimFree</Function>
+      <Function>M3dimNormals</Function>
+      <Function>M3dimGetResult</Function>
+      <Function>M3dmetFeatureEx</Function>
+      <Function>M3dmetFeature</Function>
+      <Function>MappAlloc</Function>
+      <Function>MappControl</Function>
+      <Function>MappFileOperation</Function>
+      <Function>MappFree</Function>
+      <Function>MappTimer</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufImport</Function>
+      <Function>MobjInquire</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+  </Functions>
+  <Notes>
+    <Note>Example might not be compatible with older compilers</Note>
+  </Notes>    
+  <Licenses>
+    <License>Image Analysis</License>
+    <License>Metrology</License>
+    <License>3D Calibration &amp; Supplement</License>
+    </Licenses>
+  <Keywords>
+    <Keyword>3D segmentation</Keyword>
+    <Keyword>Fixturing</Keyword>
+    <Keyword>Graphical annotations</Keyword>
+  </Keywords>
+</Example>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Name="VariousStatistics" Revision="10.60.0776" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+    <Categories>
+        <Category Name="Overview">
+            <Category Name="Advanced">
+               <Category Name="Processing"/>
+            </Category>
+        </Category>
+        <Category Name="Industries">
+            <Category Name="Electronics"/>
+            <Category Name="Packaging"/>
+        </Category >
+        <Category Name="Applications">
+            <Category Name="Preprocessing"/>
+        </Category>
+        <Category Name="Modules">
+            <Category Name="Buffer"/>
+            <Category Name="Display"/>
+            <Category Name="Graphics"/>
+            <Category Name="Image Processing"/>
+            <Category Name="Pattern Matching"/>
+            </Category>
+        <Category Name="What's New">
+            <Category Name="MIL 10.0 PP3" New="1"/>
+        </Category>
+    </Categories>
+    <Description>This example demonstrates how to calculate various statistics using MIL.
+    </Description>
+    <Languages>
+        <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+    </Languages>
+    <Functions>
+        <Function>MappAlloc</Function>
+        <Function>MappFree</Function>
+        <Function>MbufAlloc2d</Function>
+        <Function>MbufChild2d</Function>
+        <Function>MbufChildMove</Function>
+        <Function>MbufClear</Function>
+        <Function>MbufFree</Function>
+        <Function>MbufInquire</Function>
+        <Function>MbufRestore</Function>
+        <Function>MdispAlloc</Function>
+        <Function>MdispControl</Function>
+        <Function>MdispFree</Function>
+        <Function>MdispInquire</Function>
+        <Function>MdispSelect</Function>
+        <Function>MdispZoom</Function>
+        <Function>MgraAllocList</Function>
+        <Function>MgraClear</Function>
+        <Function>MgraColor</Function>
+        <Function>MgraFree</Function>
+        <Function>MgraRect</Function>
+        <Function>MimAlloc</Function>
+        <Function>MimAllocResult</Function>
+        <Function>MimBinarize</Function>
+        <Function>MimControl</Function>
+        <Function>MimDraw</Function>
+        <Function>MimFree</Function>
+        <Function>MimGetResult</Function>
+        <Function>MimLocateEvent</Function>
+        <Function>MimStatCalculate</Function>
+        <Function>MpatAlloc</Function>
+        <Function>MpatAllocResult</Function>
+        <Function>MpatControl</Function>
+        <Function>MpatDefine</Function>
+        <Function>MpatDraw</Function>
+        <Function>MpatFind</Function>
+        <Function>MpatFree</Function>
+        <Function>MpatGetResult</Function>
+        <Function>MpatMask</Function>
+        <Function>MpatPreprocess</Function>
+        <Function>MsysAlloc</Function>
+        <Function>MsysFree</Function>
+   </Functions>
+   <Licenses>
+      <License>Image Analysis</License>
+      <License>Machine Vision</License>
+   </Licenses>
+    <Keywords>
+        <Keyword>Preprocessing</Keyword>
+        <Keyword>Pattern matching</Keyword>
+        <Keyword>Texture</Keyword>
+        <Keyword>Co-occurrence matrix</Keyword>
+        <Keyword>Defect detection</Keyword>
+		<Keyword>Image statistics</Keyword>
+    </Keywords>
+</Example>

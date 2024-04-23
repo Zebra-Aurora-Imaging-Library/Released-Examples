@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimFFT", "MimFFT.csproj", "{D0012D00-56B0-4F6D-9F35-42103970F535}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0012D00-56B0-4F6D-9F35-42103970F535}.Debug|x64.ActiveCfg = Debug|x64
+		{D0012D00-56B0-4F6D-9F35-42103970F535}.Debug|x64.Build.0 = Debug|x64
+		{D0012D00-56B0-4F6D-9F35-42103970F535}.Release|x64.ActiveCfg = Release|x64
+		{D0012D00-56B0-4F6D-9F35-42103970F535}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39C6970F-5F37-4773-B162-6211F8795DC3}
+	EndGlobalSection
+EndGlobal

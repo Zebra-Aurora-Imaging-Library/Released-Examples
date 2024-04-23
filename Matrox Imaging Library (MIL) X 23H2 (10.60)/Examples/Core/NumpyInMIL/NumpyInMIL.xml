@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="NumpyInMIL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+   <Categories>
+      <Category Name="Overview">
+         <Category Name="Advanced">
+            <Category Name="Core"/>
+         </Category>
+      </Category>
+      <Category Name="Modules">
+         <Category Name="Buffer">
+         </Category>
+         <Category Name="Display">
+         </Category>
+         <Category Name="Graphics">
+         </Category>
+      </Category>
+      <Category Name="What's New">
+      <Category Name="MIL 10.0 SP5" New="1"/>
+      </Category>
+   </Categories>
+   <Description>
+      This example shows how to use MIL in an Python project using numpy. 
+   </Description>
+   <Languages>
+      <Language>Python</Language>
+      <LinuxLanguage>Python</LinuxLanguage>
+   </Languages>
+   <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappFree</Function>
+      <Function>MappTrace</Function>
+      <Function>MbufChildColor</Function>
+      <Function>MbufControl</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufGet</Function>
+      <Function>MbufGetLine</Function>
+      <Function>MbufInquire</Function>
+      <Function>MbufRestore</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispControl</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispSelect</Function>
+      <Function>MgraAllocList</Function>
+      <Function>MgraControl</Function>
+      <Function>MgraFree</Function>
+      <Function>MgraLine</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysControl</Function>
+      <Function>MsysFree</Function>
+   </Functions>
+   <Notes>
+      <Note>Requires third-party packages</Note>
+   </Notes>
+   <Keywords>
+      <Keyword>Numpy</Keyword>
+      <Keyword>Matplotlib</Keyword>
+      <Keyword>pyplot</Keyword>
+      <Keyword>Line profile</Keyword>
+      <Keyword>imshow</Keyword>
+      <Keyword>Scripting language</Keyword>
+   </Keywords>
+   <Licenses>
+      <License>MIL Lite only</License>
+   </Licenses>
+</Example>

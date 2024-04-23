@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Morphology" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Electronics"/>
+   <Category Name="Medical diagnostics"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Identifying"/>
+   <Category Name="Inspecting/Proofing/Verifying"/>
+   <Category Name="Measuring"/>
+   <Category Name="Preprocessing"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Image Processing"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 9.0 PP2" New="1"/>
+   <Category Name="MIL 10.0 PP1"/>
+  </Category>
+ </Categories>
+ <Description>This example shows various operations based on morphological operators.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAlloc1d</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufChild2d</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufClearCond</Function>
+  <Function>MbufControl</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufCopyCond</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufPut1d</Function>
+  <Function>MbufPutColor</Function>
+  <Function>MbufRestore</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MimAllocResult</Function>
+  <Function>MimArith</Function>
+  <Function>MimBinarize</Function>
+  <Function>MimClose</Function>
+  <Function>MimConnectMap</Function>
+  <Function>MimConvert</Function>
+  <Function>MimConvolve</Function>
+  <Function>MimCountDifference</Function>
+  <Function>MimDilate</Function>
+  <Function>MimDistance</Function>
+  <Function>MimErode</Function>
+  <Function>MimFree</Function>
+  <Function>MimGetResult</Function>
+  <Function>MimLutMap</Function>
+  <Function>MimMorphic</Function>
+  <Function>MimOpen</Function>
+  <Function>MimShift</Function>
+  <Function>MimStatCalculate</Function>
+  <Function>MimThin</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Licenses>
+  <License>Image Analysis</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Morphology</Keyword>
+  <Keyword>Image segmentation</Keyword>
+  <Keyword>Object detection</Keyword>
+  <Keyword>Object dimensions</Keyword>
+  <Keyword>Image enhancement</Keyword>
+  <Keyword>Image filtering</Keyword>
+  <Keyword>Defect detection</Keyword>
+  <Keyword>Preprocessing</Keyword>
+ </Keywords>
+</Example>

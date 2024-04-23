@@ -1,0 +1,36 @@
+[{
+  "id": "BSN_altiz",
+  "version": "2024020714",
+  "title": "Matrox AltiZ",
+  "subTitles": null,
+  "location": "MIL Hardware-specific Notes",
+  "pageURL": "content\\BoardSpecificNotes\\altiz\\ChapterInformation.htm",
+  "text": " Matrox AltiZ This chapter discusses features of MIL that are particular to Matrox AltiZ. Camera-specific information regarding specific functions is integrated into the functions' reference topics under Matrox GigE Vision driver. For any additions/modifications to this chapter or the MIL Reference, refer to the Matrox GigE Vision driver release note. Matrox AltiZ overview Summary of Matrox AltiZ features Using Matrox AltiZ with MIL ",
+  "wordCount": 65,
+  "subEntries": [
+    {
+      "id": "BSN_altiz_Matrox_AltiZ_specific_features",
+      "version": null,
+      "title": "Matrox AltiZ overview",
+      "subTitles": [
+        "Summary of Matrox AltiZ features"
+      ],
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\altiz\\Matrox_AltiZ_specific_features.htm",
+      "text": " Matrox AltiZ overview The Matrox AltiZ is a family of 3D profile sensors that use camera-laser triangulation to acquire high-precision 3D data. There are four models: AZ1D4SR, AZ1D4SB, AZ1D4MR, and AZ1D4LR. The primary differences between the Matrox AltiZ models are: laser color and class, working distance, available Z-range, Z-axis resolution, and X-axis resolution. Specifications Matrox AltiZ family members AZ1D4SR AZ1D4SB AZ1D4MR AZ1D4LR Laser color and class Red/2M Blue/2M Red/3R Red/3R Working distance 100 mm 100 mm 185 mm 160 mm Available Z-range 70 mm 70 mm 225 mm 385 mm Z-axis resolution 4 µm - 8 µm 4 µm - 8 µm 9.5 µm - 35 µm 10 µm - 89 µm X-axis resolution 39 µm 39 µm 84 µm 158 µm Matrox AltiZ can interface with a controlling computer and other devices over Ethernet (1000Base-T) using the GigE Vision protocol. Matrox AltiZ can also interface with other devices using its auxiliary digital I/O lines (auxiliary I/O signals). Matrox AltiZ supports the GenICam GenDC specification with 3D datasets. It also supports custom GenICam features, which are outlined in the Matrox Altiz Installation and Technical Reference. Summary of Matrox AltiZ features The following table outlines the features currently available with each model of the Matrox AltiZ. Features Matrox AltiZ Number of supported triggers 4 general auxiliary Asynchronous reset mode Yes Number of timers 4 Number of auxiliary signals (lines) 6 (4 in and 2 out) Quadrature decoder 1 1 1 Also known as quadrature encoder interface. Matrox AltiZ overview Summary of Matrox AltiZ features ",
+      "wordCount": 255,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_altiz_Using_Matrox_AltiZ_with_MIL",
+      "version": null,
+      "title": "Using Matrox AltiZ with MIL",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\altiz\\Using_Matrox_AltiZ_with_MIL.htm",
+      "text": " Using Matrox AltiZ with MIL To use your Matrox AltiZ with MIL, you must allocate a MIL GigE Vision system (M_SYSTEM_GIGE_VISION), using MsysAlloc(). This allocation opens general communication with all the GigE Vision-compliant cameras found on your subnet (through one or more Gigabit Ethernet network adapters in your computer). Then, allocate a digitizer for each Matrox AltiZ that you want to use to grab data and/or access directly, using MdigAlloc(). In the case where you have only one Matrox AltiZ, use MdigAlloc() with M_DEV0. If, however, you have multiple grabberless interface cameras, you should use the M_GC_CAMERA_ID() macro and specify the camera's name; this will make for more portable code. Each process (executable) can allocate only one MIL GigE Vision system; an error will occur if you try to allocate more than one. Multiple processes can allocate a MIL GigE Vision system. Since you interact with Matrox AltiZ as you would another GigE Vision camera, Matrox AltiZ information in the MIL Reference can be found in the paragraphs and values marked as being supported by the GigE Vision driver. For additional information on Matrox AltiZ, refer to the Matrox GigE Vision driver chapter in the MIL Hardware-specific Notes. Refer to the Matrox GigE Vision driver release notes for any additions/modifications to this chapter. To grab data from Matrox AltiZ, use MdigGrab() with a MIL container. For information, refer to Chapter 42: Grabbing from 3D sensors. If the grabbed data from your Matrox AltiZ is in the form of a point cloud and the direction of the Z-axis of your working coordinate system is not suitable for your application, you can invert or flip its direction. For more information, refer to the Aligning or flipping the coordinate system section of Chapter 42: Grabbing from 3D sensors. To inquire the current value of the required GigE Vision camera feature, use MdigInquireFeature(). If a GigE Vision feature is not already set to the required value, use MdigControlFeature() to change the value of the feature. Functionality is also supported with the conventional MIL functions MdigControl() and MdigInquire(). Note to control/inquire about the auxiliary I/O lines (signals), rotary encoder interface, and timers, you need to use MdigControlFeature() and MdigInquire(). For information on the available GenICam features, see the Matrox AltiZ Installation and Technical Reference. Matrox Capture Work's Feature Browser accesses the device description file (XML) of any GigE Vision-compliant camera/3D sensor, including Matrox AltiZ, and provides an interface to change or inquire the device's information. For information on how to change or inquire the features of your Matrox AltiZ using MIL, refer to the Using MIL with GenICam section of Chapter 27: Grabbing with your digitizer. Using Matrox AltiZ with MIL ",
+      "wordCount": 448,
+      "subEntries": []
+    }
+  ]
+}]

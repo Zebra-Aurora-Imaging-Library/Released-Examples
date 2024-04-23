@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Mmet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="320" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Machining"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Measuring"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Calibration"/>
+   <Category Name="Geometric Model Finder"/>
+   <Category Name="Metrology"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+   <Category Name="MIL 10.0 U116" NewWorkspace ="1"/>
+  </Category>
+ </Categories>
+ <Description>This program uses the metrology module to measure geometric feature and tolerances on parts.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <Language>MIL CoPilot</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufRestore</Function>
+  <Function>McalAssociate</Function>
+  <Function>McalFree</Function>
+  <Function>McalFixture</Function>
+  <Function>McalRestore</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraFree</Function>
+  <Function>MmetAddFeature</Function>
+  <Function>MmetAddTolerance</Function>
+  <Function>MmetAlloc</Function>
+  <Function>MmetAllocResult</Function>
+  <Function>MmetCalculate</Function>
+  <Function>MmetControl</Function>
+  <Function>MmetDraw</Function>
+  <Function>MmetFree</Function>
+  <Function>MmetGetResult</Function>
+  <Function>MmetSetRegion</Function>
+  <Function>MmodAllocResult</Function>
+  <Function>MmodControl</Function>
+  <Function>MmodDraw</Function>
+  <Function>MmodFind</Function>
+  <Function>MmodFree</Function>
+  <Function>MmodGetResult</Function>
+  <Function>MmodPreprocess</Function>
+  <Function>MmodRestore</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>Geometric Model Finder</License>
+  <License>Metrology</License>
+ </Licenses>
+  <Notes>
+  </Notes>
+  <Keywords>
+  <Keyword>Object dimensions</Keyword>
+  <Keyword>Object matching</Keyword>
+  <Keyword>2D calibration</Keyword>
+  <Keyword>Metrology</Keyword>
+ </Keywords>
+</Example>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="ActionTrigger" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+     <Category Name="Advanced">
+        <Category Name="Hardware-specific">
+           <Category Name="GigE Vision"/>
+           <Category Name="Matrox GevIQ"/>
+        </Category>
+     </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Digitizer"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This example shows how to send a trigger to multiple cameras at once using the GigE Vision® Action command.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAllocDefault</Function>
+  <Function>MappFreeDefault</Function>
+  <Function>MappControl</Function>  
+  <Function>MappInquire</Function>
+  <Function>MappGetError</Function>
+  <Function>MsysInquire</Function>
+  <Function>MsysControl</Function>  
+  <Function>MdigAlloc</Function>
+  <Function>MdigFree</Function>
+  <Function>MdigControl</Function>
+  <Function>MdigInquire</Function>
+  <Function>MdigInquireFeature</Function>
+  <Function>MdigControlFeature</Function>
+  <Function>MdigProcess</Function>
+  <Function>MdigGetHookInfo</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufCopy</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispSelect</Function>
+ </Functions>
+ <Notes>
+  <Note>Requires a digitizer</Note>
+ </Notes>
+ <Keywords>
+  <Keyword>Image acquisition</Keyword>
+ </Keywords>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

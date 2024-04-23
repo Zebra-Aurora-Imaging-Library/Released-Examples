@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdigGrab", "MdigGrab.csproj", "{2D3771F5-36CC-40B2-91B1-72553BEED9C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D3771F5-36CC-40B2-91B1-72553BEED9C4}.Debug|x64.ActiveCfg = Debug|x64
+		{2D3771F5-36CC-40B2-91B1-72553BEED9C4}.Debug|x64.Build.0 = Debug|x64
+		{2D3771F5-36CC-40B2-91B1-72553BEED9C4}.Release|x64.ActiveCfg = Release|x64
+		{2D3771F5-36CC-40B2-91B1-72553BEED9C4}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45360CA6-C79F-4CB5-80D8-477F21D220B3}
+	EndGlobalSection
+EndGlobal

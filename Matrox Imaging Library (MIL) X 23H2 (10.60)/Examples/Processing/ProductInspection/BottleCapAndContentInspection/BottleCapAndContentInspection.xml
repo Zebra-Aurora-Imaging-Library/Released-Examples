@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="BottleCapAndContentInspection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Automation"/>
+   <Category Name="Packaging"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Inspecting/Proofing/Verifying"/>
+   <Category Name="Measuring"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Calibration"/>
+   <Category Name="Image Processing"/>
+   <Category Name="Blob Analysis"/>
+   <Category Name="Measurement"/>
+   <Category Name="Geometric Model Finder"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This example shows some basic inspection of ampoules and their packaging using fixtured operations.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MblobAlloc</Function>
+  <Function>MblobAllocResult</Function>
+  <Function>MblobCalculate</Function>
+  <Function>MblobControl</Function>
+  <Function>MblobDraw</Function>
+  <Function>MblobFree</Function>
+  <Function>MblobGetResult</Function>
+  <Function>MblobSelect</Function>
+  <Function>MbufAlloc1d</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufChild2d</Function>
+  <Function>MbufChildColor</Function>
+  <Function>MbufChildMove</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufCreateColor</Function>
+  <Function>MbufDiskInquire</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufImportSequence</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufRestore</Function>
+  <Function>McalAlloc</Function>
+  <Function>McalAssociate</Function>
+  <Function>McalDraw</Function>
+  <Function>McalFixture</Function>
+  <Function>McalFree</Function>
+  <Function>McalRelativeOrigin</Function>
+  <Function>McalTransformImage</Function>
+  <Function>McalUniform</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispGetHookInfo</Function>
+  <Function>MdispHookFunction</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgenLutRamp</Function>
+  <Function>MgraAlloc</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraControl</Function>
+  <Function>MgraControlList</Function>
+  <Function>MgraDraw</Function>
+  <Function>MgraFont</Function>
+  <Function>MgraFree</Function>
+  <Function>MgraInquire</Function>
+  <Function>MgraInquireList</Function>
+  <Function>MgraLines</Function>
+  <Function>MgraRect</Function>
+  <Function>MgraText</Function>
+  <Function>MimArith</Function>
+  <Function>MimBinarize</Function>
+  <Function>MimConvolve</Function>
+  <Function>MimLutMap</Function>
+  <Function>MimOpen</Function>
+  <Function>MmeasDraw</Function>
+  <Function>MmeasFindMarker</Function>
+  <Function>MmeasFree</Function>
+  <Function>MmeasGetResult</Function>
+  <Function>MmeasRestoreMarker</Function>
+  <Function>MmodAllocResult</Function>
+  <Function>MmodFind</Function>
+  <Function>MmodFree</Function>
+  <Function>MmodGetResult</Function>
+  <Function>MmodPreprocess</Function>
+  <Function>MmodRestore</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>Geometric Model Finder</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Object matching</Keyword>
+  <Keyword>Object dimensions</Keyword>
+  <Keyword>2D calibration</Keyword>
+  <Keyword>Fixturing</Keyword>
+  <Keyword>Morphology</Keyword>
+  <Keyword>Defect detection</Keyword>
+  <Keyword>Pattern recognition</Keyword>
+  <Keyword>Image arithmetic</Keyword>
+  <Keyword>Blob analysis</Keyword>
+  <Keyword>Gauging</Keyword>
+  <Keyword>Measurement</Keyword>
+ </Keywords>
+</Example>

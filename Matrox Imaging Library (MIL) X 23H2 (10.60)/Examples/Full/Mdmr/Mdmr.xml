@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Mdmr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="365" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Packaging"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Reading"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="SureDotOCR®"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 PP2" New="1"/>
+   <Category Name="MIL 10.0 U59" NewWorkspace ="1"/>
+  </Category>
+ </Categories>
+ <Description>This program uses the SureDotOCR® module to read a product
+              expiry date and lot number printed using a CIJ printer.
+   </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+  <Language>Python</Language>
+  <Language>MIL CoPilot</Language>
+ </Languages>
+ <Functions>
+   <Function>MappAlloc</Function>
+   <Function>MappFree</Function>
+   <Function>MbufFree</Function>
+   <Function>MbufRestore</Function>
+   <Function>MdispAlloc</Function>
+   <Function>MdispControl</Function>
+   <Function>MdispFree</Function>
+   <Function>MdispInquire</Function>
+   <Function>MdispSelect</Function>
+   <Function>MdmrAlloc</Function>
+   <Function>MdmrAllocResult</Function>
+   <Function>MdmrControl</Function>
+   <Function>MdmrControlStringModel</Function>
+   <Function>MdmrDraw</Function>
+   <Function>MdmrFree</Function>
+   <Function>MdmrGetResult</Function>
+   <Function>MdmrImportFont</Function>
+   <Function>MdmrPreprocess</Function>
+   <Function>MdmrRead</Function>
+   <Function>MgraColor</Function>
+   <Function>MgraText</Function>
+   <Function>MsysAlloc</Function>
+   <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+ <Licenses>
+  <License>String Reader and SureDotOCR</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>OCR</Keyword>
+  <Keyword>Dot Matrix</Keyword>
+  <Keyword>SureDotOCR®</Keyword>
+  <Keyword>Optical character recognition</Keyword>
+ </Keywords>
+</Example>

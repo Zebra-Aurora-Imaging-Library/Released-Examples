@@ -1,0 +1,171 @@
+[
+  {
+    "id": "agm",
+    "version": "2024020714",
+    "wordCount": 0
+  },
+  {
+    "id": "app",
+    "wordCount": 0
+  },
+  {
+    "id": "bead",
+    "wordCount": 0
+  },
+  {
+    "id": "blob",
+    "wordCount": 0
+  },
+  {
+    "id": "buf",
+    "wordCount": 0
+  },
+  {
+    "id": "cal",
+    "wordCount": 0
+  },
+  {
+    "id": "class",
+    "wordCount": 0
+  },
+  {
+    "id": "code",
+    "wordCount": 0
+  },
+  {
+    "id": "col",
+    "wordCount": 0
+  },
+  {
+    "id": "com",
+    "wordCount": 0
+  },
+  {
+    "id": "dig",
+    "wordCount": 0
+  },
+  {
+    "id": "disp",
+    "wordCount": 0
+  },
+  {
+    "id": "dlocr",
+    "wordCount": 0
+  },
+  {
+    "id": "dmr",
+    "wordCount": 0
+  },
+  {
+    "id": "edge",
+    "wordCount": 0
+  },
+  {
+    "id": "fpga",
+    "wordCount": 0
+  },
+  {
+    "id": "func",
+    "wordCount": 0
+  },
+  {
+    "id": "gen",
+    "wordCount": 0
+  },
+  {
+    "id": "gra",
+    "wordCount": 0
+  },
+  {
+    "id": "im",
+    "wordCount": 0
+  },
+  {
+    "id": "meas",
+    "wordCount": 0
+  },
+  {
+    "id": "met",
+    "wordCount": 0
+  },
+  {
+    "id": "mod",
+    "wordCount": 0
+  },
+  {
+    "id": "obj",
+    "wordCount": 0
+  },
+  {
+    "id": "ocr",
+    "wordCount": 0
+  },
+  {
+    "id": "pat",
+    "wordCount": 0
+  },
+  {
+    "id": "reg",
+    "wordCount": 0
+  },
+  {
+    "id": "seq",
+    "wordCount": 0
+  },
+  {
+    "id": "str",
+    "wordCount": 0
+  },
+  {
+    "id": "sys",
+    "wordCount": 0
+  },
+  {
+    "id": "sysIo",
+    "wordCount": 0
+  },
+  {
+    "id": "thr",
+    "wordCount": 0
+  },
+  {
+    "id": "3dblob",
+    "wordCount": 0
+  },
+  {
+    "id": "3ddisp",
+    "wordCount": 0
+  },
+  {
+    "id": "3dgeo",
+    "wordCount": 0
+  },
+  {
+    "id": "3dgra",
+    "wordCount": 0
+  },
+  {
+    "id": "3dim",
+    "wordCount": 0
+  },
+  {
+    "id": "3dmap",
+    "wordCount": 0
+  },
+  {
+    "id": "3dmeas",
+    "wordCount": 0
+  },
+  {
+    "id": "3dmet",
+    "wordCount": 0
+  },
+  {
+    "id": "3dmod",
+    "wordCount": 0
+  },
+  {
+    "id": "3dreg",
+    "wordCount": 0
+  }
+]

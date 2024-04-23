@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="AdditionalExamples" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="999" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Automation"/>
+   <Category Name="Automotive"/>
+   <Category Name="Electronics"/>
+   <Category Name="Packaging"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="3D profiling"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="3D Map"/>
+   <Category Name="3D Registration"/>
+   <Category Name="3D Metrology"/>
+   <Category Name="3D Display"/>
+   <Category Name="3D Graphics"/>
+   <Category Name="3D Geometry"/>
+   <Category Name="3D Image Processing"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP5"/>
+   <Category Name="MIL 10.0 SP4" New="1"/>
+  </Category>
+ </Categories>
+ <Description>Please visit https://github.com/Matrox-Imaging to get these examples.
+ </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function> 
+ </Functions>
+ <Licenses>
+  <License>3D Calibration &amp; Supplement</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>3D profiling</Keyword>
+  <Keyword>3D reconstruction</Keyword>
+  <Keyword>3D measurement</Keyword>
+  <Keyword>3D calibration</Keyword>
+  <Keyword>3D VGR</Keyword>
+  <Keyword>3D depth map</Keyword>
+  <Keyword>3D laser scanner</Keyword>
+  <Keyword>3D registration</Keyword>
+  <Keyword>3D surface alignment</Keyword>
+  <Keyword>3D matching</Keyword>
+  <Keyword>3D acquisition</Keyword>
+ </Keywords>
+ <Notes>
+  <Note>Interfaces to a third-party SDK</Note>
+  <Note>Supports digitizer use</Note>
+  <Note>Example might not be compatible with older compilers</Note>
+ </Notes>
+</Example>

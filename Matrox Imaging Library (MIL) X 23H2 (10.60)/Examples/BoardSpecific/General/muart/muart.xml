@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="muart" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category  Name="Advanced">
+     <Category Name="Hardware-specific">
+        <Category Name="Matrox Morphis"/>
+        <Category Name="Matrox Solios"/>
+        <Category Name="Matrox Radient"/>
+        <Category Name="Matrox RadientPro"/>
+        <Category Name="Matrox Radient eV-CL"/>
+        <Category Name="Matrox Rapixo CL Pro"/>
+     </Category>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Digitizer"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 9.0" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program allows you to test all the UART features to read and write data.  The user must physically link the UART connector on the Matrox board to the specified COM port on the same computer.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MdispAlloc</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufControl</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufRestore</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysControl</Function>
+  <Function>MsysFree</Function>
+  <Function>MsysHookFunction</Function>
+  <Function>MsysInquire</Function>
+ </Functions>
+ <Notes>
+  <Note>Requires a digitizer</Note>
+ </Notes>
+ <Keywords>
+  <Keyword>Image acquisition</Keyword>
+ </Keywords>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

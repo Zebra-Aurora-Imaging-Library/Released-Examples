@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="BottleCapAndLabelInspection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Automation"/>
+   <Category Name="Pharmaceutical/Medical"/>
+   <Category Name="Packaging"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Identifying"/>
+   <Category Name="Inspecting/Proofing/Verifying"/>
+   <Category Name="Measuring"/>
+   <Category Name="Reading"/>
+   <Category Name="Finding/Locating"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Calibration"/>
+   <Category Name="Code Reader"/>
+   <Category Name="Measurement"/>
+   <Category Name="Geometric Model Finder"/>
+   <Category Name="String Reader"/>
+   <Category Name="Metrology"/>
+   <Category Name="Color Analysis"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This example shows some basic inspection steps for bottle caps and labels.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufChild2d</Function>
+  <Function>MbufChildColor</Function>
+  <Function>MbufChildMove</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufCreateColor</Function>
+  <Function>MbufDiskInquire</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufImportSequence</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufSetRegion</Function>
+  <Function>McalAssociate</Function>
+  <Function>McalDraw</Function>
+  <Function>McalFixture</Function>
+  <Function>McalRelativeOrigin</Function>
+  <Function>McalUniform</Function>
+  <Function>McodeAllocResult</Function>
+  <Function>McodeDraw</Function>
+  <Function>McodeFree</Function>
+  <Function>McodeGetResult</Function>
+  <Function>McodeRead</Function>
+  <Function>McodeRestore</Function>
+  <Function>McolAllocResult</Function>
+  <Function>McolFree</Function>
+  <Function>McolGetResult</Function>
+  <Function>McolMatch</Function>
+  <Function>McolPreprocess</Function>
+  <Function>McolRestore</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispGetHookInfo</Function>
+  <Function>MdispHookFunction</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraAlloc</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraControl</Function>
+  <Function>MgraControlList</Function>
+  <Function>MgraDraw</Function>
+  <Function>MgraFont</Function>
+  <Function>MgraFree</Function>
+  <Function>MgraInquire</Function>
+  <Function>MgraInquireList</Function>
+  <Function>MgraLines</Function>
+  <Function>MgraRect</Function>
+  <Function>MgraRectAngle</Function>
+  <Function>MgraText</Function>
+  <Function>MmeasDraw</Function>
+  <Function>MmeasFindMarker</Function>
+  <Function>MmeasFree</Function>
+  <Function>MmeasGetResult</Function>
+  <Function>MmeasRestoreMarker</Function>
+  <Function>MmetAllocResult</Function>
+  <Function>MmetCalculate</Function>
+  <Function>MmetDraw</Function>
+  <Function>MmetFree</Function>
+  <Function>MmetGetResult</Function>
+  <Function>MmetName</Function>
+  <Function>MmetRestore</Function>
+  <Function>MmodAllocResult</Function>
+  <Function>MmodFind</Function>
+  <Function>MmodFree</Function>
+  <Function>MmodGetResult</Function>
+  <Function>MmodPreprocess</Function>
+  <Function>MmodRestore</Function>
+  <Function>MstrAllocResult</Function>
+  <Function>MstrDraw</Function>
+  <Function>MstrFree</Function>
+  <Function>MstrGetResult</Function>
+  <Function>MstrPreprocess</Function>
+  <Function>MstrRead</Function>
+  <Function>MstrRestore</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+  <Function>MsysInquire</Function>
+ </Functions>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>Identification</License>
+  <License>Geometric Model Finder</License>
+  <License>Color Analysis</License>
+  <License>String Reader and SureDotOCR</License>
+  <License>Metrology</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Matrix barcodes</Keyword>
+  <Keyword>Object dimensions</Keyword>
+  <Keyword>2D calibration</Keyword>
+  <Keyword>Fixturing</Keyword>
+  <Keyword>Color analysis</Keyword>
+  <Keyword>Optical character recognition</Keyword>
+  <Keyword>OCR</Keyword>
+  <Keyword>Color matching</Keyword>
+  <Keyword>Metrology</Keyword>
+  <Keyword>Gauging</Keyword>
+  <Keyword>Measurement</Keyword>
+ </Keywords>
+</Example>

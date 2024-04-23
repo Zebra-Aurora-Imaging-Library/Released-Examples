@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="DMILBasic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+
+     <Categories>
+       <Category Name="Overview">
+         <Category Name="Distributed MIL"/>
+       </Category>
+
+       <Category Name="Modules">
+         <Category Name="Buffer"/>
+         <Category Name="Display"/>
+         <Category Name="Image Processing"/>
+       </Category>
+       <Category Name="What's New">
+         <Category Name="MIL 10.0 PP1" New="1"/>
+       </Category>
+     </Categories>
+ 
+     <Description>
+       This program shows how to do basic processing using Distributed MIL.
+     </Description>
+     <Languages>
+       <Language>C++</Language>
+       <LinuxLanguage>C++</LinuxLanguage>
+     </Languages>
+   <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappFree</Function>
+      <Function>MappInquire</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufRestore</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispSelect</Function>
+      <Function>MimHistogramEqualize</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+      <Function>MsysInquire</Function>
+   </Functions>   
+  <Notes>
+    <Note>Requires compilation</Note>
+  </Notes>   
+ <Keywords>
+  <Keyword>Distributed computing</Keyword>
+ </Keywords>
+   <Licenses>
+      <License>MIL Lite only</License>
+   </Licenses>
+
+</Example>

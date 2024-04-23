@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MdispWindowLeveling" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="90" Name="General"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications">
+   <Category Name="Preprocessing"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This MIL program shows how to display a 10-bit monochrome 
+                         Medical diagnostics image and apply a LUT to perform interactive Window Leveling.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+  <Language>Python</Language>
+ </Languages>
+ <Functions>
+  <Function>MbufControl</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAlloc1d</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufRestore</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispLut</Function>
+  <Function>MdispSelect</Function>
+  <Function>MdispSelectWindow</Function>
+  <Function>MgenLutRamp</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraLine</Function>
+  <Function>MgraText</Function>
+  <Function>MimAllocResult</Function>
+  <Function>MimFindExtreme</Function>
+  <Function>MimFree</Function>
+  <Function>MimGetResult</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+  <Note/>
+ </Notes>
+ <Keywords>
+  <Keyword>Image enhancement</Keyword>
+  <Keyword>LUT</Keyword>
+  <Keyword>Interactive annotations</Keyword>
+  <Keyword>Preprocessing</Keyword>
+ </Keywords>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

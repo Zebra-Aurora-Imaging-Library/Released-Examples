@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MappStart" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="1" Name="General"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This program allocates a MIL application and system, then displays a welcoming 
+                         message using graphics functions. It also shows how to check for errors.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+  <Language>Python</Language>
+ </Languages>
+ <Functions>
+  <Function>MappAllocDefault</Function>
+  <Function>MappFreeDefault</Function>
+  <Function>MappGetError</Function>
+  <Function>MbufClear</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraFont</Function>
+  <Function>MgraRect</Function>
+  <Function>MgraText</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+ <Keywords/>
+ <!-- The node "SortedCategoriesTree" must only be found in mappstart.xml -->
+ <SortedCategoriesTree>
+  <Category Name="Overview">
+   <Category Name="General"/>
+   <Category Name="Advanced"/>
+   <Category Name="Board specific"/>
+   <Category Name="DistributedMIL specific"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules"/>
+  <Category Name="Licenses"/>
+  <Category Name="Hardwares"/>
+  <Category Name="Languages"/>
+  <Category Name="Notes"/>
+ </SortedCategoriesTree>
+</Example>

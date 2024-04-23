@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MdispWeb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Core"/>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Digitizer"/>
+   <Category Name="Image Processing"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 PP3" New="1"/>
+  </Category>
+ </Categories>
+<Description>This example demonstrates how to publish various MIL objects
+using the MILweb API.
+It also shows how to access them from 2 types of external clients:A web browser using the MIL Javascript API and a standalone application.
+The web browser can also be embedded in a C#/VB WebForm or Gtk Webkit for Linux.
+Note that version 11 is the minimum requirement for Internet Explorer and that the embedded browser is Internet Explorer.
+ </Description>
+
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MsysInquire</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappControl</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufFree</Function>
+  <Function>MdigAlloc</Function>
+  <Function>MdigGetHookInfo</Function>
+  <Function>MdigGrabContinuous</Function>
+  <Function>MdigHalt</Function>
+  <Function>MdigInquire</Function>
+  <Function>MdigProcess</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraText</Function>
+  <Function>MimArith</Function>
+  <Function>MobjAlloc</Function>
+  <Function>MobjControl</Function>
+  <Function>MobjInquire</Function>
+  <Function>MobjMessageRead</Function>
+  <Function>MobjMessageWrite</Function>
+  <Function>MsysAlloc</Function>
+ </Functions>
+ <Notes>
+   <Note>Requires a digitizer</Note>
+   <Note>May show a firewall alert</Note>
+ </Notes>
+ <Keywords>
+   <Keyword>Image acquisition</Keyword>
+   <Keyword>HTML5</Keyword>
+   <Keyword>HTML</Keyword>
+   <Keyword>Javascript</Keyword>
+ </Keywords>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

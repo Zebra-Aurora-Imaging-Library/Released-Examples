@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="ColorToGrayscalePCA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+   <Category Name="Color Analysis"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP6" New="1"/>
+  </Category>
+ </Categories>
+ <Description>
+   This example shows how to convert a color image to grayscale by projecting
+   the colors on the principal axis resulting from a principal component analysis (PCA).
+ </Description>
+ <Languages>
+  <Language>C++</Language>
+ </Languages>
+ <Functions>
+   <Function>MappAlloc</Function>
+   <Function>MappFree</Function>
+   <Function>MbufAlloc1d</Function>
+   <Function>MbufAlloc2d</Function>
+   <Function>MbufAllocColor</Function>
+   <Function>MbufChild2d</Function>
+   <Function>MbufClear</Function>
+   <Function>MbufCopyCond</Function>
+   <Function>MbufDiskInquire</Function>
+   <Function>MbufFree</Function>
+   <Function>MbufLoad</Function>
+   <Function>McolProject</Function>
+   <Function>MdispAlloc</Function>
+   <Function>MdispControl</Function>
+   <Function>MdispFree</Function>
+   <Function>MdispInquire</Function>
+   <Function>MdispSelect</Function>
+   <Function>MdispZoom</Function>
+   <Function>MgraColor</Function>
+   <Function>MgraControl</Function>
+   <Function>MgraRectFill</Function>
+   <Function>MgraText</Function>
+   <Function>MimConvert</Function>
+   <Function>MsysAlloc</Function>
+   <Function>MsysFree</Function>
+ </Functions>
+  <Licenses>
+  <License>Color Analysis</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Color analysis</Keyword>
+  <Keyword>Preprocessing</Keyword>
+ </Keywords>
+</Example>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="M3dMap" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="390" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Machining"/>
+   <Category Name="Food and Beverage"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Inspecting/Proofing/Verifying"/>
+   <Category Name="3D profiling"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+   <Category Name="Calibration"/>
+   <Category Name="Blob Analysis"/>
+   <Category Name="3D Map"/>
+   <Category Name="3D Display"/>
+   <Category Name="3D Graphics"/>
+   <Category Name="3D Image Processing"/>
+   <Category Name="3D Geometry"/>
+   <Category Name="3D Metrology"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP4"/>
+   <Category Name="MIL 9.0 PP1" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program inspects a wood surface using laser profiling to find any depth defects and computes the volume of a cookie.
+              Note: Printable calibration grids in PDF format can be found in your "Matrox Imaging/Images/" directory.
+              Note: When considering a laser-based 3D reconstruction system, the file "3D Setup Helper.xls" can be used to accelerate 
+              prototyping by choosing an adequate hardware configuration (angle, distance, lens, camera, ...).
+              The file is located in your "Matrox Imaging/Tools/" directory.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <Language>Python</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+ </Languages>
+ <Functions>
+   <Function>M3dmapAddScan</Function>
+   <Function>M3dmapAlloc</Function>
+   <Function>M3dmapAllocResult</Function>
+   <Function>M3dmapCalibrate</Function>
+   <Function>M3dmapControl</Function>
+   <Function>M3dmapCopyResult</Function>
+   <Function>M3dmapFree</Function>
+   <Function>M3dmapInquire</Function>
+   <Function>M3ddispControl</Function>
+   <Function>MappAlloc</Function>
+   <Function>MappFree</Function>
+   <Function>MappTimer</Function>
+   <Function>MblobAlloc</Function>
+   <Function>MblobAllocResult</Function>
+   <Function>MblobCalculate</Function>
+   <Function>MblobControl</Function>
+   <Function>MblobDraw</Function>
+   <Function>MblobFree</Function>
+   <Function>MblobGetResult</Function>
+   <Function>MbufAlloc1d</Function>
+   <Function>MbufAlloc2d</Function>
+   <Function>MbufAllocColor</Function>
+   <Function>MbufAllocContainer</Function>
+   <Function>MbufClear</Function>
+   <Function>MbufCopy</Function>
+   <Function>MbufCopyColor2d</Function>
+   <Function>MbufDiskInquire</Function>
+   <Function>MbufFree</Function>
+   <Function>MbufControlContainer</Function>
+   <Function>MbufImportSequence</Function>
+   <Function>MbufInquire</Function>
+   <Function>MbufLoad</Function>
+   <Function>MbufRestore</Function>
+   <Function>McalAlloc</Function>
+   <Function>McalDraw</Function>
+   <Function>McalFree</Function>
+   <Function>McalGrid</Function>
+   <Function>McalInquire</Function>
+   <Function>MdispAlloc</Function>
+   <Function>MdispControl</Function>
+   <Function>MdispFree</Function>
+   <Function>MdispInquire</Function>
+   <Function>MdispLut</Function>
+   <Function>MdispSelect</Function>
+   <Function>MgenLutRamp</Function>
+   <Function>MgraColor</Function>
+   <Function>MgraControl</Function>
+   <Function>MgraText</Function>
+   <Function>MimBinarize</Function>
+   <Function>MimControl</Function>
+   <Function>MimConvert</Function>
+   <Function>MimOpen</Function>
+   <Function>MsysAlloc</Function>
+   <Function>MsysFree</Function>
+   <Function>M3ddispAlloc</Function>
+   <Function>M3ddispFree</Function>
+   <Function>M3ddispSelect</Function>
+   <Function>M3ddispSetView</Function>
+   <Function>M3dgeoAlloc</Function>
+   <Function>M3dgeoFree</Function>
+   <Function>M3dgeoPlane</Function>
+   <Function>M3dimAlloc</Function>
+   <Function>M3dimCalibrateDepthMap</Function>
+   <Function>M3dimControl</Function>
+   <Function>M3dimCrop</Function>
+   <Function>M3dimFillGaps</Function>
+   <Function>M3dimFree</Function>
+   <Function>M3dimProject</Function>
+   <Function>M3dmetVolume</Function>
+   <Function>MappControl</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+ <Licenses>
+  <License>Image Analysis</License>
+  <License>Compression/Decompression</License>
+  <License>Metrology</License>
+  <License>3D Calibration &amp; Supplement</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>3D calibration</Keyword>
+  <Keyword>3D reconstruction</Keyword>
+  <Keyword>Morphology</Keyword>
+  <Keyword>Sheet-of-light</Keyword>
+  <Keyword>3D profiling</Keyword>
+  <Keyword>3D depth map</Keyword>
+  <Keyword>Object volume</Keyword>
+  <Keyword>3D measurement</Keyword>
+  <Keyword>Blob analysis</Keyword>
+ </Keywords>
+</Example>

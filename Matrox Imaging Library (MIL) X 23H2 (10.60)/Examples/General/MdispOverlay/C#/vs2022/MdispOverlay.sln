@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MdispOverlay", "MdispOverlay.csproj", "{719C20D4-AE5D-40AD-ACF1-0C0FCB43575E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{719C20D4-AE5D-40AD-ACF1-0C0FCB43575E}.Debug|x64.ActiveCfg = Debug|x64
+		{719C20D4-AE5D-40AD-ACF1-0C0FCB43575E}.Debug|x64.Build.0 = Debug|x64
+		{719C20D4-AE5D-40AD-ACF1-0C0FCB43575E}.Release|x64.ActiveCfg = Release|x64
+		{719C20D4-AE5D-40AD-ACF1-0C0FCB43575E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB25B7E2-ADD4-417C-811D-181809F8A4F2}
+	EndGlobalSection
+EndGlobal

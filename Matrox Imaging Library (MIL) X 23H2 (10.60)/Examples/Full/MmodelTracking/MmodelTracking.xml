@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MmodelTracking" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="280" Name="General"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications">
+   <Category Name="Finding/Locating"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Digitizer"/>
+   <Category Name="Pattern Matching"/>
+   <Category Name="Geometric Model Finder"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This program shows how to track a unique object using pattern recognition.
+                         It allocates a model in the field of view of the camera and finds it in a loop. 
+                         It also prints the coordinates of the found model and draws a box around it. 
+                         It searches using 2 methods, the normalized grayscale correlation (Mpat), which 
+                         is very fast and with the Geometric Model Finder (Mmod), 
+                         which is independent of the model rotation and scale but slower.
+                         Note: Display update and annotations drawing can require significant CPU usage.
+     </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+ </Languages>
+   <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappFree</Function>
+      <Function>MappTimer</Function>
+      <Function>MbufAlloc2d</Function>
+      <Function>MbufAllocColor</Function>
+      <Function>MbufClear</Function>
+      <Function>MbufCopy</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufInquire</Function>
+      <Function>MdigAlloc</Function>
+      <Function>MdigControl</Function>
+      <Function>MdigFree</Function>
+      <Function>MdigGrab</Function>
+      <Function>MdigGrabContinuous</Function>
+      <Function>MdigGrabWait</Function>
+      <Function>MdigHalt</Function>
+      <Function>MdigInquire</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispControl</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispInquire</Function>
+      <Function>MdispSelect</Function>
+      <Function>MgraColor</Function>
+      <Function>MgraRect</Function>
+      <Function>MmodAlloc</Function>
+      <Function>MmodAllocResult</Function>
+      <Function>MmodControl</Function>
+      <Function>MmodDefine</Function>
+      <Function>MmodDraw</Function>
+      <Function>MmodFind</Function>
+      <Function>MmodFree</Function>
+      <Function>MmodGetResult</Function>
+      <Function>MmodInquire</Function>
+      <Function>MmodPreprocess</Function>
+      <Function>MpatAlloc</Function>
+      <Function>MpatAllocResult</Function>
+      <Function>MpatControl</Function>
+      <Function>MpatDefine</Function>
+      <Function>MpatDraw</Function>
+      <Function>MpatFind</Function>
+      <Function>MpatFree</Function>
+      <Function>MpatGetResult</Function>
+      <Function>MpatInquire</Function>
+      <Function>MpatPreprocess</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+   </Functions>
+ <Licenses>
+  <License>Machine Vision</License>
+  <License>Geometric Model Finder</License>
+ </Licenses>
+ <Notes>
+  <Note>Requires a digitizer</Note>
+ </Notes>
+ <Keywords>
+  <Keyword>Pattern recognition</Keyword>
+ </Keywords>
+</Example>

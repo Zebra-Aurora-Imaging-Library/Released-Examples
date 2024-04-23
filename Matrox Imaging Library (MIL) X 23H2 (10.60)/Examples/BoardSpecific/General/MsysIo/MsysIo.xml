@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MsysIO" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category  Name="Advanced">
+     <Category Name="Hardware-specific">
+        <Category Name="Matrox 4Sight"/>
+		<Category Name="Matrox Indio"/>
+     </Category>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 PP1" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This example shows how to use the hardware command list and the timers to achieve real-time and determinist control of the auxiliary I/Os.
+ </Description>
+ <Languages>
+   <Language>C++</Language>
+   <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysControl</Function>
+  <Function>MsysFree</Function>
+  <Function>MsysHookFunction</Function>
+  <Function>MsysIoAlloc</Function>
+  <Function>MsysIoControl</Function>
+  <Function>MsysIoFree</Function>
+ </Functions>
+ <Notes>
+  <Note>Console-based utility</Note>
+ </Notes>
+ <Keywords/>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

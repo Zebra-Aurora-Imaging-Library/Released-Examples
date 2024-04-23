@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="ExternalUserFunction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories> 
+	<Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Core"/>
+      </Category>
+   </Category>
+   <Category Name="Industries">
+   </Category>
+   <Category Name="Applications">
+   </Category>
+   <Category Name="Modules">
+      <Category Name="Blob Analysis"/>
+      <Category Name="Buffer"/>
+      <Category Name="Calibration"/>
+      <Category Name="Display"/>
+      <Category Name="Graphics"/>
+      <Category Name="Image Processing"/>
+   </Category>
+   <Category Name="What's New">
+      <Category Name="MIL 10.0 U116" NewWorkspace ="1"/>
+   </Category>
+ </Categories>
+ <Description>This workspace shows how to use an external function inside MIL CoPilot.
+ </Description>
+ <Languages>
+  <Language>MIL CoPilot</Language>
+ </Languages>
+ <Functions>
+   <Function>MappAlloc</Function>
+   <Function>MappControl</Function>
+   <Function>MappFree</Function>
+   <Function>MappGetError</Function>
+   <Function>MappGetHookInfo</Function>
+   <Function>MappHookFunction</Function>
+   <Function>MappInquire</Function>
+   <Function>MappTimer</Function>
+   <Function>MappTrace</Function>
+   <Function>MblobAlloc</Function>
+   <Function>MblobAllocResult</Function>
+   <Function>MblobCalculate</Function>
+   <Function>MblobControl</Function>
+   <Function>MblobDraw</Function>
+   <Function>MblobFree</Function>
+   <Function>MblobGetResult</Function>
+   <Function>MblobInquire</Function>
+   <Function>MbufAlloc2d</Function>
+   <Function>MbufAllocColor</Function>
+   <Function>MbufChild2d</Function>
+   <Function>MbufChildColor2d</Function>
+   <Function>MbufChildMove</Function>
+   <Function>MbufClear</Function>
+   <Function>MbufClone</Function>
+   <Function>MbufControl</Function>
+   <Function>MbufCopy</Function>
+   <Function>MbufFree</Function>
+   <Function>MbufGetHookInfo</Function>
+   <Function>MbufHookFunction</Function>
+   <Function>MbufImport</Function>
+   <Function>MbufInquire</Function>
+   <Function>MbufTransfer</Function>
+   <Function>McalAssociate</Function>
+   <Function>McalInquire</Function>
+   <Function>MdispAlloc</Function>
+   <Function>MdispControl</Function>
+   <Function>MdispFree</Function>
+   <Function>MdispInquire</Function>
+   <Function>MdispSelect</Function>
+   <Function>MgraAlloc</Function>
+   <Function>MgraAllocList</Function>
+   <Function>MgraClear</Function>
+   <Function>MgraColor</Function>
+   <Function>MgraFree</Function>
+   <Function>MgraInquire</Function>
+   <Function>MimBinarize</Function>
+   <Function>MimClose</Function>
+   <Function>MimOpen</Function>
+   <Function>MobjControl</Function>
+   <Function>MobjGetHookInfo</Function>
+   <Function>MobjHookFunction</Function>
+   <Function>MobjInquire</Function>
+   <Function>MoveChild</Function>
+   <Function>MsysAlloc</Function>
+   <Function>MsysFree</Function>
+   <Function>MsysInquire</Function>
+</Functions>
+<Licenses>
+   <License>Image Analysis</License>
+</Licenses>
+ <Keywords>
+ </Keywords>
+ 
+</Example>

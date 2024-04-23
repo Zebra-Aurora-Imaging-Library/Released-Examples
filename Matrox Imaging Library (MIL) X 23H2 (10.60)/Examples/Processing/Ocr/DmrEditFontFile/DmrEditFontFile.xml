@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="DmrEditFontFile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Reading"/>
+    </Category>
+    <Category Name="Modules">
+      <Category Name="Buffer"/>
+      <Category Name="Display"/>
+      <Category Name="Graphics"/>
+      <Category Name="Image Processing"/>
+      <Category Name="SureDotOCR®"/>
+    </Category>
+    <Category Name="What's New">
+      <Category Name="MIL 10.0 PP2" New="1"/>
+    </Category>
+  </Categories>
+  <Description>
+    This utility helps the user to edit a Dot Matrix Reader (SureDotOCR®) font file.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+    <Function>MappAlloc</Function>
+    <Function>MappControl</Function>
+    <Function>MappFree</Function>
+    <Function>MappGetError</Function>
+    <Function>MbufAlloc2d</Function>
+    <Function>MbufChild2d</Function>
+    <Function>MbufClear</Function>
+    <Function>MbufCopy</Function>
+    <Function>MbufFree</Function>
+    <Function>MbufInquire</Function>
+    <Function>MdispAlloc</Function>
+    <Function>MdispControl</Function>
+    <Function>MdispFree</Function>
+    <Function>MdispGetHookInfo</Function>
+    <Function>MdispHookFunction</Function>
+    <Function>MdispSelect</Function>
+    <Function>MdmrAlloc</Function>
+    <Function>MdmrControl</Function>
+    <Function>MdmrControlFont</Function>
+    <Function>MdmrExportFont</Function>
+    <Function>MdmrFree</Function>
+    <Function>MdmrImportFont</Function>
+    <Function>MdmrInquire</Function>
+    <Function>MdmrInquireFont</Function>
+    <Function>MgraArc</Function>
+    <Function>MgraArcFill</Function>
+    <Function>MgraColor</Function>
+    <Function>MgraControl</Function>
+    <Function>MgraDot</Function>
+    <Function>MgraDots</Function>
+    <Function>MgraFont</Function>
+    <Function>MgraLines</Function>
+    <Function>MgraText</Function>
+    <Function>MimResize</Function>
+    <Function>MsysAlloc</Function>
+    <Function>MsysFree</Function>
+
+  </Functions>
+  <Licenses>
+     <License>String Reader and SureDotOCR</License>
+  </Licenses>
+  <Notes>
+    <Note>Console-based utility</Note>
+    <Note>Requires read-write access</Note>
+    <Note>Example might not be compatible with older compilers</Note>    
+  </Notes>
+  <Keywords>
+    <Keyword>Optical character recognition</Keyword>
+    <Keyword>Dot Matrix</Keyword>
+    <Keyword>SureDotOCR®</Keyword>
+  </Keywords>
+</Example>

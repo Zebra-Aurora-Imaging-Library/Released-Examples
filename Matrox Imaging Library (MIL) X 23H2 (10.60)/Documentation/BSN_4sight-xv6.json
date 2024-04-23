@@ -1,0 +1,49 @@
+[{
+  "id": "BSN_4sight-xv6",
+  "version": "2024020714",
+  "title": "Matrox 4Sight XV6",
+  "subTitles": null,
+  "location": "MIL Hardware-specific Notes",
+  "pageURL": "content\\BoardSpecificNotes\\4sight-xv6\\ChapterInformation.htm",
+  "text": " Matrox 4Sight XV6 This chapter discusses features of MIL that are particular to Matrox 4Sight XV6, and ways that optimize its performance. Matrox 4Sight XV6 overview Frame grabbers and other add-on boards Display capabilities Summary of Matrox 4Sight XV6 features Using MIL with Matrox 4Sight XV6 Matrox 4Sight XV6 board flow diagram ",
+  "wordCount": 54,
+  "subEntries": [
+    {
+      "id": "BSN_4sight-xv6_Matrox_4SightXV6_specific_features",
+      "version": null,
+      "title": "Matrox 4Sight XV6 overview",
+      "subTitles": [
+        "Frame grabbers and other add-on boards",
+        "Display capabilities",
+        "Summary of Matrox 4Sight XV6 features"
+      ],
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\4sight-xv6\\Matrox_4SightXV6_specific_features.htm",
+      "text": " Matrox 4Sight XV6 overview The Matrox 4Sight XV6 unit is a self-contained, expandable imaging computer (unit) that integrates processing and display capability, along with image capture from USB3 Vision and/or GigE Vision cameras. Matrox 4Sight XV6 supports networking and industrial communication (over GigE Ethernet ports or a RS-232/RS-422/RS-485 port). Matrox 4Sight XV6 also supports add-on boards compliant with the full-height, half-length PCIe form factor. This chapter outlines basic features of the Matrox 4Sight XV6 unit, and relates them to specific functions in MIL. Frame grabbers and other add-on boards Matrox 4Sight XV6 has four PCIe connectors for connecting full-height, half-length add-on boards. For example, you can connect Matrox frame grabbers, Matrox digital I/O boards, and/or a Matrox board that supports hardware-assisted PROFINET communication (for example, Matrox Indio). Display capabilities For display purposes, Matrox 4Sight XV6 uses an integrated Intel PCH graphics controller chipset that allows connection to a high-resolution analog display device (such as an analog monitor or analog flat panel) and two digital display devices (such as a digital flat-panel display), or three digital display devices. Summary of Matrox 4Sight XV6 features The following table outlines the features currently available for Matrox 4Sight XV6. Features Matrox 4Sight XV6 CPU Yes (Intel i5-8500 or Intel Celeron G4900) Host memory Up to 32 Gbytes Interface type PCIe Networking 2 GigE Ethernet interfaces (10/100/1000 BaseT Ethernet) Number of supported UARTS 1 serial port connector (RS-232, RS-422, or RS-485) Matrox 4Sight XV6 overview Frame grabbers and other add-on boards Display capabilities Summary of Matrox 4Sight XV6 features ",
+      "wordCount": 256,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_4sight-xv6_Using_Matrox_4SightXV6_with_MIL",
+      "version": null,
+      "title": "Using MIL with Matrox 4Sight XV6",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\4sight-xv6\\Using_Matrox_4SightXV6_with_MIL.htm",
+      "text": " Using MIL with Matrox 4Sight XV6 MIL treats Matrox 4Sight XV6 as a normal computer. To use the processing power of Matrox 4Sight XV6, allocate a Host system using MsysAlloc() with M_SYSTEM_HOST. To use the features of an installed Matrox frame garabber or I/O board, you must first allocate the board as a MIL system. Refer to the MIL Hardware-specific Notes for that board. Note that when installing a redistribution (runtime) version of MIL on Matrox 4Sight XV6, the license number will be based on the hardware fingerprint of your unit. This means that you will not be able to copy the licensed version of MIL to another computer. Using MIL with Matrox 4Sight XV6 ",
+      "wordCount": 117,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_4sight-xv6_Matrox_4SightXV6_board_flow_diagram",
+      "version": null,
+      "title": "Matrox 4Sight XV6 board flow diagram",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\4sight-xv6\\Matrox_4SightXV6_board_flow_diagram.htm",
+      "text": " Matrox 4Sight XV6 board flow diagram The following diagram illustrates the data flow of a Matrox 4Sight XV6 unit. Matrox 4Sight XV6 board flow diagram ",
+      "wordCount": 27,
+      "subEntries": []
+    }
+  ]
+}]

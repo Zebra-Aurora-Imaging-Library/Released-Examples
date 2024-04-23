@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="3dProfileMetrology" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+  <Categories>
+    <Category Name="Overview">
+      <Category Name="Advanced">
+      <Category Name="Processing"/>
+      </Category>
+    </Category>
+    <Category Name="Industries">
+      <Category Name="Automotive"/>
+      <Category Name="Machining"/>
+    </Category>
+    <Category Name="Applications">
+      <Category Name="Inspecting/Proofing/Verifying"/>
+      <Category Name="Measuring"/>
+      <Category Name="3D profiling"/>
+    </Category>
+    <Category Name="Modules">
+      <Category Name="3D Image Processing"/>
+      <Category Name="Buffer"/>
+      <Category Name="Calibration"/>
+      <Category Name="Display"/>
+      <Category Name="Graphics"/>
+      <Category Name="Geometric Model Finder"/>
+      <Category Name="Metrology"/>
+      <Category Name="3D Display"/>
+      <Category Name="3D Graphics"/>
+    </Category>
+    <Category Name="What's New">
+	  <Category Name="MIL 10.0 SP4"/>
+      <Category Name="MIL 10.0 PP2" New="1"/>
+      <Category Name="MIL 10.0 U37"/>
+    </Category>
+  </Categories>
+  <Description>
+    This example demonstrates the validation of measures along
+    a 3D profile of the 3D point cloud of a mechanical part.
+  </Description>
+  <Languages>
+    <Language>C++</Language>
+    <LinuxLanguage>C++</LinuxLanguage>
+  </Languages>
+  <Functions>
+    <Function>M3ddispAlloc</Function>
+    <Function>M3ddispControl</Function>
+    <Function>M3ddispFree</Function>
+    <Function>M3ddispInquire</Function>
+    <Function>M3ddispSelect</Function>
+    <Function>M3ddispSetView</Function>
+    <Function>M3dgeoAlloc</Function>
+    <Function>M3dgeoBox</Function>
+    <Function>M3dgeoFree</Function>
+    <Function>M3dgeoMatrixSetTransform</Function>
+    <Function>M3dgeoMatrixSetWithAxes</Function>
+    <Function>M3dgraAxis</Function>
+    <Function>M3dgraControl</Function>
+    <Function>M3dgraCopy</Function>
+    <Function>M3dgraPlane</Function>
+    <Function>M3dimMatrixTransform</Function>
+    <Function>M3dimAlloc</Function>
+    <Function>M3dimAllocResult</Function>
+    <Function>M3dimCalculateMapSize</Function>
+    <Function>M3dimCalibrateDepthMap</Function>
+    <Function>M3dimControl</Function>
+    <Function>M3dimCrop</Function>
+    <Function>M3dimFillGaps</Function>
+    <Function>M3dimFree</Function>
+    <Function>M3dimGetResult</Function>
+    <Function>M3dimProfile</Function>
+    <Function>M3dimProject</Function>
+    <Function>MappAlloc</Function>
+    <Function>MappControl</Function>
+    <Function>MappFileOperation</Function>
+    <Function>MappFree</Function>
+    <Function>MbufAlloc2d</Function>
+    <Function>MbufClear</Function>
+    <Function>MbufFree</Function>
+    <Function>MbufImport</Function>
+    <Function>McalAlloc</Function>
+    <Function>McalDraw</Function>
+    <Function>McalFixture</Function>
+    <Function>McalFree</Function>
+    <Function>McalGetCoordinateSystem</Function>
+    <Function>McalUniform</Function>
+    <Function>MdispAlloc</Function>
+    <Function>MdispControl</Function>
+    <Function>MdispFree</Function>
+    <Function>MdispSelect</Function>
+    <Function>MgraAllocList</Function>
+    <Function>MgraBackColor</Function>
+    <Function>MgraClear</Function>
+    <Function>MgraColor</Function>
+    <Function>MgraControl</Function>
+    <Function>MgraDots</Function>
+    <Function>MgraFree</Function>
+    <Function>MgraLine</Function>
+    <Function>MmetAddFeature</Function>
+    <Function>MmetAddTolerance</Function>
+    <Function>MmetAlloc</Function>
+    <Function>MmetAllocResult</Function>
+    <Function>MmetCalculate</Function>
+    <Function>MmetControl</Function>
+    <Function>MmetDraw</Function>
+    <Function>MmetFree</Function>
+    <Function>MmetPut</Function>
+    <Function>MmetSetRegion</Function>
+    <Function>MmodAllocResult</Function>
+    <Function>MmodControl</Function>
+    <Function>MmodDraw</Function>
+    <Function>MmodFind</Function>
+    <Function>MmodFree</Function>
+    <Function>MmodGetResult</Function>
+    <Function>MmodPreprocess</Function>
+    <Function>MmodRestore</Function>
+    <Function>MsysAlloc</Function>
+    <Function>MsysFree</Function>
+    <Function>MobjInquire</Function>
+  </Functions>
+  <Licenses>
+    <License>Geometric Model Finder</License>
+    <License>Image Analysis</License>
+    <License>Metrology</License>
+    <License>3D Calibration &amp; Supplement</License>
+  </Licenses>
+  <Keywords>
+    <Keyword>3D profiling</Keyword>
+    <Keyword>3D reconstruction</Keyword>
+    <Keyword>Graphical annotations</Keyword>
+    <Keyword>3D measurement</Keyword>
+    <Keyword>Object dimensions</Keyword>
+    <Keyword>3D calibration</Keyword>
+    <Keyword>3D depth map</Keyword>
+    <Keyword>Object matching</Keyword>
+    <Keyword>Geometric pattern matching</Keyword>
+  </Keywords>
+</Example>

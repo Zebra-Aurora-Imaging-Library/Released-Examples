@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MbufPointerAccess" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="400" Name="General"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 PP1" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program shows how to use the pointer of a
+              MIL buffer in order to directly access its data.
+ </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+ </Languages>
+ <Functions>
+   <Function>MappAlloc</Function>
+   <Function>MappFree</Function>
+   <Function>MbufAlloc2d</Function>
+   <Function>MbufAllocColor</Function>
+   <Function>MbufChildColor</Function>
+   <Function>MbufControl</Function>
+   <Function>MbufFree</Function>
+   <Function>MbufInquire</Function>
+   <Function>MdispAlloc</Function>
+   <Function>MdispFree</Function>
+   <Function>MdispSelect</Function>
+   <Function>MsysAlloc</Function>
+   <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+  <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+ <Keywords>
+ </Keywords>
+</Example>

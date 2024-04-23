@@ -1,0 +1,79 @@
+[{
+  "id": "UG_ML_Predicting_and_advanced_techniques",
+  "version": "2024020714",
+  "title": "Prediction",
+  "subTitles": null,
+  "location": "MIL UG P07: Machine learning fundamentals",
+  "pageURL": "content\\UserGuide\\ML_Predicting_and_advanced_techniques\\ChapterInformation.htm",
+  "text": " Chapter 50: Prediction This chapter explains how to perform prediction with the MIL Classification module. Prediction overview Predict engine Basic concepts for predicting Prediction settings, results, and drawings Understanding prediction Timeout and stop Results Drawing Advanced techniques Assisted labeling Extracting ONNX ONNX requirements ",
+  "wordCount": 45,
+  "subEntries": [
+    {
+      "id": "UG_ML_Predicting_and_advanced_techniques_Prediction_overview",
+      "version": null,
+      "title": "Prediction overview",
+      "subTitles": [
+        "Predict engine"
+      ],
+      "location": "MIL UG P07: Machine learning fundamentals",
+      "pageURL": "content\\UserGuide\\ML_Predicting_and_advanced_techniques\\Prediction_overview.htm",
+      "text": " Prediction overview MclassPredict() uses a trained classifier context to make class predictions (interferences) on a target. For a trained CNN, segmentation, or object detection classifier context, your target is either an image or a dataset of images. For a trained tree ensemble classifier context, your target is either a feature (list of values) or a dataset of features. Specifying a dataset as the target can help label your data. For more information, see the Assisted labeling subsection of the Advanced techniques section later in this chapter. The Classification module also lets you import a trained ONNX machine learning model into an ONNX classifier context and use it for prediction with MIL. For more information, see the ONNX section later in this chapter. For the most recent documentation of this topic, particularly as it relates to anomaly detection and statistical analysis (MclassStatCalculate()), check for an updated version of the MIL Help online at zebra.com/aurora-imaging-library-help. Predict engine The predict engine refers to the hardware (CPU/GPU) with which the prediction is performed. MclassPredict() uses the default predict engine established by the MILConfig utility. You can modify this by calling MclassControl() with M_PREDICT_ENGINE or in MILConfig. MIL provides an example, PredictEngineSelection.cpp, to help you pick the fastest prediction engine available to you. predictengineselection.cpp To take advantage of all available resources, such as GPU prediction using OpenVINO and CUDA, you should install the required MIL X Service Pack add-on. For more information, see the MIL add-ons and updates subsection of the Requirements, recommendations, and troubleshooting section of Chapter 47: Machine learning with the MIL Classification module. Prediction overview Predict engine ",
+      "wordCount": 267,
+      "subEntries": []
+    },
+    {
+      "id": "UG_ML_Predicting_and_advanced_techniques_Basic_concepts",
+      "version": null,
+      "title": "Basic concepts for predicting",
+      "subTitles": null,
+      "location": "MIL UG P07: Machine learning fundamentals",
+      "pageURL": "content\\UserGuide\\ML_Predicting_and_advanced_techniques\\Basic_concepts.htm",
+      "text": " Basic concepts for predicting The basic concepts and vocabulary conventions for predicting are: Assisted labeling. Performing the prediction operation on unlabeled dataset entries and labeling results with a very high score as the ground truth. This is also known as active learning. Inference. An alternative and equivalent term for prediction. ONNX. An is an open-source format (Open Neural Network Exchange) that lets you create, train, and save a machine learning model. You can import such a model and incorporate it into your MIL application for prediction. Predict engine. The processing device (for example, the CPU or GPU) on which prediction is performed. Score. An output of a classifier that determines how likely a target belongs to each class. Target. The image or set of features that the prediction operation classifies. Basic concepts for predicting ",
+      "wordCount": 136,
+      "subEntries": []
+    },
+    {
+      "id": "UG_ML_Predicting_and_advanced_techniques_Prediction_settings_results_and_drawings",
+      "version": null,
+      "title": "Prediction settings, results, and drawings",
+      "subTitles": [
+        "Understanding prediction",
+        "Timeout and stop",
+        "Results",
+        "Drawing"
+      ],
+      "location": "MIL UG P07: Machine learning fundamentals",
+      "pageURL": "content\\UserGuide\\ML_Predicting_and_advanced_techniques\\Prediction_settings_results_and_drawings.htm",
+      "text": " Prediction settings, results, and drawings In general, you call MclassPredict() with a trained classifier to make predictions on data that the classifier has never seen, though it has been trained on similar data. You can also call MclassPredict() with other intentions, to make predictions on unlabeled data, or to test your classifier and then use the results to make further training modifications. Keep in mind that your prediction results might not be as expected. For example, you might think that your classifier is fully trained, though when you use it to predict on a test dataset, you are surprised to see a lower accuracy than you thought. This is ultimately part of the training process, since you now have the opportunity to adjust your training settings, or even your dataset, to help ensure that predictions are actually what you expect them to be. Understanding prediction A trained classifier can only predict what it knows, and it only knows what it was trained on. For example, if your classifier was trained with a dataset that has numerous representative images, such as images with variances in location and blurriness, predicting with that classifier on such images will yield excellent results. Even if images seem quite poor, as long you labeled and trained with them properly, the prediction will succeed. On the other hand, images that have what might be misconstrued as inconsequential differences, such as rotation or scale, can be problematic to predict, if those differences where not learned by the classifier at training time. If a classifier was never trained on rotated images, it cannot predict these cases, no matter how simple they might seem. It would be like a human trying to predict the words of a language he has never learned. Often, the best way to address such issues is to add the images with the new variances to the dataset, retrain, and then perform the prediction again with the newly trained classifier. To account for discrepancies in rotation, you can also use MclassPrepareData() to add augmented images with various rotation to your training data. For more information, see the Augmentation subsection of the Data augmentation and other data preparations section of Chapter 48: Datasets. Timeout and stop To prevent the classification process from taking too long, you can set a maximum calculation time for MclassPredict(), by calling MclassControl() with M_TIMEOUT. You can also stop the current execution of MclassPredict() (from another thread of higher priority), by specifying M_STOP_PREDICT. Results Typically, the most important prediction results to retrieve are the best predicted class (M_BEST_CLASS_INDEX) and its score (M_BEST_CLASS_SCORE). The score is a measure, in percentage, of how well a class represents the target. Therefore, the class with the highest score is the class to which the target belongs. You can also retrieve the status result of the prediction operation (M_STATUS), allowing you to determine if MclassPredict() is currently predicting, has completed successfully, or was terminated because of a timeout limit or a memory issue. To clear the prediction results, call MclassControl() with M_RESET and the identifier of the prediction result buffer. It is a good practice to predict on your source labeled data to check for mislabeled data. If your classifier predicts a class with a high score, but is incorrect (not the ground truth), then it is worth manually checking that entry and confirming that you have correctly labeled the data. Note, if you have a testing dataset, you should predict with it, using MclassPredict(). As previously discussed, predicting with a testing dataset serves as a quarantined final check for your trained classifier. If the results are what you expect (they should be approximately the same as your training results), you can continue with prediction using your trained classifier. If the results are not what you expect, it is a sign that you should continue training. Drawing You can draw and visually identify various features from a classifier context, dataset context, or a prediction result buffer into an image buffer or LUT buffer using MclassDraw(). You can also draw from a specific entry in an images dataset using MclassDrawEntry(). Prediction settings, results, and drawings Understanding prediction Timeout and stop Results Drawing ",
+      "wordCount": 695,
+      "subEntries": []
+    },
+    {
+      "id": "UG_ML_Predicting_and_advanced_techniques_Advanced_techniques",
+      "version": null,
+      "title": "Advanced techniques",
+      "subTitles": [
+        "Assisted labeling",
+        "Extracting"
+      ],
+      "location": "MIL UG P07: Machine learning fundamentals",
+      "pageURL": "content\\UserGuide\\ML_Predicting_and_advanced_techniques\\Advanced_techniques.htm",
+      "text": " Advanced techniques This section describes advanced techniques for prediction. Assisted labeling You can use prediction to help label your dataset by calling MclassPredict() with a trained classifier context and a dataset context (rather than a target image or a set of features). The ground truth of an entry in the dataset can then be set to the predicted label. This process is known as assisted labeling or active learning. Using MclassPredict() this way is typically done when you have so much data with which to train (hundreds of thousands of images or features), that it is unrealistic to manually label all of it (unless the data gathering process naturally sorts out the classes). To assist with labeling, a random subset of the entries (images or sets of features), such as a few hundred per class, can be labeled by prediction, and then used in the dataset to continue training the classifier. After prediction, you need to add the new label within your dataset. You should only accept the predicted label as the ground truth if you are very confident in the predicted label result; for example, when you conclude that the score is robust and above an extremely high value, such as 99%. Adding this new labeled data to the training dataset is known as exploitation. In general, you would have an expert label a new subset of the remaining data which is known as exploration. This entire process, iterated until a satisfactory performance, assumes that the data picked and labeled by the expert constitutes a dataset of good quality and quantity. When performing the prediction operation on a target dataset, you can hook functions to prediction events, using MclassHookFunction(). To get information about the prediction events that caused the hook-handler function to execute, call MclassGetHookInfo(). Extracting In some applications, there might be a need to extract and to preprocess a region of an image to be classified. For example: Only an ROI within an image needs to be classified and the location of this ROI can be established using other means such as from a pattern matching occurrence. Multiple ROIs within an image with different labels need to be extracted, either manually or automatically using a segmentation technique, for example. Fixturing, if applicable, might be used to also correct an image or a ROI of geometric variations (rotation, scale, or translation). The reduction of possible variations simplifies the classification problem, increasing the chance to obtain a better/faster trained network. You might also need to extract and preprocess a region of the target image before the prediction in your final application. For more information, see Child buffers, regions of interest, and fixturing. Advanced techniques Assisted labeling Extracting ",
+      "wordCount": 449,
+      "subEntries": []
+    },
+    {
+      "id": "UG_ML_Predicting_and_advanced_techniques_ONNX",
+      "version": null,
+      "title": "ONNX",
+      "subTitles": [
+        "ONNX requirements"
+      ],
+      "location": "MIL UG P07: Machine learning fundamentals",
+      "pageURL": "content\\UserGuide\\ML_Predicting_and_advanced_techniques\\ONNX.htm",
+      "text": " ONNX ONNX (Open Neural Network Exchange) is an open-source format that lets you create, train, and save a machine learning model. The Classification module lets you import such a model into an ONNX classifier context (M_CLASSIFIER_ONNX) and incorporate it into your MIL application for the inference (MclassPredict()). The imported ONNX model is already trained; no further training with MIL is required. The classification task that you can perform with an ONNX classifier depends on the machine learning model you designed and trained prior to importing it. Possible tasks include those inherently available with the Classification module (for example, image classification, segmentation, and object detection), as well as any other task available with ONNX. The following steps provide a basic methodology for using the MIL Classification module with an ONNX classifier: Allocate an ONNX classifier context, using MclassAlloc() with M_CLASSIFIER_ONNX. Import a trained ONNX machine learning model into an ONNX classifier context, using MclassImport() with M_ONNX_FILE. Optionally, modify ONNX classifier settings, using MclassControl(). Preprocess the ONNX classifier context, using MclassPreprocess(). Allocate an ONNX result buffer to hold the prediction results, using MclassAllocResult() with M_PREDICT_ONNX_RESULT. Perform the inference using the imported ONNX classifier on the specified target image, using MclassPredict(). Retrieve the required results from the classification result buffer, using MclassGetResult(). Free all your allocated objects, using MclassFree(), unless M_UNIQUE_ID was specified during allocation. ONNX requirements To ensure the ONNX machine learning model that you import with M_ONNX_FILE works as expected, all per-established requirements must be met. For example, you must ensure: You are using a supported ONNX file format version (ir_version). The network's inputs and outputs are properly configured. This includes the network having at least 1 input and 1 output, and that the type of the inputs and outputs are dense tensor (the tensors must have a shape). The graph of the machine learning model is free from cycles. For a complete description of all requirements, refer to M_ONNX_FILE in the MIL Reference. ONNX ONNX requirements ",
+      "wordCount": 328,
+      "subEntries": []
+    }
+  ]
+}]

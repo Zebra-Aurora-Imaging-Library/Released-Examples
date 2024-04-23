@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Mcol" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="380" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Food and Beverage"/>
+   <Category Name="Electronics"/>
+   <Category Name="Packaging"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Inspecting/Proofing/Verifying"/>
+   <Category Name="Identifying"/>
+   <Category Name="Finding/Locating"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+   <Category Name="Geometric Model Finder"/>
+   <Category Name="Color Analysis"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 9.0 PP1" New="1"/>
+   <Category Name="MIL 10.0 SP4" />
+  </Category>
+ </Categories>
+ <Description>This program uses the color module to perform color segmentation, color identification, color separation and color to grayscale conversion.
+ </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <Language>Python</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufChild2d</Function>
+  <Function>MbufChildColor2d</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufCopy</Function>
+  <Function>MbufDiskInquire</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufLoad</Function>
+  <Function>MbufPut2d</Function>
+  <Function>McolAlloc</Function>
+  <Function>McolAllocResult</Function>
+  <Function>McolControl</Function>
+  <Function>McolDefine</Function>
+  <Function>McolDraw</Function>
+  <Function>McolFree</Function>
+  <Function>McolGetResult</Function>
+  <Function>McolInquire</Function>
+  <Function>McolMatch</Function>
+  <Function>McolPreprocess</Function>
+  <Function>McolProject</Function>
+  <Function>McolSetMethod</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraArcFill</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraFont</Function>
+  <Function>MgraRect</Function>
+  <Function>MgraRectFill</Function>
+  <Function>MgraText</Function>
+  <Function>MimConvert</Function>
+  <Function>MmodAllocResult</Function>
+  <Function>MmodDraw</Function>
+  <Function>MmodFind</Function>
+  <Function>MmodFree</Function>
+  <Function>MmodGetResult</Function>
+  <Function>MmodPreprocess</Function>
+  <Function>MmodRestore</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+  <Licenses>
+  <License>Geometric Model Finder</License>
+  <License>Color Analysis</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Color analysis</Keyword>
+  <Keyword>Color matching</Keyword>
+ </Keywords>
+</Example>

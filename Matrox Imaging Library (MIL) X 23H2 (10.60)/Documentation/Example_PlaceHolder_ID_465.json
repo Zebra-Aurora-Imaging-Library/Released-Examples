@@ -1,0 +1,16 @@
+[{
+  "id": "Example_PlaceHolder_ID",
+  "version": "2024020714",
+  "title": "Example_PlaceHolder_Title",
+  "wordCount": 0,
+  "subEntries": [
+    {
+      "id": "Examples_IndustrialCommunication_PLC_OPCUA_Server_CS_mcomopcuaserver_cs",
+      "version": "2024020714",
+      "title": "mcomopcuaserver.cs",
+      "location": "Sample Code from MIL Examples",
+      "text": " Top //***************************************************************************** // // File name: McomOpcuaServer.cs // Location: See Matrox Example Launcher in the MIL Control Center // // // Synopsis: This program allocates a MIL application and system. // Then allocate a MIL industrial communication context to a // OPC UA server instance. // // Notes: This example is only available if you have the MIL Industrial Communication package, // or another relevant update installed. // Copyright (C) Matrox Electronic Systems Ltd., 1992-2024. // All Rights Reserved //***************************************************************************** using System; using System.Diagnostics; using System.Threading; using Matrox.MatroxImagingLibrary; namespace MAppStart { class Program { const int _toPLCDataRegister = 0; const int _fromPLCDataRegister = 0; const int _fromPLCTriggerFlag = 0; const int _fromPLCAcknowledgeFlag = 1; const int _toPLCDataReadyFlag = 0; static void Main(string[] args) { MIL_ID _milApplication = MIL.M_NULL; // Application identifier. MIL_ID _milSystem = MIL.M_NULL; // System identifier. MIL_ID _milCom = MIL.M_NULL; // Display identifier. byte[] result = { 0 }; byte[] data = { 0 }; /* Allocate a default MIL application, system, display and image. */ MIL.MappAllocDefault(MIL.M_DEFAULT, ref _milApplication, ref _milSystem, MIL.M_NULL, MIL.M_NULL, MIL.M_NULL); MIL.McomAlloc(_milSystem, MIL.M_COM_PROTOCOL_OPCUA, \"M_DEFAULT\", MIL.M_DEFAULT, MIL.M_DEFAULT, ref _milCom); /* Read in the [the.answer] object */ MIL.McomRead(ComId: _milCom, DataObjectEntryName: \"the.answer\", Offset: 0, Size: 1, UserArrayPtr: result); Console.Write(\"the.answer = {0}\\n\", result[0]); data[0] = (byte)~result[0]; MIL.McomWrite(ComId: _milCom, DataObjectEntryName: \"the.answer\", Offset: 0, Size: 1, UserArrayPtr: data ); MIL.McomRead(ComId: _milCom, DataObjectEntryName: \"the.answer\", Offset: 0, Size: 1, UserArrayPtr: result); Console.Write(\"the.answer = {0}\\n\", result[0]); Debug.Assert(data[0] == result[0]); /* Free MIL objects*/ MIL.McomFree(_milCom); MIL.MappFreeDefault(_milApplication, _milSystem, MIL.M_NULL, MIL.M_NULL, MIL.M_NULL); } } } ",
+      "wordCount": 250
+    }
+  ]
+}]

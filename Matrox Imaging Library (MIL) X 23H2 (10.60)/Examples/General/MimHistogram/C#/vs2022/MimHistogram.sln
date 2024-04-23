@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimHistogram", "MimHistogram.csproj", "{A86627CB-089F-4342-A45F-EACD5DDDEAC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A86627CB-089F-4342-A45F-EACD5DDDEAC1}.Debug|x64.ActiveCfg = Debug|x64
+		{A86627CB-089F-4342-A45F-EACD5DDDEAC1}.Debug|x64.Build.0 = Debug|x64
+		{A86627CB-089F-4342-A45F-EACD5DDDEAC1}.Release|x64.ActiveCfg = Release|x64
+		{A86627CB-089F-4342-A45F-EACD5DDDEAC1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56A389A5-E23F-4728-98D7-B0FE05E96298}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+[{
+  "id": "BSN_v4l2",
+  "version": "2024020714",
+  "title": "Matrox Video4Linux2 Consumer",
+  "subTitles": null,
+  "location": "MIL Hardware-specific Notes",
+  "pageURL": "content\\BoardSpecificNotes\\v4l2\\ChapterInformation.htm",
+  "text": " Matrox Video4Linux2 Consumer This chapter discusses features of MIL that are particular to the Matrox Video4Linux2 (V4L2) Consumer, and optimizing its performance. Information regarding using this system with specific functions is integrated into the functions' reference topics. Refer to the Linux release notes for any additions/modifications to this chapter or the MIL Reference. Matrox Video4Linux2 Consumer (library) overview Using Matrox V4L2 Consumer (library) with MIL ",
+  "wordCount": 67,
+  "subEntries": [
+    {
+      "id": "BSN_v4l2_V4L2_specific_features",
+      "version": null,
+      "title": "Matrox Video4Linux2 Consumer (library) overview",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\v4l2\\V4L2_specific_features.htm",
+      "text": " Matrox Video4Linux2 Consumer (library) overview The Matrox Video4Linux2 Consumer (library) allows you to use a Video4Linux2 (V4L2) driver with MIL. The Matrox Video4Linux2 Consumer (based on the Linux Video4Linux2 API) provides a way to communicate with any device capable of video capture (provided it has a V4L2 driver working within the running Linux kernel) and can control the capture process and move images from the driver into the user space. The Matrox Video4Linux2 Consumer allows for access and configuration of devices including video input, video output, and encoding for capture devices. Many drivers come with the Linux kernel, but a hardware device/camera manufacturer could distribute one separately. Make sure that the required/separately distributed V4L2 driver is either installed by the software provided with the device, or by installing a compatible V4L2 driver. Note that not all V4L2 image formats are supported by MIL, and some cameras might not have any MIL-supported image formats. When using cameras with auto-focus, auto-lighting, or similar features, you might need to grab a few frames before obtaining a clear picture. Matrox Video4Linux2 Consumer (library) overview ",
+      "wordCount": 182,
+      "subEntries": []
+    },
+    {
+      "id": "BSN_v4l2_Using_V4L2_with_MIL",
+      "version": null,
+      "title": "Using Matrox V4L2 Consumer (library) with MIL",
+      "subTitles": null,
+      "location": "MIL Hardware-specific Notes",
+      "pageURL": "content\\BoardSpecificNotes\\v4l2\\Using_V4L2_with_MIL.htm",
+      "text": " Using Matrox V4L2 Consumer (library) with MIL To use the Matrox Video4Linux2 Consumer with MIL, you need to allocate a MIL V4L2 system (M_SYSTEM_V4L2), using MsysAlloc(). This allocation opens general communication with all devices capable of video capture found on your computer (discovers all character device special files /dev/video* ????, where * is a number between 0 to 63). You must then allocate a digitizer for each hardware device that you want to use to grab images and/or access directly, using MdigAlloc() with M_DEVn. For more information, refer to the Device number section of Chapter 27: Grabbing with your digitizer. Note that, you can only allocate one MIL V4L2 system per Linux process but multiple processes can allocate a V4L2 system. Each device can only be used by one process at a time. A conversion between Video4Linux2 and GenICam has been implemented which allows V4L2 controls to be accessible through MdigControlFeature() and MdigInquireFeature(). You can also use Matrox Capture Works and Matrox Feature Browser to access the Video4Linux2 controls, which provide an interface to view and change the camera's configuration. For more information, refer to the Using MIL with GenICam section of Chapter 27: Grabbing with your digitizer. Matrox Video4Linux2 information in the MIL Reference can be found in the paragraphs and values marked as being supported by the Video4Linux2 system. For any additions/modifications to this chapter, refer to the Linux release notes. Using Matrox V4L2 Consumer (library) with MIL ",
+      "wordCount": 242,
+      "subEntries": []
+    }
+  ]
+}]

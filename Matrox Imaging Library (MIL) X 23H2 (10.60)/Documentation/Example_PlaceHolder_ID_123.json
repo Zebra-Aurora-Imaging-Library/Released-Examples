@@ -1,0 +1,16 @@
+[{
+  "id": "Example_PlaceHolder_ID",
+  "version": "2024020714",
+  "title": "Example_PlaceHolder_Title",
+  "wordCount": 0,
+  "subEntries": [
+    {
+      "id": "Examples_General_MdigGrab_CPP_mdiggrab_cpp",
+      "version": "2024020714",
+      "title": "mdiggrab.cpp",
+      "location": "Sample Code from MIL Examples",
+      "text": " Top /********************************************************************************/ /* * File name: MDigGrab.cpp * Location: See Matrox Example Launcher in the MIL Control Center * * * Synopsis: This program demonstrates how to grab from a camera in * continuous and monoshot mode. * * Copyright (C) Matrox Electronic Systems Ltd., 1992-2024. * All Rights Reserved */ #include &lt;mil.h&gt; int MosMain(void) { MIL_ID MilApplication, /* Application identifier. */ MilSystem, /* System identifier. */ MilDisplay, /* Display identifier. */ MilDigitizer, /* Digitizer identifier. */ MilImage; /* Image buffer identifier. */ /* Allocate defaults. */ MappAllocDefault(M_DEFAULT, &amp;MilApplication, &amp;MilSystem, &amp;MilDisplay, &amp;MilDigitizer, &amp;MilImage); /* Grab continuously. */ MdigGrabContinuous(MilDigitizer, MilImage); /* When a key is pressed, halt. */ MosPrintf(MIL_TEXT(\"\\nDIGITIZER ACQUISITION:\\n\")); MosPrintf(MIL_TEXT(\"----------------------\\n\\n\")); MosPrintf(MIL_TEXT(\"Continuous image grab in progress.\\n\")); MosPrintf(MIL_TEXT(\"Press any key to stop.\\n\\n\")); MosGetch(); /* Stop continuous grab. */ MdigHalt(MilDigitizer); /* Pause to show the result. */ MosPrintf(MIL_TEXT(\"Continuous grab stopped.\\n\\n\")); MosPrintf(MIL_TEXT(\"Press any key to do a single image grab.\\n\\n\")); MosGetch(); /* Monoshot grab. */ MdigGrab(MilDigitizer, MilImage); /* Pause to show the result. */ MosPrintf(MIL_TEXT(\"Displaying the grabbed image.\\n\")); MosPrintf(MIL_TEXT(\"Press any key to end.\\n\\n\")); MosGetch(); /* Free defaults. */ MappFreeDefault(MilApplication, MilSystem, MilDisplay, MilDigitizer, MilImage); return 0; } ",
+      "wordCount": 184
+    }
+  ]
+}]

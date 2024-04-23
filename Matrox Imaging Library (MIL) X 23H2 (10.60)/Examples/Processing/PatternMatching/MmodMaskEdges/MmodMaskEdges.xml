@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MmodMaskEdges" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+    <Category Name="Advanced">
+    <Category Name="Processing"/>
+	</Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Machining"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Finding/Locating"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Geometric Model Finder"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP5" New="1"/>       
+  </Category>
+ </Categories>
+ <Description>This example allows you interactively creates a \"don't care\" mask for a Geometric Model Finder model using two approaches: selecting edges and drawing rectangle regions.
+   </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MblobAlloc</Function>
+  <Function>MblobAllocResult</Function>
+  <Function>MblobCalculate</Function>
+  <Function>MblobControl</Function>
+  <Function>MblobFree</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufRestore</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispHookFunction</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MdispZoom</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraFree</Function>
+  <Function>MimArith</Function>
+  <Function>MimZoneOfInfluence</Function>
+  <Function>MmodAlloc</Function>
+  <Function>MmodAllocResult</Function>
+  <Function>MmodControl</Function>
+  <Function>MmodDefine</Function>
+  <Function>MmodDraw</Function>
+  <Function>MmodFree</Function>
+  <Function>MmodMask</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+  <Licenses>
+  <License>Geometric Model Finder</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Geometric pattern matching</Keyword>
+  <Keyword>Interactive annotations</Keyword>
+  <Keyword>Region of interest</Keyword>
+ </Keywords>
+</Example>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="BottleDefect" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Processing"/>
+   </Category>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Automation"/>
+   <Category Name="Packaging"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Inspecting/Proofing/Verifying"/>
+  </Category>
+  <Category Name="Modules">
+  </Category>
+  <Category Name="What's New">
+  <Category Name="MIL 10.0 U59" NewWorkspace ="1" New ="1"/>  
+  </Category>
+ </Categories>
+ <Description>This workspace shows some basic inspection of ampoules using fixtured operations.</Description>
+ <Languages>
+  <Language>MIL CoPilot</Language>
+ </Languages>
+   <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappControl</Function>
+      <Function>MappFree</Function>
+      <Function>MappHookFunction</Function>
+      <Function>MblobAlloc</Function>
+      <Function>MblobAllocResult</Function>
+      <Function>MblobCalculate</Function>
+      <Function>MblobControl</Function>
+      <Function>MblobDraw</Function>
+      <Function>MblobFree</Function>
+      <Function>MbufAllocColor</Function>
+      <Function>MbufClear</Function>
+      <Function>MbufClone</Function>
+      <Function>MbufCopy</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufImport</Function>
+      <Function>MbufSetRegion</Function>
+      <Function>McalAlloc</Function>
+      <Function>McalDraw</Function>
+      <Function>McalFixture</Function>
+      <Function>McalFree</Function>
+      <Function>McalTransformImage</Function>
+      <Function>McalUniform</Function>
+      <Function>MdigAlloc</Function>
+      <Function>MdigFree</Function>
+      <Function>MdigGetHookInfo</Function>
+      <Function>MdigInquire</Function>
+      <Function>MdigProcess</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispControl</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispSelect</Function>
+      <Function>MgraAlloc</Function>
+      <Function>MgraAllocList</Function>
+      <Function>MgraClear</Function>
+      <Function>MgraControl</Function>
+      <Function>MgraFree</Function>
+      <Function>MimArith</Function>
+      <Function>MimBinarize</Function>
+      <Function>MimConvolve</Function>
+      <Function>MimDilate</Function>
+      <Function>MimOpen</Function>
+      <Function>MmodAllocResult</Function>
+      <Function>MmodControl</Function>
+      <Function>MmodFind</Function>
+      <Function>MmodFree</Function>
+      <Function>MmodPreprocess</Function>
+      <Function>MmodRestore</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+   </Functions> 
+ <Licenses>
+   <License>Geometric Model Finder</License>
+   <License>Image Analysis</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Object matching</Keyword>
+  <Keyword>2D calibration</Keyword>
+  <Keyword>Fixturing</Keyword>
+  <Keyword>Morphology</Keyword>
+  <Keyword>Defect detection</Keyword>
+  <Keyword>Pattern recognition</Keyword>
+  <Keyword>Image arithmetic</Keyword>
+  <Keyword>Blob analysis</Keyword>
+ </Keywords>
+</Example>

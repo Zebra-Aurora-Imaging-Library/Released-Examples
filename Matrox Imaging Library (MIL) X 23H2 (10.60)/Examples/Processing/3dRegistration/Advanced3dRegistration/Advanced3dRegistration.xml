@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Advanced3dRegistration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+      <Category Name="Advanced">
+        <Category Name="Processing"/>
+      </Category>
+    </Category>
+  <Category Name="Industries">
+   <Category Name="Machining"/>
+   <Category Name="Automation"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="3D profiling"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="3D Display"/>
+   <Category Name="3D Graphics"/>
+   <Category Name="3D Registration"/>
+   <Category Name="Buffer"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 SP6" New="1"/>
+  </Category>
+ </Categories>
+ <Description>
+ This example demonstrates the use of advanced 3d registration controls
+ and subsampling modes to improve the robustness, precision, and speed in
+ various registration scenarios.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+ </Languages>
+ <Functions>
+   <Function>M3ddispAlloc</Function>
+   <Function>M3ddispControl</Function>
+   <Function>M3ddispFree</Function>
+   <Function>M3ddispInquire</Function>
+   <Function>M3ddispSelect</Function>
+   <Function>M3ddispSetView</Function>
+   <Function>M3dgraRemove</Function>
+   <Function>M3dregAlloc</Function>
+   <Function>M3dregAllocResult</Function>
+   <Function>M3dregCalculate</Function>
+   <Function>M3dregControl</Function>
+   <Function>M3dregDraw3d</Function>
+   <Function>M3dregFree</Function>
+   <Function>M3dregGetResult</Function>
+   <Function>M3dregInquire</Function>
+   <Function>M3dregMerge</Function>
+   <Function>MappAlloc</Function>
+   <Function>MappControl</Function>
+   <Function>MappFree</Function>
+   <Function>MappTimer</Function>
+   <Function>MbufFree</Function>
+   <Function>MbufInquireContainer</Function>
+   <Function>MbufRestore</Function>
+   <Function>MobjInquire</Function>
+   <Function>MsysAlloc</Function>
+   <Function>MsysFree</Function>
+ </Functions>
+ <Licenses>
+  <License>Registration</License>
+  <License>3D Calibration &amp; Supplement</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>3D registration</Keyword>
+  <Keyword>3D reconstruction</Keyword>
+ </Keywords>
+</Example>

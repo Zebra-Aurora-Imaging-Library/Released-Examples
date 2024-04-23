@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MdigProcessMultiple" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+      <Category Name="Hardware-specific">
+        <Category Name="Matrox Morphis"/>
+        <Category Name="Matrox Radient"/>
+        <Category Name="Matrox Radient eV-CXP"/>
+        <Category Name="Matrox RadientPro"/>
+        <Category Name="Matrox Radient eV-CL"/>
+        <Category Name="Matrox Rapixo CL Pro"/>
+        <Category Name="Matrox Rapixo CXP"/>
+        <Category Name="Matrox Solios"/>
+      </Category>
+   </Category>
+ </Category>
+ <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Digitizer"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This program shows how to use multiple digitizers to do processing. The main starts an independent processing job for each digitizer (one per camera) and then waits for a key to be pressed to stop them.
+    </Description>
+ <Languages>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+ </Languages>
+ <Functions>
+ </Functions>
+ <Notes>
+  <Note>Requires a digitizer</Note>
+ </Notes>
+ <Keywords>
+  <Keyword>Image acquisition</Keyword>
+ </Keywords>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

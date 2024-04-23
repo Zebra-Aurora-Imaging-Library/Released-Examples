@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Mreg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="370" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Electronics"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Stitching"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Registration"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This program uses the registration module to form a mosaic of three images taken from a camera at unknown translation.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbufAllocColor</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufInquire</Function>
+  <Function>MbufRestore</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraFree</Function>
+  <Function>MgraLine</Function>
+  <Function>MregAlloc</Function>
+  <Function>MregAllocResult</Function>
+  <Function>MregCalculate</Function>
+  <Function>MregControl</Function>
+  <Function>MregDraw</Function>
+  <Function>MregFree</Function>
+  <Function>MregGetResult</Function>
+  <Function>MregTransformCoordinate</Function>
+  <Function>MregTransformImage</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+  <Notes>
+  </Notes>
+  <Licenses>
+  <License>Registration</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Geometric transformation</Keyword>
+  <Keyword>Image stitching</Keyword>
+  <Keyword>Image registration</Keyword>
+ </Keywords>
+</Example>

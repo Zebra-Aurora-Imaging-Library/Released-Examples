@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="Mbead" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="310" Name="General"/>
+  </Category>
+  <Category Name="Industries">
+   <Category Name="Machining"/>
+  </Category>
+  <Category Name="Applications">
+   <Category Name="Measuring"/>
+  </Category>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Calibration"/>
+   <Category Name="Geometric Model Finder"/>
+   <Category Name="Bead Inspection"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 9.0 PP2" New="1"/>
+   <Category Name="MIL 10.0"/>
+  </Category>
+ </Categories>
+ <Description>This program performs several bead inspections on mechanical parts.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <Language>Python</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+ </Languages>
+ <Functions>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MbeadAlloc</Function>
+  <Function>MbeadAllocResult</Function>
+  <Function>MbeadControl</Function>
+  <Function>MbeadDraw</Function>
+  <Function>MbeadFree</Function>
+  <Function>MbeadGetResult</Function>
+  <Function>MbeadInquire</Function>
+  <Function>MbeadTemplate</Function>
+  <Function>MbeadTrain</Function>
+  <Function>MbeadVerify</Function>
+  <Function>MbufFree</Function>
+  <Function>MbufRestore</Function>
+  <Function>McalAlloc</Function>
+  <Function>McalDraw</Function>
+  <Function>McalFixture</Function>
+  <Function>McalFree</Function>
+  <Function>McalUniform</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispControl</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispInquire</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraAllocList</Function>
+  <Function>MgraClear</Function>
+  <Function>MgraColor</Function>
+  <Function>MgraFree</Function>
+  <Function>MmodAlloc</Function>
+  <Function>MmodAllocResult</Function>
+  <Function>MmodDefine</Function>
+  <Function>MmodDraw</Function>
+  <Function>MmodFind</Function>
+  <Function>MmodFree</Function>
+  <Function>MmodPreprocess</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+ </Notes>
+  <Licenses>
+  <License>Image Analysis</License>
+  <License>Geometric Model Finder</License>
+ </Licenses>
+ <Keywords>
+  <Keyword>Object dimensions</Keyword>
+  <Keyword>Fixturing</Keyword>
+ </Keywords>
+</Example>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MdigDoubleBuffering" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Priority="60" Name="General"/>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Digitizer"/>
+   <Category Name="Image Processing"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="Older"/>
+  </Category>
+ </Categories>
+ <Description>This program performs a double-buffering grab, times the processing, and displays some statistics.
+    </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+  <LinuxLanguage>Python</LinuxLanguage>
+  <Language>Python</Language>
+ </Languages>
+ <Functions>
+  <Function>MbufAllocColor</Function>
+  <Function>MappAlloc</Function>
+  <Function>MappFree</Function>
+  <Function>MappTimer</Function>
+  <Function>MbufAlloc2d</Function>
+  <Function>MbufClear</Function>
+  <Function>MbufFree</Function>
+  <Function>MdigAlloc</Function>
+  <Function>MdigControl</Function>
+  <Function>MdigFree</Function>
+  <Function>MdigGrab</Function>
+  <Function>MdigGrabWait</Function>
+  <Function>MdigHookFunction</Function>
+  <Function>MdigInquire</Function>
+  <Function>MdispAlloc</Function>
+  <Function>MdispFree</Function>
+  <Function>MdispSelect</Function>
+  <Function>MgraText</Function>
+  <Function>MimArith</Function>
+  <Function>MsysAlloc</Function>
+  <Function>MsysFree</Function>
+ </Functions>
+ <Notes>
+  <Note>Requires a digitizer</Note>
+ </Notes>
+ <Keywords>
+  <Keyword>Image acquisition</Keyword>
+ </Keywords>
+ <Licenses>
+  <License>MIL Lite only</License>
+ </Licenses>
+</Example>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="MbufCreate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Core"/>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="Buffer"/>
+   <Category Name="Display"/>
+   <Category Name="Graphics"/>
+   <Category Name="Image Processing"/>
+  </Category>
+  <Category Name="What's New">
+   <Category Name="MIL 10.0 PP2" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This program shows how to use MbufCreate function to
+              create a MIL buffer on user data or on the data of another
+              MIL buffer.
+ </Description>
+ <Languages>
+  <Language>C#</Language>
+  <Language>C++</Language>
+  <LinuxLanguage>C++</LinuxLanguage>
+  <LinuxLanguage>C#</LinuxLanguage>
+ </Languages>
+ <Functions>
+      <Function>MappAlloc</Function>
+      <Function>MappFree</Function>
+      <Function>MbufAllocColor</Function>
+      <Function>MbufChild2d</Function>
+      <Function>MbufClear</Function>
+      <Function>MbufControl</Function>
+      <Function>MbufCopy</Function>
+      <Function>MbufCreate2d</Function>
+      <Function>MbufCreateColor</Function>
+      <Function>MbufFree</Function>
+      <Function>MbufLoad</Function>
+      <Function>MdispAlloc</Function>
+      <Function>MdispControl</Function>
+      <Function>MdispFree</Function>
+      <Function>MdispSelect</Function>
+      <Function>MdispZoom</Function>
+      <Function>MgraAllocList</Function>
+      <Function>MgraColor</Function>
+      <Function>MgraInquireList</Function>
+      <Function>MgraControl</Function>
+      <Function>MgraDots</Function>
+      <Function>MgraFree</Function>
+      <Function>MimAllocResult</Function>
+      <Function>MimArith</Function>
+      <Function>MimFree</Function>
+      <Function>MimGetResult</Function>
+      <Function>MimLocateEvent</Function>
+      <Function>MsysAlloc</Function>
+      <Function>MsysFree</Function>
+   </Functions>
+ <Notes>
+ </Notes>
+  <Licenses>
+  <License>Image Analysis</License>
+ </Licenses>
+ <Keywords>
+ </Keywords>
+</Example>

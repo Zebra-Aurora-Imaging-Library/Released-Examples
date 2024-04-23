@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Revision="10.60.0776" Name="M3dgra" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+ <Categories>
+  <Category Name="Overview">
+   <Category Name="Advanced">
+    <Category Name="Core"/>
+   </Category>
+  </Category>
+  <Category Name="Industries"/>
+  <Category Name="Applications"/>
+  <Category Name="Modules">
+   <Category Name="3D Display"/>
+   <Category Name="3D Geometry"/>
+   <Category Name="3D Graphics"/>
+   <Category Name="3D Image Processing"/>
+   <Category Name="Buffer"/>
+  </Category>
+    <Category Name="What's New">
+	   <Category Name="MIL 10.0 SP4" New="1"/>
+  </Category>
+ </Categories>
+ <Description>This example shows how to draw 3d graphics in the 3d display.
+    </Description>
+
+  <Languages>
+     <Language>C#</Language>
+     <Language>C++</Language>
+     <LinuxLanguage>C++</LinuxLanguage>
+     <LinuxLanguage>C#</LinuxLanguage>
+  </Languages>
+
+  <Functions>
+        <Function>MappAlloc</Function>
+        <Function>MappControl</Function>
+        <Function>MappFree</Function>
+        <Function>M3ddispAlloc</Function>
+        <Function>M3ddispControl</Function>
+        <Function>M3ddispInquire</Function>
+        <Function>M3ddispSelect</Function>
+        <Function>M3ddispSetView</Function>
+        <Function>M3ddispFree</Function>
+        <Function>M3dgeoAlloc</Function>
+        <Function>M3dgeoBox</Function>
+        <Function>M3dgeoMatrixSetTransform</Function>
+        <Function>M3dgeoMatrixSetWithAxes</Function>
+        <Function>M3dgeoDraw3d</Function>
+        <Function>M3dgeoFree</Function>
+        <Function>M3dgraControl</Function>
+        <Function>M3dgraInquire</Function>
+        <Function>M3dgraAdd</Function>
+        <Function>M3dgraCopy</Function>
+        <Function>M3dgraRemove</Function>
+        <Function>M3dgraArc</Function>
+        <Function>M3dgraAxis</Function>
+        <Function>M3dgraBox</Function>
+        <Function>M3dgraCylinder</Function>
+        <Function>M3dgraDots</Function>
+        <Function>M3dgraGrid</Function>
+        <Function>M3dgraLine</Function>
+        <Function>M3dgraNode</Function>
+        <Function>M3dgraPlane</Function>
+        <Function>M3dgraPolygon</Function>
+        <Function>M3dgraSphere</Function>
+        <Function>M3dgraText</Function>
+        <Function>M3dimNormals</Function>
+        <Function>M3dimMesh</Function>
+        <Function>MgenLutFunction</Function>
+        <Function>MbufAllocColor</Function>
+        <Function>MbufRestore</Function>
+        <Function>MbufImport</Function>
+        <Function>MbufInquire</Function>
+        <Function>MbufGet1d</Function>
+        <Function>MbufFree</Function>
+        <Function>MsysAlloc</Function>
+        <Function>MsysFree</Function>
+  </Functions>
+  <Notes>
+    <Note>Example might not be compatible with older compilers</Note>
+  </Notes> 
+  <Licenses>
+  	<License>Image Analysis</License>
+    <License>3D Calibration &amp; Supplement</License>
+  </Licenses>
+  <Keywords>
+    <Keyword>Graphical annotations</Keyword>
+    <Keyword>HTML5</Keyword>
+    <Keyword>HTML</Keyword>
+    <Keyword>Javascript</Keyword>
+  </Keywords>
+
+</Example>

@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MmodelTracking", "MmodelTracking.csproj", "{46388192-A1EC-4304-8466-CF543DE6C580}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46388192-A1EC-4304-8466-CF543DE6C580}.Debug|x64.ActiveCfg = Debug|x64
+		{46388192-A1EC-4304-8466-CF543DE6C580}.Debug|x64.Build.0 = Debug|x64
+		{46388192-A1EC-4304-8466-CF543DE6C580}.Release|x64.ActiveCfg = Release|x64
+		{46388192-A1EC-4304-8466-CF543DE6C580}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A689E0B3-C179-4A21-B6EC-C5311509D0C5}
+	EndGlobalSection
+EndGlobal

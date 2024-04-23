@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M3dreg", "M3dreg.csproj", "{D203849B-C096-4920-94DA-C8A771940FAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D203849B-C096-4920-94DA-C8A771940FAE}.Debug|x64.ActiveCfg = Debug|x64
+		{D203849B-C096-4920-94DA-C8A771940FAE}.Debug|x64.Build.0 = Debug|x64
+		{D203849B-C096-4920-94DA-C8A771940FAE}.Release|x64.ActiveCfg = Release|x64
+		{D203849B-C096-4920-94DA-C8A771940FAE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36923B40-8192-4FD5-B955-F62765956797}
+	EndGlobalSection
+EndGlobal

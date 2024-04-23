@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{3DB82B13-59E1-4858-B4E5-C78B188EA195}") = "RectangleAndBoxFinder", "RectangleAndBoxFinder.vcxproj", "{41309818-24F9-453A-B1BE-50CD5EC8E5CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41309818-24F9-453A-B1BE-50CD5EC8E5CB}.Debug|x64.ActiveCfg = Debug|x64
+		{41309818-24F9-453A-B1BE-50CD5EC8E5CB}.Debug|x64.Build.0 = Debug|x64
+		{41309818-24F9-453A-B1BE-50CD5EC8E5CB}.Release|x64.ActiveCfg = Release|x64
+		{41309818-24F9-453A-B1BE-50CD5EC8E5CB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

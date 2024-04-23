@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Example Name="MbufBayer" Revision="10.60.0776" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../.schema/example_restriction.xsd">
+    <Categories>
+         <Category Name="Overview">
+            <Category Name="Advanced">
+               <Category Name="Core"/>
+            </Category>
+         </Category>
+        
+        <Category Name="Applications">
+            <Category Name="Preprocessing"/>
+        </Category>
+
+        <Category Name="Modules">
+            <Category Name="Buffer"/>
+            <Category Name="Display"/>
+            <Category Name="Graphics"/>
+        </Category>
+        
+        <Category Name="What's New">
+           <Category Name="MIL 10.0 PP1" New="1"/>
+           <Category Name="MIL 10.0 PP3"/>
+        </Category>
+        
+    </Categories>
+
+    <Description>This program converts a single-band, Bayer color-encoded image into a 3-band image.
+    </Description>
+
+    <Languages>
+        <Language>C++</Language>
+	<LinuxLanguage>C++</LinuxLanguage>
+    </Languages>
+
+    <Functions>
+         <Function>MappAlloc</Function>
+         <Function>MappFree</Function>
+         <Function>MbufAlloc1d</Function>
+         <Function>MbufAllocColor</Function>
+         <Function>MbufBayer</Function>
+         <Function>MbufChild2d</Function>
+         <Function>MbufCopyColor2d</Function>
+         <Function>MbufFree</Function>
+         <Function>MbufInquire</Function>
+         <Function>MbufRestore</Function>
+         <Function>MdispAlloc</Function>
+         <Function>MdispControl</Function>
+         <Function>MdispFree</Function>
+         <Function>MdispInquire</Function>
+         <Function>MdispSelect</Function>
+         <Function>MdispZoom</Function>
+         <Function>MgraColor</Function>
+         <Function>MgraRect</Function>
+         <Function>MsysAlloc</Function>
+         <Function>MsysFree</Function>
+    </Functions>
+
+    <Licenses>
+        <License>MIL Lite only</License>
+    </Licenses>
+
+    <Keywords>
+        <Keyword>Preprocessing</Keyword>
+        <Keyword>Bayer demosaicing</Keyword>
+    </Keywords>
+
+</Example>
